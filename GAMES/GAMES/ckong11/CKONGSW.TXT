@@ -1,0 +1,248 @@
+***************************************************************************
+*                         CHAMP Kong, ver. 1.1                            *
+*                    Copyright 1996 CHAMProgramming                       *
+*                               5/10/96                                   *         
+***************************************************************************
+
+----------------
+| INTRODUCTION |
+----------------
+
+CHAMProgramming is proud to present our latest work, CHAMP Kong!!!  The
+game features superb graphics, sound, and top-notch game play that makes
+you feel like you're in an arcade!  A completely re-designed user interface
+is now easier and more powerful than before.  A complete remake of the look
+(Thanks Dan!) and feel has created a truly enjoyable game.
+
+We hope you enjoy the results.
+
+-----------
+| CREDITS |
+-----------
+
+CHAMP Kong is a result of almost 9 months of hard work.  The following people
+have had significant contributions to the making of this game:
+
+John Champeau     - Game Design, Programming & Sound. 
+Dan Van Buskirk   - Game Design, Graphics and the CHAMP Sidebar. 
+Paul Champeau     - Game Design and Testing.  Also the creator of CHAMP Cable!
+
+Special thanks to Christina Jackson for getting this project off the ground
+to begin with and seeing it through to it's completion.  Thanks Bunny!
+
+
+----------------
+| DISTRIBUTION |
+----------------
+
+This is the shareware version of CHAMP Kong.  It can be freely distributed
+to any other BBS or online service.  It cannot be sold for profit either
+individually or as part of a bundle.  Though every effort has been made to
+ensure that CHAMP Kong will operate with any PC that meets the requirements
+specified, CHAMProgramming is not responsible for anything that may occur
+as a result of the use of this program.
+
+---------------------
+| REGISTRATION INFO |
+---------------------
+
+To register your copy of CHAMP Kong, send a check or money order for $17.95
+plus $2.00 shipping to:
+
+       CHAMProgramming
+       34-3 Shunpike Road
+       Cromwell, CT 06416
+
+You may print out the text file ORDER.FRM, or select 'P' from the ending
+text screen when exiting the game.
+
+----------------
+| REQUIREMENTS |
+----------------
+
+CHAMP Kong requires the following to run:
+
+  * 386/25Mhz or better IBM PC or 100% Compatible
+  * DOS ver. 3.1 or better
+  * VGA Graphics
+  * 450K of free conventional memory
+
+CHAMP Kong also supports the following:
+  * 1 or 2 analog joysticks
+  * Soundblaster card or compatible
+  * Microsoft compatible mouse
+  * Digital joystick using CHAMP Cable(tm)
+
+The following configuration is recommended to play CHAMP Kong:
+  * 486/33
+  * Soundblaster 16
+  * VESA compatible VGA card
+  * 550K of free conventional memory
+  * Digital joystick using CHAMP Cable(tm)
+
+-----------------------
+| RUNNING THE PROGRAM |
+-----------------------
+     
+The following are the files CHAMP Kong needs to run.  CHAMP Kong will NOT
+run unless these three files are found:
+
+  * CKONG.EXE   - This is the program.
+  * CKONG.BIN   - Contains necessary graphics and sounds.
+  * CKONGSW.HLP - Contains on-line help for CHAMP Kong
+
+The following files are created after running CHAMP Kong:
+  * CKONG.CFG    - Configuration file.
+  * CKONG.HOF    - Top ten hall of fame.
+  * JOYSTICK.CFG - Joystick calibration values.
+
+To run CHAMP Kong, switch to the directory where you have copied the program
+and type 'ckong' and press ENTER.  If you have trouble running CHAMP Kong,
+see the Troubleshooting section.
+
+Once the program loads, you will see the CHAMP Intro screen.  Next, the
+CHAMP Kong title screen will be shown:
+
+  * START GAME (1P/2P): Press ENTER to play the game; use the arrow keys to
+    change between 1 and 2 players.
+  * OPTIONS: Choose this to view the many options available for CHAMP Kong.
+  * EXIT GAME: Choose this to exit CHAMP Kong.
+
+NOTE: You can press F1 at any time to get context-sensitive help.
+
+WINDOWS USERS:  CHAMP Kong will run under Windows 3.1x, Windows 95, and OS/2.
+A file called CKONG.ICO has been included if you wish to make an icon to run
+it directly from these operating systems.  Please consult your Windows
+manuals for help setting up program items.
+
+--------------------
+| PLAYING THE GAME |
+--------------------
+
+The object of CHAMP Kong is to save your girlfriend from the love sick ape
+named Kong!  You must run, jump and climb up a dangerous construction site
+to reunite with the girl while avoiding barrels and fireballs.  Once you
+reach the top, Kong will grab the girl and bring her to a higher level.
+
+The Rivet Level
+
+In this level, you must remove 8 rivets to make Kong fall and bonk his head
+by jumping or walking over them.  Be careful not to fall through the holes
+once the rivets are gone.
+
+During the game, you can press any of the following keys:
+
+  * F1  - Brings up the help screen.
+  * F5  - Brings up the Controller options.
+  * F6  - Brings up the Sound options.
+  * F9  - Toggles the sound on and off.
+  * F10 - Resets the game.
+  * F12 - Pauses the game.  Press the spacebar or tap a button to resume.
+  * Esc - Brings up the Options menu.  Press ESC to resume the game.
+
+--------------------
+| TROUBLE SHOOTING |
+--------------------
+
+The following switches are used from the command line to disable certain
+auto-detection features of CHAMP Kong if you are experiencing problems
+running the program:
+
+  -s : Disable the auto detection of the sound card.
+  -j : Disable any analog joysticks that are being used.
+  -d : Disable any digital joysticks that are being used.
+  -m : Mute all sounds.  
+  -3 : Disable the auto-detection of a 386.  Use this ONLY if you have a
+       386 PC or better!
+
+For example:  To disable the sound card detection, you would type:
+
+   ckong -s
+
+Sound Card problems
+
+You must have a 100% compatible Soundblaster card.  To manually configure your
+sound card, choose Configure Sound Card in the Sound menu (from the Options
+menu).  You will be prompted for the PORT, IRQ, and DMA of your sound card.
+Please consult your user's manual of your sound card for these values.  You
+can always select Auto Detect and let the program try to determine the values,
+though this may lock up your computer.
+
+If you continue to experience problems, please Email CHAMProgramming's
+technical support at:
+
+  support@champgames.com
+
+Also, other technical support is available at the CHAMProgramming web site,
+located at:
+
+  http://www.champgames.com
+
+
+---------------
+| CHAMP CABLE |
+---------------
+
+Play our games the way they were meant to be played!
+
+What is CHAMP Cable?  CHAMP Cable is a 3-foot cable that allows you to plug
+a standard 9-pin digital joystick (from the Atari 2600) into a parallel
+printer port and play all CHAMP Games!!!
+
+  * Digital response -> faster response than analog
+  * NO CALIBRATION!!
+  * Works on LPT1, LPT2 and LPT3
+  * Supports joysticks from the Atari 2600/7800/400/800/1200/130xe,
+    Commodore 64/128, and Colecovision.  Also supports digital Wico joysticks.
+  * Lifetime warranty!!
+
+Where can I get those old joysticks?
+  * Your attic
+  * Your cellar
+  * Your friend's attic or cellar
+  * Garage and yard sales
+  * For-sale sections of magazines
+
+To order your CHAMP Cable, send a check or money order for $17.95 plus
+$2.00 shipping to:
+
+                 CHAMProgramming
+                 34-3 Shunpike Road
+                 Cromwell, CT 06416
+
+Please allow 2 weeks for shipping.  Joysticks not included.
+
+---------------
+| OTHER GAMES |
+---------------
+
+CHAMProgramming is currently working on or has released the following games:
+
+   * CHAMP Kong
+   * CHAMP Ms. Pac-em
+   * CHAMP Pac-em
+   * CHAMP Galaxia
+   * CHAMP Centipede
+   * CHAMP Asteroids
+   * CHAMP Galagon
+   * CHAMP Frog-em
+   * CHAMP Invaders
+   * CHAMP Burger Chef
+
+For more information on these games, please visit our web site at:
+
+   http://www.champgames.com
+
+If you have any comments or any suggestions for future CHAMP games, feel free
+to contact us at:
+
+   comments@champgames.com
+
+jwc
+5/10/96
+
+
+
+
+
+

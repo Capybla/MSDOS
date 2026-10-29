@@ -1,0 +1,388 @@
+                         LEMMINGS AT WAR (v1.2)
+
+                              by E. Wenners
+                              2001 Holland
+
+                        --------------------------
+
+
+This document contains the following chapters:
+
+ABOUT                what is this game?
+
+WINDOWS 2000/XP      a note for Windows 2000/NT/XP users
+
+QUICK GUIDE          bored quick? read the quick guide instead of the 
+                     entire document
+
+LEMWAR MENU          what gametypes are there, and what are their rules?
+
+GAMEPLAY             the most importent one: How to control the players?
+
+LEVELS, MUSIC
+and SOUND            you can add your own levels, music and sound. read it
+                     to find out how
+
+FAMOUS LAST WORDS    legal statement and greets
+
+
+
+.: ABOUT
+.......:
+
+  maybe you remember the old dos game Lemmings, in which you had to guide
+  those cute lemmings through very hard levels.
+
+  well...
+
+  they might have looked cute and dumb at the time, but they are back!
+  and this time they are serious.. a war broke out in Lemmings-land.
+  choose sides, and fight their war!
+
+  Lemmings At War is the ultimate combination of Worms and Lemmings. It is
+  a 2-player game!
+
+  this game is FREEWARE. this means you can copy it and spread it around
+  as many as you like, without changing the contents of the game.
+
+
+
+.: WINDOWS 2000/XP
+.................:
+
+  if the ingame sound doesn't work like it should, then try starting 
+  the game with the nosound option. start the game like this:
+
+  LEMWAR.EXE -nosound
+
+  or just start the game by running NOSOUND.BAT
+
+  this should solve the problems.
+  this does however not disable the music.
+
+
+
+.: QUICK GUIDE
+.............:
+
+  for the ones who hate reading docs (like me),here is a quick guide:
+
+  - there are two teams, each human player leads one of them:
+
+    PURPLE = TEAM #1 (Bob, Fox and Ozz)
+    YELLOW = TEAM #2 (Jef, Ken and Lee)
+
+  - press ENTER to see your arsenal, move the selection box with
+    the arrow keys and select a weapon with ENTER.
+
+  - press SPACE to enter fire mode. use arrow UP and DOWN to aim,
+    and fire by pressing SPACE again.
+
+  - that's it. now read the rest of the manual if you get stuck!
+
+
+
+.: LEMMINGS @ WAR MENU
+.....................:
+
+  in the main menu of LemWar you have the followin choises:
+
+
+  1. TEAM DEATHMATCH
+
+  the goal of TEAM DEATHMATCH is to blast the players of the opposite team 
+  to bits. you each play with 3 players a teams. you can attack others and
+  defend yourself with an arsenal of weapons and tools.
+
+  the team that kills the entire other team wins!
+
+  during a players turn, the names of the players are stated when not pressing
+  a key for 4 seconds. the names of the players are stated in different colors.
+
+  PURPLE = TEAM #1
+  YELLOW = TEAM #2
+
+
+   2. CAPTURE THE FLAG
+
+  the game CAPTURE THE FLAG is a bit different. again each one has 3 players
+  in it's team. the goal is to capture the other players flag, and return that
+  flag to your home-base.
+
+  the names of the players are stated in different colors (press 'E'):
+
+  PURPLE = TEAM #1 (Bob, Fox and Ozz)
+  YELLOW = TEAM #2 (Jef, Ken and Lee)
+
+
+  the flag of the yellow team is in the yellow square. the flag of the purple team
+  is in the purple square. ofcourse the purple team has to capture the yellow flag
+  and visa versa.
+
+
+  : Capture a Flag :
+  ..................
+
+  to steal the other flag, you just need to walk/jump/fall against it. after that
+  you need to get back to your own base and touch your own flag.
+
+
+  : Recapture your Flag :
+  .......................
+
+  if your enemy captures your flag, you can recapture it. just kill the player that
+  holds your flag. your flag will appear on the spot you killed him. now, just touch
+  your flag to return it to your home-base.
+
+
+  : Win the Game :
+  ................
+
+  the first team that steels a flag an returnes it to his home-baseand jumps against
+  his own flag (which obviously may not be stolen at that time) wins!
+
+
+  3. INFO ON LEMWAR
+
+  this opens a screen with some general info. and a cool picture, guess from what
+  movie this screen is and you win a free version of LemWar (which is FREEWARE :)
+
+
+  4. QUIT GAME
+
+  obviously the most stupid option ;)
+
+
+.: WEAPONS
+.........:
+
+  LemWar features an arsenal of weapons and tools to make the life of the other
+  player misserable. here is a list of them, plus info on how to use them.
+
+
+    WEAPON/TOOL (AMMO)  INFO 
+    ------------------  ----
+    Small missile (X)   good weapon to 'feel' around in the level. perfect
+                        for desiding the shooting angle for the next shot.
+
+
+    Big missile (2)     the big brother of the small missile. does more 
+                        damage ofcourse and makes quite a hole. 
+
+
+    Lava bomb (1)       when this bomb hits the ground it creates a stream
+                        of *HOT* lava. even if you don't get directly in 
+                        contact with it, but are to close to it, you'll get
+                        burned. 
+
+                        great fun to trough in a hole someone just dug.
+
+
+    Guided missile (2)  select the right angle and power, start the missile, 
+                        then select the target with the arrow keys and fire. 
+                        after 2 seconds the missile will go straight at
+                        the selected target!
+
+
+    Shovel (2)          with this you can dig trough any piece of the level. 
+                        to get a better shooting position, or maybe to get 
+                        the hell out of some place. using it will not end 
+                        your turn, so you can shoot after digging a hole.
+                         
+                        your ammo is 2 per turn.
+
+
+    Dirt ball (2)       want to slow down your opponent? want to fill a hole 
+                        so you can walk over it? use the dirt ball. it does 
+                        no damage, it's plain durt.
+
+
+    Dynamite (1)        place it and run! or even better.. jump! you have 5
+                        seconds to get out of the way!!! does real damage if 
+                        placed correctly.
+
+
+    Shield (2)          protects your from 1 or 2 shots. great for skipping
+                        a turn without leaving yourself unprotected.
+                       
+
+    Teleport (1)        teleport yourself to any other empty location in 
+                        the level!
+
+
+    Cluster bomb (1)    in the air this bomb splits up in 5 individual bombs,
+                        each with another angle. all the bombs have the 
+                        strength of a small missile, but you will almost 
+                        always hit someone (or more!)
+
+    Uzi (3)             if used right, this baby can do some damage. it only
+                        works in a close range. still, it's more usefull to 
+                        blast holes with.
+
+
+    Stairs (2)          like with the old Lemmings you can build stairs. 
+                        you get 2 stairs every new turn. they are a very
+                        important tool. you'll find out why...
+
+
+    Handgranate (3)     very useful to hit someone who is in a difficult spot,
+                        unreachable for a rocket. just throw a handgranate and 
+                        wait 5 seconds! but be carefull: it might just bounce
+                        right back at you!
+ 
+
+    Lasergun (1)        if you are close enough you can use the lasergun to hurt
+                        the other player, this beam takes away half his energy.
+                        note that the laserbeam goes through every material (goes
+                        through walls), but loses it's power after hitting 1
+                        player.
+
+
+
+   (X) = you have unlimited ammo for this weapon
+
+
+
+.: GAMEPLAY (HOW IT WORKS)
+.........................:
+
+  you control the little guys on the screen. to control them the game has 3 modes.
+
+
+ [WALK MODE]
+
+   When your turn starts, you are in the WALK MODE. You have 30 seconds to
+   move your player around the level.
+
+
+   for manouvring throug the level, you can use the following keys:
+
+    ARROW LEFT      = walk left
+    ARROW RIGHT     = walk right
+    ARROW UP        = jump (just hit ARROW UP once, and you will jump)
+
+    ENTER           = select a weapon (see info on WEAPON SELECTION MODE below)
+    S               = Skip turn (to finish your coffee for example)
+    F               = Frag list: you earn a frag by killing another player.
+                      you loose a frag by killing yourself or a team member
+
+    SPACEBAR        = enter Fire mode (see info on FIRE MODE below)
+
+
+   to quit the game, press ESC.
+
+
+ [WEAPON SELECTION MODE  (press ENTER) ]
+
+   to choose a weapon, you can press ENTER. this will display you complete
+   weapon arsenal. under every weapon the amount of ammo is displayed in
+   GREEN DOTS. if there is a line under the weapon, it means you have
+   unlimited ammo. if you're out of ammo the weapon will display "out of
+   ammo".
+
+   in the "WEAPON SELECTION MODE" the keys are:
+
+   ARROW LEFT &
+   ARROW RIGHT     = cycle through the weapons
+   ENTER           = select a weapon
+
+
+
+ [FIRE MODE  (press SPACEBAR) ]
+
+   if you have found the right spot to fire from, just hit the SPACEBAR.
+   depending on the weapon you choose, this will bring up the controls
+   to use your weapon.
+
+   generaly the keys are:
+
+   ARROW UP        = aim up
+   ARROW DOWN      = aim down
+   +           (*) = increase power (the + and - are on the Numeric Keypad) 
+   -           (*) = decrease power (the + and - are on the Numeric Keypad)
+   SPACE           = fire
+   ESC             = abort fire
+
+
+   (*) + and - are disabled for weapons like the Uzi and Laser. this is 
+       because you can't set the power on these kind of weapons.
+
+
+
+   some examples for using weapons:
+
+   > to use for example the shield or the dynamite, you will only have to
+     press the spacebar once.
+
+   > to use the teleport press spacebar, then use the arrow keys to select
+     the new location. now press spacebar to be teleported to that location.
+     be sure the place you want to teleport to is big enough to fit your 
+     player.
+
+   > and with the heat seaking missile, which you fire like a normal missile,
+     you must select the target with the arrow keys, and confirm with spacebar.
+     the rocket will launche like a normal rocket, but after 2 seconds, the
+     heat seaking mechanism will kick in.
+
+
+.: LEVELS
+........:
+
+   you can create your own levels. read all about it in LEVELS.ZIP. after you've
+   made your own level, just put it in the LEVELS folder of the game, and it will
+   automaticly be used!
+
+   also be sure to send the level to me! i will add it in the next release or make
+   a new mission pack add-on for LemWar.
+
+
+.: MUSIC
+.......:
+
+   the music files are HSC files. you can find more on the internet. if you want,
+   you can add more HSC files in the MUSIC folder. the game will recognize them
+   and use them automaticly.
+
+
+.: SOUNDS
+........:
+
+   you can also add sound effects. the sound effects used in the game are 8-bit
+   uncompressed WAVE files.
+
+   the sounds in the SOUNDS folder, are divided in 3 groups:
+
+   MISS = played when you shoot out of the screen border
+   HURT = played when a player gets hurt
+   DEAD = played when a player dies
+
+
+   if the files MISS1.WAV, MISS2.WAV and MISS3.WAV exist, and you want to add
+   a new WAVE file in the MISS category, then make sure it is called MISS4.WAV. 
+   this way the game will find and use the new sound.
+
+
+.: FAMOUS LAST WORDS
+...................:
+
+   LemWar is FREEWARE. you are encouraged to spread this game without changing
+   any of the contents of this game.
+
+   Lemmings is a registered trademark of Psygnisos, Worms is a registered
+   trademark of Team17. i made this game just for fun, not the money, so
+   i hope nobody got offended...
+
+   you can always find LemWar at: http://come.to/under1mb
+
+
+
+   final notice : no Lemmings were spared during the creation of this game.
+
+
+
+   greetz,
+
+   E. Wenners (aka Chaozz) -- The Netherlands
+
+   chaozz666@hotmail.com
+   http://come.to/under1mb

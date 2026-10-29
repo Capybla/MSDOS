@@ -1,0 +1,58 @@
+FD-REPOv1	Build time: 1743604616	FreeDOS Base	57
+ambhelp	0.1d	FreeDOS help files in AMB format	1ab5cc6f
+append	5.0-0.7	Access files as if in the current dir	0d15a723
+assign	1.4a	Assign a new letter to a drive	8ef35fc7
+attrib	2.1a	Display and set file attributes	8ae764ff
+chkdsk	beta 0.9.2 (rev A)	Check the disk for errors	5363179e
+choice	4.4a	Present a choice and wait	4d437734
+comp	1.04a	Compare files and display differences	7a547756
+cpidos	3.0a	DISPLAY-type DOS codepages	3bf5e157
+ctmouse	2.1b4	The FreeDOS mouse driver	a48592bd
+debug	2.50	Program testing and editing tool	4fac2b3c
+defrag	1.3.2a	Disk defragmentation utility	626fd71e
+deltree	1.02g.mrlg (rev A)	Delete files and directories	2fdd2438
+devload	3.25a	Load device drivers from the command line	a17c968b
+diskcomp	06jun2003 (rev A)	Disk comparing utility	72a1c0c4
+diskcopy	beta 0.95 (rev A)	Copy one disk or image file to another	c8f8eb8f
+display	0.13d	Driver for codepage management	0ba99653
+edit	0.9b	The FreeDOS text editor	cdd591cd
+edlin	2.24	The FreeDOS standard line editor	beee3f1a
+exe2bin	1.5a	Convert an exe file to bin format	f77a9453
+fc	3.03a	File compare utility	ca811e53
+fdapm	2009sep11 (rev A)	Advanced power management utility	f03ac807
+fdhelper	1.3.6	Batch files to perform various tasks	35426706
+fdisk	1.4.3	Fixed disk partition tool	72c363a0
+fdxms286	0.03.Temperaments (rev A)	Replacement XMS driver for '286 systems or better.	246e6304
+fdxms	0.94.Bananas (rev A)	Replacement XMS driver for '386 systems or better	354df3e2
+find	3.0b LFN (rev A)	Search for files that contain a string	d67f7f5e
+format	0.92a (pre-release)	Disk formatting program	ca9ea226
+freecom	0.86a	The FreeDOS Command Shell	7581b582
+graphics	2008-07-14a	Allows PrtScr to print graphics screens	fa8de167
+himemx	3.38	HimemX is a XMS memory manager derived from FreeDOS Himem.	0f523501
+htmlhelp	1.1.0	FreeDOS help files in HTML format	a7e639bf
+jemm	5.85	Jemm386 is an Expanded Memory Manager	ce184e6a
+kernel	2043	The FreeDOS Kernel	ebf91ae3
+keyb_lay	3.1a	Keyboard layouts for KEYB	a86efca9
+keyb	2.11	A BIOS level international keyboard driver	93c3d90b
+label	1.5	Set or change the disk volume label	f796c3c7
+lbacache	2009feb06	Disk cache for drives and floppies	44c3285e
+mem	1.12	Display used and free memory in your system	be24657b
+mirror	0.2a	Records disk information for possible data recovery	439585c0
+mkeyb	0.52 (fork)	A very small keyboard driver	c5d704b3
+mode	2015-11-25a	Set the mode of your devices	bbdb668b
+more	4.3a	Display a text file or program output one page at a time	2607e40d
+move	3.5	Move files from one location to another	418048e7
+nansi	4.0d (2007may26)	An ANSI driver for DOS	c7739cfa
+nlsfunc	0.4a	Add NLS for some supported programs	262d5164
+print	1.02.ea (rev A)	Print files in the background	5dd1502a
+recover	0.1 (BETA) (rev A)	Recover disks or lost files	f445e72a
+replace	1.2a	Replaces files in a destination directory	5dfd22a9
+samcfg	20110719a	Sample configuration files	86d46289
+share	08/2006a	File sharing and locking capabilities	8b5cc4af
+shsucdx	3.09	CD-ROM and DVD-ROM extender	c333b866
+sort	1.5.1a	Sort the contents of a text file	9c22e7fd
+swsubst	3.2a	SUBST and JOIN	7b3f5961
+tree	3.7.3	Graphically displays the folder structure of a drive or path. Support for message catalogs (different languages) using cats, and can be compiled for both Windows NT/9x and DOS.	5d4b7c2c
+undelete	2008a	Undelete erased files on FAT16/32 file systems	839f9d5a
+unformat	0.8a	Unformat an accidentally formatted disk	f8b00fd3
+xcopy	1.8b	Copies files and directory trees	baaf8a82

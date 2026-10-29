@@ -1,0 +1,58 @@
+FD-REPOv1	Build time: 1743604616	FreeDOS Base	57
+ambhelp	0.1d	FreeDOS Hilfedateien im AMB Format.	1ab5cc6f
+append	5.0-0.7	Zugang zu Dateien in anderen Ordnern.	0d15a723
+assign	1.4a	Weist Laufwerk anderen Buchstaben zu.	8ef35fc7
+attrib	2.1a	Anzeigen/Setzen von Dateiattributen.	8ae764ff
+chkdsk	beta 0.9.2 (rev A)	Untersucht ein Laufwerk auf Fehler.	5363179e
+choice	4.4a	LÑsst Benutzer eine Auswahl treffen.	4d437734
+comp	1.04a	Vergleicht Dateien, zeigt Unterschiede.	7a547756
+cpidos	3.0a	DOS Codepages fÅr den Typ DISPLAY.	3bf5e157
+ctmouse	2.1b4	Der FreeDOS Maus-Treiber.	a48592bd
+debug	2.50	Programmtest- und Editiertool.	4fac2b3c
+defrag	1.3.2a	Festplattendefragementiertool.	626fd71e
+deltree	1.02g.mrlg (rev A)	Lîschen von Dateien und Verzeichnissen.	2fdd2438
+devload	3.25a	LÑdt GerÑtetreiber in der Kommandozeile.	a17c968b
+diskcomp	06jun2003 (rev A)	Programm zum Vergleichen von Disketten.	72a1c0c4
+diskcopy	beta 0.95 (rev A)	Diskette oder Image auf andere kopieren.	c8f8eb8f
+display	0.13d	Treiber fÅrs Codepage-Management.	0ba99653
+edit	0.9b	Der FreeDOS Texteditor.	cdd591cd
+edlin	2.24	Der FreeDOS Standardzeileneditor.	beee3f1a
+exe2bin	1.5a	Konvertiert eine exe in das bin-Format.	f77a9453
+fc	3.03a	Datei-Vergleich Utility.	ca811e53
+fdapm	2009sep11 (rev A)	Dienstprogramm zur Energieverwaltung.	f03ac807
+fdhelper	1.3.6	Batch-Dateien fÅr diverse FD-Aufgaben.	35426706
+fdisk	1.4.3	Festplattenpartitionierungstool.	72c363a0
+fdxms286	0.03.Temperaments (rev A)	Ersatz-XMS-Treiber fÅr 286er/besser.	246e6304
+fdxms	0.94.Bananas (rev A)	Ersatz-XMS-Treiber fÅr 386er/besser.	354df3e2
+find	3.0b LFN (rev A)	Sucht Zeilen mit bestimmtem String.	d67f7f5e
+format	0.92a (pre-release)	Disk Formatierprogramm.	ca9ea226
+freecom	0.86a	FreeDOS Befehlsshell (Command Shell).	7581b582
+graphics	2008-07-14a	Ermîglicht PrtScr das Drucken von Grafikscreens.	fa8de167
+himemx	3.38	XMS Memory Manager, Basis: FD HIMEM.	0f523501
+htmlhelp	1.1.0	FreeDOS Hilfedateien im HTML-Format.	a7e639bf
+jemm	5.85	Ein Expanded Memory Manager.	ce184e6a
+kernel	2043	Der FreeDOS Kernel.	ebf91ae3
+keyb_lay	3.1a	Tastaturlayouts fÅr KEYB.	a86efca9
+keyb	2.11	Tastaturtreiber fÅr internat. Support (BIOS-Level).	93c3d90b
+label	1.5	Setzt/Ñndert die DatentrÑgerbezeichnung.	f796c3c7
+lbacache	2009feb06	Diskcache fÅr Laufwerke und Disketten.	44c3285e
+mem	1.12	Information Åber genutzten/freien Arbeitsspeicher anzeigen.	be24657b
+mirror	0.2a	Speichert HD-Info fÅr evtl. Datenrettung.	439585c0
+mkeyb	0.52 (fork)	Ein sehr kleiner Tastaturtreiber.	c5d704b3
+mode	2015-11-25a	Stellt den Modus der GerÑte ein.	bbdb668b
+more	4.3a	Seitenweise Anzeige einer Textdatei.	2607e40d
+move	3.5	Verschiebt Dateien woandershin.	418048e7
+nansi	4.0d (2007may26)	Ein ANSI-Treiber fÅr DOS.	c7739cfa
+nlsfunc	0.4a	FÅgt National Language Support hinzu.	262d5164
+print	1.02.ea (rev A)	Druckt Sachen im Hintergrund.	5dd1502a
+recover	0.1 (BETA) (rev A)	Stellt Disks/verlorene Dateien wieder her.	f445e72a
+replace	1.2a	Ersetzt Dateien in einem Zielverzeichnis.	5dfd22a9
+samcfg	20110719a	Beispiele von Konfigurationsdateien.	86d46289
+share	08/2006a	File-Sharing und Sperren von Dateien.	8b5cc4af
+shsucdx	3.09	CD-ROM und DVD-ROM Extender.	c333b866
+sort	1.5.1a	Sortiert den Inhalt einer Textdatei.	9c22e7fd
+swsubst	3.2a	SUBST und JOIN.	7b3f5961
+tree	3.7.3	Zeigt Ordnerstruktur eines Laufwerks/Pfads grafisch an.	5d4b7c2c
+undelete	2008a	Stellt gelîschte Dateien wieder her.	839f9d5a
+unformat	0.8a	Macht das Formatieren von HDs rÅckgÑngig.	f8b00fd3
+xcopy	1.8b	Kopiert Dateien und VerzeichnisbÑume.	baaf8a82

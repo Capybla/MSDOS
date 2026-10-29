@@ -1,0 +1,59 @@
+********************************************************************************
+*                                                                              *
+*                          CHAMPROGRAMMING ORDER FORM                          *
+*                                                                              *
+********************************************************************************
+
+1. NAME AND ADDRESS:                       3. CLASSIC GAMES WISH LIST:
+
+______________________________________         1. ____________________________
+
+______________________________________         2. ____________________________
+
+______________________________________         3. ____________________________
+
+Phone: (______)____________ Age: _____         4. ____________________________
+
+Email: _____________@_________________         5. ____________________________
+
+2. HARDWARE PROFILE:                       4.  HOW WERE YOU INTRODUCED TO
+   (Describe your computer system)             CHAMPROGRAMMING?
+
+Processor (386/486/Pentium): _________         _______________________________
+
+      Do you use a joystick? _________     5.  WHAT DO YOU LIKE MOST ABOUT
+																							 CHAMP GAMES?
+   Do you have a sound card? _________
+
+6. ORDER INFORMATION:
+
+ Quantity  Item Code         Item Description            Unit Price Total Price
+--------------------------------------------------------------------------------
+|        |   CG05    |   CHAMP KONG                     |  17.95   |           |
+|________|___________|__________________________________|__________|___________|
+|        |   CG04    |   CHAMP MS. PAC-EM               |  14.95   |           |
+|________|___________|__________________________________|__________|___________|
+|        |   CG03    |   CHAMP ASTERIODS  (6/96)        |  17.95   |           |
+|________|___________|__________________________________|__________|___________|
+|        |   CG01    |   CHAMP PAC-EM     (5/96)        |  12.95   |           |
+|________|___________|__________________________________|__________|___________|
+|        |   CG02    |   CHAMP CENTIPEDE  (5/96)        |  12.95   |           |
+|________|___________|__________________________________|__________|___________|
+|        |   CG99    |   CHAMP CABLE                    |  17.95   |           |
+|________|___________|__________________________________|__________|___________|
+   ********************************                                |           |
+   *    SATISFACTION GUARANTEED   *                      Subtotal: |___________|
+   *                              *                                |           |
+   * If, for any reason, you are  *     (CT Residents add 6%) Tax: |___________|
+   *   not satisfied, write our   *                                |           |
+   * Customer Service Department  *                      Shipping: |___________|
+   ********************************                                |           |
+                                                  - CHAMP Coupons: |___________|
+                                                                   |           |
+   Shipping and Handling:                                   Total: |___________|
+    -> $2 for first item + $1 for each additional item.
+    -> All merchandise will be shipped within 2-4 weeks of purchase!
+
+    Send to: CHAMProgramming Inc.
+             34-3 Shunpike Road,
+             Cromwell, CT 06416                        THANK YOU FOR YOUR ORDER!

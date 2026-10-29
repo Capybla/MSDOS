@@ -1,0 +1,58 @@
+FD-REPOv1	Build time: 1743604616	FreeDOS Temel	57
+ambhelp	0.1d	AMB bi‡iminde FreeDOS yardm dosyalar	1ab5cc6f
+append	5.0-0.7	Dosyalara gncel dizindeymiŸ gibi eriŸin	0d15a723
+assign	1.4a	Srclere yeni harfler ata	8ef35fc7
+attrib	2.1a	Dosya ”zniteliklerini g”rntle ve ayarla	8ae764ff
+chkdsk	beta 0.9.2 (rev A)	Diskte hata olup olmad§n denetleyin	5363179e
+choice	4.4a	Se‡im sun ve bekle	4d437734
+comp	1.04a	Dosyalar mukayese et ve farkllklar g”rntle	7a547756
+cpidos	3.0a	DISPLAY tr DOS kod sayfalar	3bf5e157
+ctmouse	2.1b4	FreeDOS fare srcs	a48592bd
+debug	2.50	Program deneme ve dzenleme arac	4fac2b3c
+defrag	1.3.2a	BirleŸtirme (defragmentation) program	626fd71e
+deltree	1.02g.mrlg (rev A)	Dosya ve dizinleri sil	2fdd2438
+devload	3.25a	Komut satrndan cihaz srcleri ykle	a17c968b
+diskcomp	06jun2003 (rev A)	Disk karŸlaŸtrma program	72a1c0c4
+diskcopy	beta 0.95 (rev A)	Bir diski ya da kalp dosyasn baŸka bir diske kopyala	c8f8eb8f
+display	0.13d	Kod sayfas y”netimi i‡in src	0ba99653
+edit	0.9b	FreeDOS metin dzenleyicisi	cdd591cd
+edlin	2.24	Standart FreeDOS satr dzenleyicisi	beee3f1a
+exe2bin	1.5a	Bir exe dosyasn bin bi‡imine d”nŸtr	f77a9453
+fc	3.03a	Dosya karŸlaŸtrma arac	ca811e53
+fdapm	2009sep11 (rev A)	GeliŸmiŸ g‡ y”netim arac	f03ac807
+fdhelper	1.3.6	€eŸitli g”revleri yerine getirmek i‡in toplu iŸ dosyalar	35426706
+fdisk	1.4.3	Sabit disk b”lmleme arac	72c363a0
+fdxms286	0.03.Temperaments (rev A)	'286 sistemleri veya daha iyisi i‡in alternatif XMS srcs.	246e6304
+fdxms	0.94.Bananas (rev A)	'386 sistemleri veya daha iyisi i‡in yedek XMS srcs	354df3e2
+find	3.0b LFN (rev A)	Bir dizeyi i‡eren dosyalar ara	d67f7f5e
+format	0.92a (pre-release)	Disk bi‡imlendirme program	ca9ea226
+freecom	0.86a	FreeDOS Komut Kabu§u	7581b582
+graphics	2008-07-14a	Prtscr tuŸunun grafik ekranlar basmasna izin verir	fa8de167
+himemx	3.38	HimemX, FreeDOS Himem'den tretilmiŸ XMS bellek y”neticisidir	0f523501
+htmlhelp	1.1.0	HTML bi‡iminde FreeDOS yardm dosyalar	a7e639bf
+jemm	5.85	Jemm386, GeniŸletilmiŸ Bellek Y”neticisidir	ce184e6a
+kernel	2043	FreeDOS €ekirde§i	ebf91ae3
+keyb_lay	3.1a	KEYB i‡in klavye dzenleri	a86efca9
+keyb	2.11	BIOS dzeyinde uluslararas klavye srcs	93c3d90b
+label	1.5	Disk birimi etiketini ayarlar veya de§iŸtirir	f796c3c7
+lbacache	2009feb06	Srcler ve disketler i‡in disk arabelle§i	44c3285e
+mem	1.12	Sisteminizdeki kullanlan ve boŸ belle§i g”rntleyin	be24657b
+mirror	0.2a	Olas veri kurtarma i‡in disk bilgilerini kaydeder	439585c0
+mkeyb	0.52 (fork)	€ok k‡k bir klavye srcs	c5d704b3
+mode	2015-11-25a	Cihazlarnzn kipini ayarlayn	bbdb668b
+more	4.3a	Metin dosyalarnn i‡eri§ini sayfa sayfa g”rntler	2607e40d
+move	3.5	Dosyalar bir yerden baŸka bir yere taŸ	418048e7
+nansi	4.0d (2007may26)	DOS i‡in bir ANSI srcs	c7739cfa
+nlsfunc	0.4a	Baz desteklenen programlara NLS iŸlevini ekler	262d5164
+print	1.02.ea (rev A)	Dosyalar arka planda yazdrn	5dd1502a
+recover	0.1 (BETA) (rev A)	Diskleri veya kayp dosyalar kurtarn	f445e72a
+replace	1.2a	Hedef dizindeki dosyalar de§iŸtirir	5dfd22a9
+samcfg	20110719a	™rnek yaplandrma dosyalar	86d46289
+share	08/2006a	Dosya paylaŸma ve kilitleme yetenekleri	8b5cc4af
+shsucdx	3.09	DOS i‡in CD-ROM geniŸleticisi	c333b866
+sort	1.5.1a	Bir metin dosyasnn i‡eri§ini sralayn	9c22e7fd
+swsubst	3.2a	SUBST ve JOIN	7b3f5961
+tree	3.7.3	Bir srcnn veya yolun dizin yapsn grafik olarak g”rntler	5d4b7c2c
+undelete	2008a	FAT16/FAT32 dosya sistemlerinden silinmiŸ dosyalar geri al	839f9d5a
+unformat	0.8a	Kazaen bi‡imlendirilen bir diskin bi‡imlendirmesini geri al	f8b00fd3
+xcopy	1.8b	Dosyalar ve dizin a§a‡larn kopyalar	baaf8a82

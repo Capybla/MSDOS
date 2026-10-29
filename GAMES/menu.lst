@@ -1,0 +1,18 @@
+timeout 3
+default 0
+
+title CapyDOS Retro Games (FreeDOS 1.4 Nativo)
+chainloader (hd0,0)+1
+boot
+
+title ReactOS 0.4.16 Live (FreeLoader - Modo Seguro VGA)
+find --set-root /freeldr.sys
+chainloader /freeldr.sys
+boot
+
+title ReactOS 0.4.16 Live (RAMDisk ISO Directo)
+find --set-root /REACTOS/ISO/ReactOS-0.4.16-i386.iso
+map --mem /REACTOS/ISO/ReactOS-0.4.16-i386.iso (0xff)
+map --hook
+chainloader (0xff)
+boot

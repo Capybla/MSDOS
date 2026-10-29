@@ -1,0 +1,99 @@
+===============================================================================
+       APARTADO REACTOS LIVE - SISTEMA ALTERNATIVO PARA UNDERTALE EN PC REAL
+===============================================================================
+
+Este apartado ha sido preparado especificamente para anadir y arrancar ReactOS
+Live en tu pendrive, proporcionando un entorno x86 de 32 bits completo y moderno
+sin necesidad de instalar nada en el disco duro ni pasar por DOS/DPMI.
+
+-------------------------------------------------------------------------------
+1. ?POR QUE REACTOS LIVE COMO ALTERNATIVA A FREEDOS?
+-------------------------------------------------------------------------------
+
+FreeDOS es un sistema monousuario de 16 bits real. Para ejecutar Undertale (que
+requiere decodificacion de audio, 60+ MB de datos de juego y un motor complejo):
+- Requiere un extensor DPMI (CWSDPMI / HDPMI32i / VDPMI).
+- El emulador SBEMU / VDPMI impone limites de memoria (p. ej. 64 MB).
+- En UEFI (con CSMWrap), las llamadas a la BIOS de video (INT 10h) son emuladas
+  y lentas a menos que se use Linear Frame Buffer.
+- El color esta limitado a 256 colores (8-bit paletizado).
+
+REACTOS LIVE, en cambio:
+1. Es un sistema operativo compatible con Windows NT (Win32) de 32 bits nativo.
+2. Modo protegido y paginacion de memoria nativa: accede a TODOS los gigabytes
+   de RAM de tu Intel Core i5 directamente, sin intermediarios DPMI ni swap.
+3. Audio nativo: incluye subsistema DirectSound y WinMM, soportando audio HD
+   (High Definition Audio) y AC97 sin requerir emuladores TSR tipo SBEMU.
+4. Graficos True Color: resolucion 640x480 o superior a 32 bits de color real,
+   mostrando Undertale con sus colores y efectos originales exactos.
+5. Compatibilidad binaria: puede ejecutar tanto el motor Butterscotch Win32 como
+   el ejecutable original de Undertale (GameMaker: Studio 1.4 Win32 PE) de forma
+   directa, limpia y con aceleracion.
+
+-------------------------------------------------------------------------------
+2. ESTRUCTURA DE ESTA CARPETA (F:\REACTOS\)
+-------------------------------------------------------------------------------
+
+F:\REACTOS\
+  |-- ISO\
+  |     |-- ReactOS-0.4.14-live.iso   (Imagen ISO Live lista para arranque)
+  |     +-- CHECKSUM.TXT              (Sumas de verificacion SHA256)
+  |
+  |-- UNDERTALE\
+  |     |-- INICIAR_UNDERTALE.BAT     (Script para lanzar Undertale en ReactOS)
+  |     +-- LEEME_JUEGO.TXT           (Instrucciones de colocacion de archivos)
+  |
+  |-- GUIA_REACTOS_LIVE.MD            (Guia detallada con capturas y pasos)
+  +-- LEEME.TXT                       (Este archivo)
+
+-------------------------------------------------------------------------------
+3. COMO ARRANCAR REACTOS LIVE EN TU PC INTEL CORE i5 (UEFI)
+-------------------------------------------------------------------------------
+
+Tu equipo arranca en modo UEFI. Tienes 2 metodos principales para arrancarlo:
+
+METODO A: ARRANQUE MEDIANTE VENTOY (RECOMENDADO Y MAS FACIL)
+------------------------------------------------------------
+Ventoy permite tener en un unico pendrive arranque UEFI de:
+1. Tu FreeDOS actual (la imagen/particion actual con CSMWrap).
+2. La ISO de ReactOS Live (F:\REACTOS\ISO\ReactOS-0.4.14-live.iso).
+
+Pasos:
+1. Si usas Ventoy, simplemente copia 'ReactOS-0.4.14-live.iso' a la particion
+   de Ventoy.
+2. Al reiniciar el PC, pulsa F12 / F11 / F8 (menu de arranque de la BIOS/UEFI).
+3. Selecciona la unidad USB -> Elige "ReactOS LiveCD" en el menu.
+4. En el menu de ReactOS, pulsa Enter en "LiveCD (Run from RAM)".
+5. El escritorio de ReactOS aparecera en unos 15-20 segundos.
+
+METODO B: DUAL-BOOT UEFI CON FREELOADER / GRUB2
+-----------------------------------------------
+ReactOS incluye el cargador FreeLoader UEFI (BOOTX64.EFI).
+Si deseas mantener exactamente tu pendrive actual sin formatear:
+- Puedes colocar una entrada en un gestor UEFI (como rEFInd o GRUB2) que apunte
+  a la ISO montada en RAM.
+- Ver detalles completos en 'GUIA_REACTOS_LIVE.MD'.
+
+-------------------------------------------------------------------------------
+4. EJECUCION DE UNDERTALE EN REACTOS LIVE
+-------------------------------------------------------------------------------
+
+Una vez que estes dentro del escritorio de ReactOS Live:
+1. Abre "Mi PC" (My Computer).
+2. Veras las unidades de disco:
+   - C: (Disco RAM virtual de ReactOS)
+   - D: o E: (Tu particion GAMES con todos tus juegos y F:\GAMES\UNDERTAL)
+3. Entra en la carpeta de Undertale (en tu unidad de juegos):
+   - Puedes ejecutar directamente 'UNDERTALE.EXE' (el binario original de Windows)
+     o el launcher 'INICIAR_UNDERTALE.BAT'.
+4. Undertale arrancara a 30 FPS estables con audio estereo completo y sin
+   ninguna de las limitaciones de memoria de DOS.
+
+-------------------------------------------------------------------------------
+5. RESUMEN: ?QUE ENTORNO USAR EN CADA CASO?
+-------------------------------------------------------------------------------
+- Usa FREEDOS + ButterDOS si tu meta es la autentica proeza retro-DOS de correr
+  el juego en modo MS-DOS puro sobre VESA con Sound Blaster.
+- Usa REACTOS LIVE si buscas jugar a Undertale en hardware real sin Windows 10/11
+  instalado, con maxima velocidad, musica estereo a 44.1 kHz y cero tirones.
+===============================================================================

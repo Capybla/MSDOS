@@ -1,0 +1,15 @@
+                      Transport Tycoon Demo Disk
+
+  This is  a demo of "Transport Tycoon", the brilliant and highly rated new 
+               release from MicroProse and Chris Sawyer
+
+               This Demo is limited to 2 years of Gameplay
+               and RailRoad construction only. There is limited
+               music for Soundblaster and Adlib but no sound effects.
+
+               The full release of Transport Tycoon will be on
+               4th November.
+
+               To install to your hard drive, press any key. If you
+               wish to abort the installation, press CTRL-C.
+

@@ -1,0 +1,40 @@
+@echo off
+rem ============================================================
+rem CAPYDOS RETRO GAMES LAUNCHER RUNNER
+rem ============================================================
+
+set CAPYDRV=
+if exist MENU.COM goto LocalRun
+if exist \MENU.COM set CAPYDRV=\
+if exist C:\MENU.COM set CAPYDRV=C:\
+if exist D:\MENU.COM set CAPYDRV=D:\
+if exist E:\MENU.COM set CAPYDRV=E:\
+if exist R:\MENU.COM set CAPYDRV=R:\
+
+if "%CAPYDRV%"=="" goto Fallback
+
+%CAPYDRV%
+cd %CAPYDRV%
+
+:LocalRun
+:Loop
+if exist RUNME.BAT del RUNME.BAT
+MENU.COM
+if not exist RUNME.BAT goto Exit
+call RUNME.BAT
+goto Loop
+
+:Fallback
+if exist CAPYMENU.BAT call CAPYMENU.BAT
+if exist \CAPYMENU.BAT call \CAPYMENU.BAT
+if exist C:\CAPYMENU.BAT call C:\CAPYMENU.BAT
+if exist D:\CAPYMENU.BAT call D:\CAPYMENU.BAT
+if exist E:\CAPYMENU.BAT call E:\CAPYMENU.BAT
+
+:Exit
+echo.
+echo ============================================================
+echo Saliendo al simbolo del sistema de FreeDOS.
+echo Para volver al lanzador de juegos, escribe MENU y pulsa Enter.
+echo ============================================================
+echo.

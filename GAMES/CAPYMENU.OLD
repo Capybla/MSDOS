@@ -1,0 +1,10207 @@
+@ECHO OFF
+CLS
+SET GAMES=
+IF EXIST C:\GAMES\NUL SET GAMES=C:\GAMES
+IF DEFINED GAMES GOTO START
+IF EXIST D:\GAMES\NUL SET GAMES=D:\GAMES
+IF DEFINED GAMES GOTO START
+IF EXIST E:\GAMES\NUL SET GAMES=E:\GAMES
+IF DEFINED GAMES GOTO START
+IF EXIST F:\GAMES\NUL SET GAMES=F:\GAMES
+IF DEFINED GAMES GOTO START
+IF EXIST G:\GAMES\NUL SET GAMES=G:\GAMES
+IF DEFINED GAMES GOTO START
+IF EXIST H:\GAMES\NUL SET GAMES=H:\GAMES
+IF DEFINED GAMES GOTO START
+IF EXIST I:\GAMES\NUL SET GAMES=I:\GAMES
+IF DEFINED GAMES GOTO START
+GOTO NOGAMES
+
+:START
+SET PAGE=1
+GOTO P1
+
+:P1
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 1/39
+ECHO.
+ECHO  1 -  Last Ninja
+ECHO  2 -  Last Ninja 2
+ECHO  3 - 1000
+ECHO  4 - 1830
+ECHO  5 - 1993tris
+ECHO  6 - 3dbox
+ECHO  7 - 3ddata
+ECHO  8 - 3dwt
+ECHO  9 - 4dboxing
+ECHO 10 - 4dtennis
+ECHO 11 - 4thprotocol
+ECHO 12 - 4x4
+ECHO 13 - 5aside
+ECHO 14 - 5-FLEET
+ECHO 15 - 688
+ECHO 16 - 7cities
+ECHO 17 - 7stud
+ECHO 18 - 8balldx
+ECHO 19 - AAMUSIC
+ECHO 20 - aargh
+ECHO 21 - abrams_tank
+ECHO 22 - ABSOLUTE
+ECHO 23 - ABUSE
+ECHO 24 - aces
+ECHO 25 - Acheton
+ECHO 26 - adcivi
+ECHO 27 - adlib
+ECHO 28 - ADOM
+ECHO 29 - aethra1
+ECHO 30 - Afghan.wz
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G1
+IF "%SEL%"=="2" GOTO G2
+IF "%SEL%"=="3" GOTO G3
+IF "%SEL%"=="4" GOTO G4
+IF "%SEL%"=="5" GOTO G5
+IF "%SEL%"=="6" GOTO G6
+IF "%SEL%"=="7" GOTO G7
+IF "%SEL%"=="8" GOTO G8
+IF "%SEL%"=="9" GOTO G9
+IF "%SEL%"=="10" GOTO G10
+IF "%SEL%"=="11" GOTO G11
+IF "%SEL%"=="12" GOTO G12
+IF "%SEL%"=="13" GOTO G13
+IF "%SEL%"=="14" GOTO G14
+IF "%SEL%"=="15" GOTO G15
+IF "%SEL%"=="16" GOTO G16
+IF "%SEL%"=="17" GOTO G17
+IF "%SEL%"=="18" GOTO G18
+IF "%SEL%"=="19" GOTO G19
+IF "%SEL%"=="20" GOTO G20
+IF "%SEL%"=="21" GOTO G21
+IF "%SEL%"=="22" GOTO G22
+IF "%SEL%"=="23" GOTO G23
+IF "%SEL%"=="24" GOTO G24
+IF "%SEL%"=="25" GOTO G25
+IF "%SEL%"=="26" GOTO G26
+IF "%SEL%"=="27" GOTO G27
+IF "%SEL%"=="28" GOTO G28
+IF "%SEL%"=="29" GOTO G29
+IF "%SEL%"=="30" GOTO G30
+IF /I "%SEL%"=="N" GOTO P2
+IF /I "%SEL%"=="P" GOTO P39
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P1
+
+:P2
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 2/39
+ECHO.
+ECHO  1 - African
+ECHO  2 - aft
+ECHO  3 - afterburner
+ECHO  4 - agenda
+ECHO  5 - agentusa
+ECHO  6 - ahws
+ECHO  7 - air_Hockey
+ECHO  8 - AIRBUS
+ECHO  9 - AIRLIFT
+ECHO 10 - aitna
+ECHO 11 - Albion
+ECHO 12 - alcatraz
+ECHO 13 - aldo2
+ECHO 14 - aldo3
+ECHO 15 - aleshar
+ECHO 16 - aliants
+ECHO 17 - alien
+ECHO 18 - alien2
+ECHO 19 - alienram
+ECHO 20 - all point bulletin
+ECHO 21 - alone
+ECHO 22 - Alone in the Dark 2
+ECHO 23 - alpine
+ECHO 24 - Al-Qadim
+ECHO 25 - altermale
+ECHO 26 - altern
+ECHO 27 - amado
+ECHO 28 - amazong
+ECHO 29 - amberstar
+ECHO 30 - amfv
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G31
+IF "%SEL%"=="2" GOTO G32
+IF "%SEL%"=="3" GOTO G33
+IF "%SEL%"=="4" GOTO G34
+IF "%SEL%"=="5" GOTO G35
+IF "%SEL%"=="6" GOTO G36
+IF "%SEL%"=="7" GOTO G37
+IF "%SEL%"=="8" GOTO G38
+IF "%SEL%"=="9" GOTO G39
+IF "%SEL%"=="10" GOTO G40
+IF "%SEL%"=="11" GOTO G41
+IF "%SEL%"=="12" GOTO G42
+IF "%SEL%"=="13" GOTO G43
+IF "%SEL%"=="14" GOTO G44
+IF "%SEL%"=="15" GOTO G45
+IF "%SEL%"=="16" GOTO G46
+IF "%SEL%"=="17" GOTO G47
+IF "%SEL%"=="18" GOTO G48
+IF "%SEL%"=="19" GOTO G49
+IF "%SEL%"=="20" GOTO G50
+IF "%SEL%"=="21" GOTO G51
+IF "%SEL%"=="22" GOTO G52
+IF "%SEL%"=="23" GOTO G53
+IF "%SEL%"=="24" GOTO G54
+IF "%SEL%"=="25" GOTO G55
+IF "%SEL%"=="26" GOTO G56
+IF "%SEL%"=="27" GOTO G57
+IF "%SEL%"=="28" GOTO G58
+IF "%SEL%"=="29" GOTO G59
+IF "%SEL%"=="30" GOTO G60
+IF /I "%SEL%"=="N" GOTO P3
+IF /I "%SEL%"=="P" GOTO P1
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P2
+
+:P3
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 3/39
+ECHO.
+ECHO  1 - amuletyen
+ECHO  2 - ANA
+ECHO  3 - ANDY
+ECHO  4 - anim
+ECHO  5 - animals
+ECHO  6 - ANIMS
+ECHO  7 - Anvil
+ECHO  8 - aoaltair
+ECHO  9 - aplaces
+ECHO 10 - apollo18
+ECHO 11 - applep
+ECHO 12 - aquanoid
+ECHO 13 - arcade1
+ECHO 14 - archer
+ECHO 15 - arka2
+ECHO 16 - Armor Alley
+ECHO 17 - arnhem
+ECHO 18 - art
+ECHO 19 - Arthur
+ECHO 20 - artofwar
+ECHO 21 - Ascendancy
+ECHO 22 - Ashes
+ECHO 23 - aspar
+ECHO 24 - asterixold
+ECHO 25 - athlet
+ECHO 26 - ATLANTIS
+ECHO 27 - atrain
+ECHO 28 - audio
+ECHO 29 - autoduel
+ECHO 30 - AV8B
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G61
+IF "%SEL%"=="2" GOTO G62
+IF "%SEL%"=="3" GOTO G63
+IF "%SEL%"=="4" GOTO G64
+IF "%SEL%"=="5" GOTO G65
+IF "%SEL%"=="6" GOTO G66
+IF "%SEL%"=="7" GOTO G67
+IF "%SEL%"=="8" GOTO G68
+IF "%SEL%"=="9" GOTO G69
+IF "%SEL%"=="10" GOTO G70
+IF "%SEL%"=="11" GOTO G71
+IF "%SEL%"=="12" GOTO G72
+IF "%SEL%"=="13" GOTO G73
+IF "%SEL%"=="14" GOTO G74
+IF "%SEL%"=="15" GOTO G75
+IF "%SEL%"=="16" GOTO G76
+IF "%SEL%"=="17" GOTO G77
+IF "%SEL%"=="18" GOTO G78
+IF "%SEL%"=="19" GOTO G79
+IF "%SEL%"=="20" GOTO G80
+IF "%SEL%"=="21" GOTO G81
+IF "%SEL%"=="22" GOTO G82
+IF "%SEL%"=="23" GOTO G83
+IF "%SEL%"=="24" GOTO G84
+IF "%SEL%"=="25" GOTO G85
+IF "%SEL%"=="26" GOTO G86
+IF "%SEL%"=="27" GOTO G87
+IF "%SEL%"=="28" GOTO G88
+IF "%SEL%"=="29" GOTO G89
+IF "%SEL%"=="30" GOTO G90
+IF /I "%SEL%"=="N" GOTO P4
+IF /I "%SEL%"=="P" GOTO P2
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P3
+
+:P4
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 4/39
+ECHO.
+ECHO  1 - Avish
+ECHO  2 - awe
+ECHO  3 - B
+ECHO  4 - b13
+ECHO  5 - baal
+ECHO  6 - babyjo
+ECHO  7 - backto2
+ECHO  8 - badblood
+ECHO  9 - baddudes
+ECHO 10 - bakerstreet
+ECHO 11 - ballyhoo
+ECHO 12 - BALTAZAR
+ECHO 13 - bangbang
+ECHO 14 - BANKS
+ECHO 15 - barbarian
+ECHO 16 - barbie
+ECHO 17 - BARTER
+ECHO 18 - baseball
+ECHO 19 - basketm
+ECHO 20 - batmanc
+ECHO 21 - Battle Zone.1987
+ECHO 22 - battlebugs
+ECHO 23 - battleofantietam
+ECHO 24 - BBGTH
+ECHO 25 - bcracers
+ECHO 26 - bedlam
+ECHO 27 - berlin
+ECHO 28 - bftc
+ECHO 29 - BH_STUFF
+ECHO 30 - bholiday
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G91
+IF "%SEL%"=="2" GOTO G92
+IF "%SEL%"=="3" GOTO G93
+IF "%SEL%"=="4" GOTO G94
+IF "%SEL%"=="5" GOTO G95
+IF "%SEL%"=="6" GOTO G96
+IF "%SEL%"=="7" GOTO G97
+IF "%SEL%"=="8" GOTO G98
+IF "%SEL%"=="9" GOTO G99
+IF "%SEL%"=="10" GOTO G100
+IF "%SEL%"=="11" GOTO G101
+IF "%SEL%"=="12" GOTO G102
+IF "%SEL%"=="13" GOTO G103
+IF "%SEL%"=="14" GOTO G104
+IF "%SEL%"=="15" GOTO G105
+IF "%SEL%"=="16" GOTO G106
+IF "%SEL%"=="17" GOTO G107
+IF "%SEL%"=="18" GOTO G108
+IF "%SEL%"=="19" GOTO G109
+IF "%SEL%"=="20" GOTO G110
+IF "%SEL%"=="21" GOTO G111
+IF "%SEL%"=="22" GOTO G112
+IF "%SEL%"=="23" GOTO G113
+IF "%SEL%"=="24" GOTO G114
+IF "%SEL%"=="25" GOTO G115
+IF "%SEL%"=="26" GOTO G116
+IF "%SEL%"=="27" GOTO G117
+IF "%SEL%"=="28" GOTO G118
+IF "%SEL%"=="29" GOTO G119
+IF "%SEL%"=="30" GOTO G120
+IF /I "%SEL%"=="N" GOTO P5
+IF /I "%SEL%"=="P" GOTO P3
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P4
+
+:P5
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 5/39
+ECHO.
+ECHO  1 - BI193
+ECHO  2 - bigbiz
+ECHO  3 - bigtop
+ECHO  4 - billnted
+ECHO  5 - Bioforge
+ECHO  6 - birdprey
+ECHO  7 - BIT
+ECHO  8 - BLACK
+ECHO  9 - blackjack
+ECHO 10 - blackmon
+ECHO 11 - Blackstar
+ECHO 12 - Blades
+ECHO 13 - blockbreaker
+ECHO 14 - blockcad
+ECHO 15 - Blood
+ECHO 16 - bluemax
+ECHO 17 - bmenace
+ECHO 18 - BOB
+ECHO 19 - bobtham
+ECHO 20 - bobwinner
+ECHO 21 - BODIES
+ECHO 22 - bodyblow
+ECHO 23 - BOMBJACK
+ECHO 24 - bombuzal
+ECHO 25 - BOPWIRE
+ECHO 26 - borderzo
+ECHO 27 - Boxer Rebellion.1982
+ECHO 28 - brix
+ECHO 29 - bsfball
+ECHO 30 - btroot
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G121
+IF "%SEL%"=="2" GOTO G122
+IF "%SEL%"=="3" GOTO G123
+IF "%SEL%"=="4" GOTO G124
+IF "%SEL%"=="5" GOTO G125
+IF "%SEL%"=="6" GOTO G126
+IF "%SEL%"=="7" GOTO G127
+IF "%SEL%"=="8" GOTO G128
+IF "%SEL%"=="9" GOTO G129
+IF "%SEL%"=="10" GOTO G130
+IF "%SEL%"=="11" GOTO G131
+IF "%SEL%"=="12" GOTO G132
+IF "%SEL%"=="13" GOTO G133
+IF "%SEL%"=="14" GOTO G134
+IF "%SEL%"=="15" GOTO G135
+IF "%SEL%"=="16" GOTO G136
+IF "%SEL%"=="17" GOTO G137
+IF "%SEL%"=="18" GOTO G138
+IF "%SEL%"=="19" GOTO G139
+IF "%SEL%"=="20" GOTO G140
+IF "%SEL%"=="21" GOTO G141
+IF "%SEL%"=="22" GOTO G142
+IF "%SEL%"=="23" GOTO G143
+IF "%SEL%"=="24" GOTO G144
+IF "%SEL%"=="25" GOTO G145
+IF "%SEL%"=="26" GOTO G146
+IF "%SEL%"=="27" GOTO G147
+IF "%SEL%"=="28" GOTO G148
+IF "%SEL%"=="29" GOTO G149
+IF "%SEL%"=="30" GOTO G150
+IF /I "%SEL%"=="N" GOTO P6
+IF /I "%SEL%"=="P" GOTO P4
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P5
+
+:P6
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 6/39
+ECHO.
+ECHO  1 - bubblepop
+ECHO  2 - Buffalo Bills Rodeo Games
+ECHO  3 - Burntime
+ECHO  4 - bz
+ECHO  5 - C
+ECHO  6 - c2
+ECHO  7 - cabal
+ECHO  8 - caesar
+ECHO  9 - campaign
+ECHO 10 - candp
+ECHO 11 - canim
+ECHO 12 - cannonf
+ECHO 13 - CannonFodder2
+ECHO 14 - capone
+ECHO 15 - captive
+ECHO 16 - car
+ECHO 17 - cardsharks
+ECHO 18 - carmenap
+ECHO 19 - carmeuro
+ECHO 20 - carmusa
+ECHO 21 - Carnage
+ECHO 22 - CARS
+ECHO 23 - CARTOON
+ECHO 24 - casgames
+ECHO 25 - Castle.1984
+ECHO 26 - castles
+ECHO 27 - CASTLEVA
+ECHO 28 - catchem
+ECHO 29 - cbongo
+ECHO 30 - cc3
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G151
+IF "%SEL%"=="2" GOTO G152
+IF "%SEL%"=="3" GOTO G153
+IF "%SEL%"=="4" GOTO G154
+IF "%SEL%"=="5" GOTO G155
+IF "%SEL%"=="6" GOTO G156
+IF "%SEL%"=="7" GOTO G157
+IF "%SEL%"=="8" GOTO G158
+IF "%SEL%"=="9" GOTO G159
+IF "%SEL%"=="10" GOTO G160
+IF "%SEL%"=="11" GOTO G161
+IF "%SEL%"=="12" GOTO G162
+IF "%SEL%"=="13" GOTO G163
+IF "%SEL%"=="14" GOTO G164
+IF "%SEL%"=="15" GOTO G165
+IF "%SEL%"=="16" GOTO G166
+IF "%SEL%"=="17" GOTO G167
+IF "%SEL%"=="18" GOTO G168
+IF "%SEL%"=="19" GOTO G169
+IF "%SEL%"=="20" GOTO G170
+IF "%SEL%"=="21" GOTO G171
+IF "%SEL%"=="22" GOTO G172
+IF "%SEL%"=="23" GOTO G173
+IF "%SEL%"=="24" GOTO G174
+IF "%SEL%"=="25" GOTO G175
+IF "%SEL%"=="26" GOTO G176
+IF "%SEL%"=="27" GOTO G177
+IF "%SEL%"=="28" GOTO G178
+IF "%SEL%"=="29" GOTO G179
+IF "%SEL%"=="30" GOTO G180
+IF /I "%SEL%"=="N" GOTO P7
+IF /I "%SEL%"=="P" GOTO P5
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P6
+
+:P7
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 7/39
+ECHO.
+ECHO  1 - CD
+ECHO  2 - CDA
+ECHO  3 - CDDATA
+ECHO  4 - cdynamo
+ECHO  5 - cfac
+ECHO  6 - CGA
+ECHO  7 - cgadat
+ECHO  8 - CGAGRAPH
+ECHO  9 - cgaiff
+ECHO 10 - champitalia
+ECHO 11 - CHARLES
+ECHO 12 - Charlie
+ECHO 13 - CHARS
+ECHO 14 - chess
+ECHO 15 - chicago90
+ECHO 16 - chicheck
+ECHO 17 - chips
+ECHO 18 - chlode
+ECHO 19 - CHR
+ECHO 20 - CHRONOS
+ECHO 21 - cisco
+ECHO 22 - civ
+ECHO 23 - civ1win
+ECHO 24 - CL
+ECHO 25 - clashofs
+ECHO 26 - CLOCK
+ECHO 27 - clue
+ECHO 28 - clue master detective
+ECHO 29 - Cockpits
+ECHO 30 - colonize
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G181
+IF "%SEL%"=="2" GOTO G182
+IF "%SEL%"=="3" GOTO G183
+IF "%SEL%"=="4" GOTO G184
+IF "%SEL%"=="5" GOTO G185
+IF "%SEL%"=="6" GOTO G186
+IF "%SEL%"=="7" GOTO G187
+IF "%SEL%"=="8" GOTO G188
+IF "%SEL%"=="9" GOTO G189
+IF "%SEL%"=="10" GOTO G190
+IF "%SEL%"=="11" GOTO G191
+IF "%SEL%"=="12" GOTO G192
+IF "%SEL%"=="13" GOTO G193
+IF "%SEL%"=="14" GOTO G194
+IF "%SEL%"=="15" GOTO G195
+IF "%SEL%"=="16" GOTO G196
+IF "%SEL%"=="17" GOTO G197
+IF "%SEL%"=="18" GOTO G198
+IF "%SEL%"=="19" GOTO G199
+IF "%SEL%"=="20" GOTO G200
+IF "%SEL%"=="21" GOTO G201
+IF "%SEL%"=="22" GOTO G202
+IF "%SEL%"=="23" GOTO G203
+IF "%SEL%"=="24" GOTO G204
+IF "%SEL%"=="25" GOTO G205
+IF "%SEL%"=="26" GOTO G206
+IF "%SEL%"=="27" GOTO G207
+IF "%SEL%"=="28" GOTO G208
+IF "%SEL%"=="29" GOTO G209
+IF "%SEL%"=="30" GOTO G210
+IF /I "%SEL%"=="N" GOTO P8
+IF /I "%SEL%"=="P" GOTO P6
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P7
+
+:P8
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 8/39
+ECHO.
+ECHO  1 - ColorHarmony
+ECHO  2 - ColorTails100
+ECHO  3 - Columb
+ECHO  4 - comanche
+ECHO  5 - conan
+ECHO  6 - concen2
+ECHO  7 - contrap
+ECHO  8 - coolslider
+ECHO  9 - corporation
+ECHO 10 - corpraid
+ECHO 11 - count
+ECHO 12 - coxanth
+ECHO 13 - cozoarre
+ECHO 14 - CP
+ECHO 15 - cquest
+ECHO 16 - CRACK
+ECHO 17 - Crash Garret.1987
+ECHO 18 - CRAZYCA2
+ECHO 19 - crazycars
+ECHO 20 - CREDITS
+ECHO 21 - crime
+ECHO 22 - CRIT
+ECHO 23 - croc
+ECHO 24 - crossword
+ECHO 25 - crusade
+ECHO 26 - Crystals
+ECHO 27 - ctbppat
+ECHO 28 - ctime
+ECHO 29 - curseoe
+ECHO 30 - Cutemouse
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G211
+IF "%SEL%"=="2" GOTO G212
+IF "%SEL%"=="3" GOTO G213
+IF "%SEL%"=="4" GOTO G214
+IF "%SEL%"=="5" GOTO G215
+IF "%SEL%"=="6" GOTO G216
+IF "%SEL%"=="7" GOTO G217
+IF "%SEL%"=="8" GOTO G218
+IF "%SEL%"=="9" GOTO G219
+IF "%SEL%"=="10" GOTO G220
+IF "%SEL%"=="11" GOTO G221
+IF "%SEL%"=="12" GOTO G222
+IF "%SEL%"=="13" GOTO G223
+IF "%SEL%"=="14" GOTO G224
+IF "%SEL%"=="15" GOTO G225
+IF "%SEL%"=="16" GOTO G226
+IF "%SEL%"=="17" GOTO G227
+IF "%SEL%"=="18" GOTO G228
+IF "%SEL%"=="19" GOTO G229
+IF "%SEL%"=="20" GOTO G230
+IF "%SEL%"=="21" GOTO G231
+IF "%SEL%"=="22" GOTO G232
+IF "%SEL%"=="23" GOTO G233
+IF "%SEL%"=="24" GOTO G234
+IF "%SEL%"=="25" GOTO G235
+IF "%SEL%"=="26" GOTO G236
+IF "%SEL%"=="27" GOTO G237
+IF "%SEL%"=="28" GOTO G238
+IF "%SEL%"=="29" GOTO G239
+IF "%SEL%"=="30" GOTO G240
+IF /I "%SEL%"=="N" GOTO P9
+IF /I "%SEL%"=="P" GOTO P7
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P8
+
+:P9
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 9/39
+ECHO.
+ECHO  1 - CUTS
+ECHO  2 - cutth
+ECHO  3 - cwdeluxe
+ECHO  4 - cyac
+ECHO  5 - cyber
+ECHO  6 - cyberbox
+ECHO  7 - CyberRac
+ECHO  8 - cyborg
+ECHO  9 - cyclones
+ECHO 10 - Cyrus.1986
+ECHO 11 - D
+ECHO 12 - d_d
+ECHO 13 - d2demo
+ECHO 14 - DA
+ECHO 15 - Daffy Duck
+ECHO 16 - Dalek
+ECHO 17 - damiano
+ECHO 18 - darkages
+ECHO 19 - darkhalf
+ECHO 20 - Darklands
+ECHO 21 - DARKSEED
+ECHO 22 - DASH
+ECHO 23 - DAT
+ECHO 24 - DATA
+ECHO 25 - DATS
+ECHO 26 - davidwolf
+ECHO 27 - DBDATA
+ECHO 28 - dboston
+ECHO 29 - dd2
+ECHO 30 - dd3
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G241
+IF "%SEL%"=="2" GOTO G242
+IF "%SEL%"=="3" GOTO G243
+IF "%SEL%"=="4" GOTO G244
+IF "%SEL%"=="5" GOTO G245
+IF "%SEL%"=="6" GOTO G246
+IF "%SEL%"=="7" GOTO G247
+IF "%SEL%"=="8" GOTO G248
+IF "%SEL%"=="9" GOTO G249
+IF "%SEL%"=="10" GOTO G250
+IF "%SEL%"=="11" GOTO G251
+IF "%SEL%"=="12" GOTO G252
+IF "%SEL%"=="13" GOTO G253
+IF "%SEL%"=="14" GOTO G254
+IF "%SEL%"=="15" GOTO G255
+IF "%SEL%"=="16" GOTO G256
+IF "%SEL%"=="17" GOTO G257
+IF "%SEL%"=="18" GOTO G258
+IF "%SEL%"=="19" GOTO G259
+IF "%SEL%"=="20" GOTO G260
+IF "%SEL%"=="21" GOTO G261
+IF "%SEL%"=="22" GOTO G262
+IF "%SEL%"=="23" GOTO G263
+IF "%SEL%"=="24" GOTO G264
+IF "%SEL%"=="25" GOTO G265
+IF "%SEL%"=="26" GOTO G266
+IF "%SEL%"=="27" GOTO G267
+IF "%SEL%"=="28" GOTO G268
+IF "%SEL%"=="29" GOTO G269
+IF "%SEL%"=="30" GOTO G270
+IF /I "%SEL%"=="N" GOTO P10
+IF /I "%SEL%"=="P" GOTO P8
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P9
+
+:P10
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 10/39
+ECHO.
+ECHO  1 - ddplay
+ECHO  2 - DDRIBBLE
+ECHO  3 - deadline
+ECHO  4 - deathsw
+ECHO  5 - DEC
+ECHO  6 - decathlon
+ECHO  7 - deep
+ECHO  8 - deep2
+ECHO  9 - DEFENCES
+ECHO 10 - DEM_DATA
+ECHO 11 - Des chiffres et des lettres.1987
+ECHO 12 - descent
+ECHO 13 - DESERT
+ECHO 14 - deserts
+ECHO 15 - dforge
+ECHO 16 - dgen
+ECHO 17 - diehard
+ECHO 18 - diehard2
+ECHO 19 - DIGIT
+ECHO 20 - disc
+ECHO 21 - disk 1
+ECHO 22 - disk 2
+ECHO 23 - DISK1
+ECHO 24 - DISK2
+ECHO 25 - DISK3
+ECHO 26 - divebomber
+ECHO 27 - dizzy
+ECHO 28 - Docs
+ECHO 29 - Dogs
+ECHO 30 - dogsowar
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G271
+IF "%SEL%"=="2" GOTO G272
+IF "%SEL%"=="3" GOTO G273
+IF "%SEL%"=="4" GOTO G274
+IF "%SEL%"=="5" GOTO G275
+IF "%SEL%"=="6" GOTO G276
+IF "%SEL%"=="7" GOTO G277
+IF "%SEL%"=="8" GOTO G278
+IF "%SEL%"=="9" GOTO G279
+IF "%SEL%"=="10" GOTO G280
+IF "%SEL%"=="11" GOTO G281
+IF "%SEL%"=="12" GOTO G282
+IF "%SEL%"=="13" GOTO G283
+IF "%SEL%"=="14" GOTO G284
+IF "%SEL%"=="15" GOTO G285
+IF "%SEL%"=="16" GOTO G286
+IF "%SEL%"=="17" GOTO G287
+IF "%SEL%"=="18" GOTO G288
+IF "%SEL%"=="19" GOTO G289
+IF "%SEL%"=="20" GOTO G290
+IF "%SEL%"=="21" GOTO G291
+IF "%SEL%"=="22" GOTO G292
+IF "%SEL%"=="23" GOTO G293
+IF "%SEL%"=="24" GOTO G294
+IF "%SEL%"=="25" GOTO G295
+IF "%SEL%"=="26" GOTO G296
+IF "%SEL%"=="27" GOTO G297
+IF "%SEL%"=="28" GOTO G298
+IF "%SEL%"=="29" GOTO G299
+IF "%SEL%"=="30" GOTO G300
+IF /I "%SEL%"=="N" GOTO P11
+IF /I "%SEL%"=="P" GOTO P9
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P10
+
+:P11
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 11/39
+ECHO.
+ECHO  1 - Dominus
+ECHO  2 - DOS
+ECHO  3 - dragon
+ECHO  4 - Drakkhen
+ECHO  5 - drbrain
+ECHO  6 - Dreamweb
+ECHO  7 - DRIVERS
+ECHO  8 - dstroy
+ECHO  9 - DTRIVPUR
+ECHO 10 - duckhunt
+ECHO 11 - dune
+ECHO 12 - dunjin
+ECHO 13 - Dusk
+ECHO 14 - dyna
+ECHO 15 - DYNO
+ECHO 16 - eaglerider
+ECHO 17 - eaglesnest
+ECHO 18 - EDT
+ECHO 19 - EFFECTS
+ECHO 20 - EGA
+ECHO 21 - egabomb
+ECHO 22 - egadat
+ECHO 23 - egaiff
+ECHO 24 - egawalls
+ECHO 25 - Eggerland
+ECHO 26 - electran
+ECHO 27 - Elements
+ECHO 28 - elitepl
+ECHO 29 - enchant
+ECHO 30 - Enclosure
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G301
+IF "%SEL%"=="2" GOTO G302
+IF "%SEL%"=="3" GOTO G303
+IF "%SEL%"=="4" GOTO G304
+IF "%SEL%"=="5" GOTO G305
+IF "%SEL%"=="6" GOTO G306
+IF "%SEL%"=="7" GOTO G307
+IF "%SEL%"=="8" GOTO G308
+IF "%SEL%"=="9" GOTO G309
+IF "%SEL%"=="10" GOTO G310
+IF "%SEL%"=="11" GOTO G311
+IF "%SEL%"=="12" GOTO G312
+IF "%SEL%"=="13" GOTO G313
+IF "%SEL%"=="14" GOTO G314
+IF "%SEL%"=="15" GOTO G315
+IF "%SEL%"=="16" GOTO G316
+IF "%SEL%"=="17" GOTO G317
+IF "%SEL%"=="18" GOTO G318
+IF "%SEL%"=="19" GOTO G319
+IF "%SEL%"=="20" GOTO G320
+IF "%SEL%"=="21" GOTO G321
+IF "%SEL%"=="22" GOTO G322
+IF "%SEL%"=="23" GOTO G323
+IF "%SEL%"=="24" GOTO G324
+IF "%SEL%"=="25" GOTO G325
+IF "%SEL%"=="26" GOTO G326
+IF "%SEL%"=="27" GOTO G327
+IF "%SEL%"=="28" GOTO G328
+IF "%SEL%"=="29" GOTO G329
+IF "%SEL%"=="30" GOTO G330
+IF /I "%SEL%"=="N" GOTO P12
+IF /I "%SEL%"=="P" GOTO P10
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P11
+
+:P12
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 12/39
+ECHO.
+ECHO  1 - ENCODED
+ECHO  2 - encount
+ECHO  3 - epicpinb
+ECHO  4 - EPULET
+ECHO  5 - equest
+ECHO  6 - ernie
+ECHO  7 - escape
+ECHO  8 - Escape from Delirium
+ECHO  9 - esoccer
+ECHO 10 - europe
+ECHO 11 - eurosoccer
+ECHO 12 - EVAGRAPH
+ECHO 13 - ewofthec
+ECHO 14 - EXE
+ECHO 15 - EXECS
+ECHO 16 - EXTRA
+ECHO 17 - eye2
+ECHO 18 - eyeofbeholder
+ECHO 19 - F
+ECHO 20 - F117
+ECHO 21 - F15-3
+ECHO 22 - F19
+ECHO 23 - Fable
+ECHO 24 - famfeud
+ECHO 25 - Fantasy
+ECHO 26 - fbcd
+ECHO 27 - FDAT
+ECHO 28 - FDATA
+ECHO 29 - FE
+ECHO 30 - FF_Endless Nova
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G331
+IF "%SEL%"=="2" GOTO G332
+IF "%SEL%"=="3" GOTO G333
+IF "%SEL%"=="4" GOTO G334
+IF "%SEL%"=="5" GOTO G335
+IF "%SEL%"=="6" GOTO G336
+IF "%SEL%"=="7" GOTO G337
+IF "%SEL%"=="8" GOTO G338
+IF "%SEL%"=="9" GOTO G339
+IF "%SEL%"=="10" GOTO G340
+IF "%SEL%"=="11" GOTO G341
+IF "%SEL%"=="12" GOTO G342
+IF "%SEL%"=="13" GOTO G343
+IF "%SEL%"=="14" GOTO G344
+IF "%SEL%"=="15" GOTO G345
+IF "%SEL%"=="16" GOTO G346
+IF "%SEL%"=="17" GOTO G347
+IF "%SEL%"=="18" GOTO G348
+IF "%SEL%"=="19" GOTO G349
+IF "%SEL%"=="20" GOTO G350
+IF "%SEL%"=="21" GOTO G351
+IF "%SEL%"=="22" GOTO G352
+IF "%SEL%"=="23" GOTO G353
+IF "%SEL%"=="24" GOTO G354
+IF "%SEL%"=="25" GOTO G355
+IF "%SEL%"=="26" GOTO G356
+IF "%SEL%"=="27" GOTO G357
+IF "%SEL%"=="28" GOTO G358
+IF "%SEL%"=="29" GOTO G359
+IF "%SEL%"=="30" GOTO G360
+IF /I "%SEL%"=="N" GOTO P13
+IF /I "%SEL%"=="P" GOTO P11
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P12
+
+:P13
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 13/39
+ECHO.
+ECHO  1 - FFighter
+ECHO  2 - fg
+ECHO  3 - Fields Of Glory
+ECHO  4 - fievel
+ECHO  5 - FIGHTS
+ECHO  6 - finalcon
+ECHO  7 - firefor
+ECHO  8 - firefor2
+ECHO  9 - firehouse
+ECHO 10 - firstenc
+ECHO 11 - Fishing
+ECHO 12 - FLAGGER
+ECHO 13 - FLAGS
+ECHO 14 - flash
+ECHO 15 - FLICS
+ECHO 16 - FLIGHT
+ECHO 17 - flightoftheamazonqueen
+ECHO 18 - FLOORS
+ECHO 19 - fm
+ECHO 20 - FMAP
+ECHO 21 - font
+ECHO 22 - Fonts
+ECHO 23 - foo
+ECHO 24 - footman2
+ECHO 25 - footman3
+ECHO 26 - FORD
+ECHO 27 - fordsim
+ECHO 28 - FRAMES
+ECHO 29 - FRED
+ECHO 30 - freddy
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G361
+IF "%SEL%"=="2" GOTO G362
+IF "%SEL%"=="3" GOTO G363
+IF "%SEL%"=="4" GOTO G364
+IF "%SEL%"=="5" GOTO G365
+IF "%SEL%"=="6" GOTO G366
+IF "%SEL%"=="7" GOTO G367
+IF "%SEL%"=="8" GOTO G368
+IF "%SEL%"=="9" GOTO G369
+IF "%SEL%"=="10" GOTO G370
+IF "%SEL%"=="11" GOTO G371
+IF "%SEL%"=="12" GOTO G372
+IF "%SEL%"=="13" GOTO G373
+IF "%SEL%"=="14" GOTO G374
+IF "%SEL%"=="15" GOTO G375
+IF "%SEL%"=="16" GOTO G376
+IF "%SEL%"=="17" GOTO G377
+IF "%SEL%"=="18" GOTO G378
+IF "%SEL%"=="19" GOTO G379
+IF "%SEL%"=="20" GOTO G380
+IF "%SEL%"=="21" GOTO G381
+IF "%SEL%"=="22" GOTO G382
+IF "%SEL%"=="23" GOTO G383
+IF "%SEL%"=="24" GOTO G384
+IF "%SEL%"=="25" GOTO G385
+IF "%SEL%"=="26" GOTO G386
+IF "%SEL%"=="27" GOTO G387
+IF "%SEL%"=="28" GOTO G388
+IF "%SEL%"=="29" GOTO G389
+IF "%SEL%"=="30" GOTO G390
+IF /I "%SEL%"=="N" GOTO P14
+IF /I "%SEL%"=="P" GOTO P12
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P13
+
+:P14
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 14/39
+ECHO.
+ECHO  1 - FRENCH
+ECHO  2 - frog2
+ECHO  3 - frontier
+ECHO  4 - FRUA
+ECHO  5 - funnels
+ECHO  6 - future
+ECHO  7 - futurewars
+ECHO  8 - FX
+ECHO  9 - G
+ECHO 10 - galacta
+ECHO 11 - Galactic Battle
+ECHO 12 - Galaxy Trek.1983
+ECHO 13 - GAM
+ECHO 14 - GAME
+ECHO 15 - GAME_1
+ECHO 16 - GAME_10
+ECHO 17 - GAME_2
+ECHO 18 - GAME_3
+ECHO 19 - GAME_4
+ECHO 20 - GAME_5
+ECHO 21 - GAME_6
+ECHO 22 - GAME_7
+ECHO 23 - GAME_8
+ECHO 24 - GAME_9
+ECHO 25 - GAME1
+ECHO 26 - GAME3
+ECHO 27 - GAME4
+ECHO 28 - GAME5
+ECHO 29 - GAME6
+ECHO 30 - GAMEDATA
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G391
+IF "%SEL%"=="2" GOTO G392
+IF "%SEL%"=="3" GOTO G393
+IF "%SEL%"=="4" GOTO G394
+IF "%SEL%"=="5" GOTO G395
+IF "%SEL%"=="6" GOTO G396
+IF "%SEL%"=="7" GOTO G397
+IF "%SEL%"=="8" GOTO G398
+IF "%SEL%"=="9" GOTO G399
+IF "%SEL%"=="10" GOTO G400
+IF "%SEL%"=="11" GOTO G401
+IF "%SEL%"=="12" GOTO G402
+IF "%SEL%"=="13" GOTO G403
+IF "%SEL%"=="14" GOTO G404
+IF "%SEL%"=="15" GOTO G405
+IF "%SEL%"=="16" GOTO G406
+IF "%SEL%"=="17" GOTO G407
+IF "%SEL%"=="18" GOTO G408
+IF "%SEL%"=="19" GOTO G409
+IF "%SEL%"=="20" GOTO G410
+IF "%SEL%"=="21" GOTO G411
+IF "%SEL%"=="22" GOTO G412
+IF "%SEL%"=="23" GOTO G413
+IF "%SEL%"=="24" GOTO G414
+IF "%SEL%"=="25" GOTO G415
+IF "%SEL%"=="26" GOTO G416
+IF "%SEL%"=="27" GOTO G417
+IF "%SEL%"=="28" GOTO G418
+IF "%SEL%"=="29" GOTO G419
+IF "%SEL%"=="30" GOTO G420
+IF /I "%SEL%"=="N" GOTO P15
+IF /I "%SEL%"=="P" GOTO P13
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P14
+
+:P15
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 15/39
+ECHO.
+ECHO  1 - games92
+ECHO  2 - GAMESAVE
+ECHO  3 - gammaf
+ECHO  4 - Gato.1984
+ECHO  5 - Gear
+ECHO  6 - GEARWORK
+ECHO  7 - gemfire
+ECHO  8 - Gene
+ECHO  9 - GENERAL
+ECHO 10 - GEODATA
+ECHO 11 - GEOGRAPH
+ECHO 12 - GERMAN
+ECHO 13 - gertsec
+ECHO 14 - GFX
+ECHO 15 - ghostb2
+ECHO 16 - GHOSTS
+ECHO 17 - gianasisters
+ECHO 18 - Glad
+ECHO 19 - GLADIATR
+ECHO 20 - GLORI
+ECHO 21 - gm
+ECHO 22 - GNBNA
+ECHO 23 - gng
+ECHO 24 - goblins
+ECHO 25 - goblins2
+ECHO 26 - gods
+ECHO 27 - GPSAVES
+ECHO 28 - GR_1869
+ECHO 29 - GRAFIKA
+ECHO 30 - GRAFIX
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G421
+IF "%SEL%"=="2" GOTO G422
+IF "%SEL%"=="3" GOTO G423
+IF "%SEL%"=="4" GOTO G424
+IF "%SEL%"=="5" GOTO G425
+IF "%SEL%"=="6" GOTO G426
+IF "%SEL%"=="7" GOTO G427
+IF "%SEL%"=="8" GOTO G428
+IF "%SEL%"=="9" GOTO G429
+IF "%SEL%"=="10" GOTO G430
+IF "%SEL%"=="11" GOTO G431
+IF "%SEL%"=="12" GOTO G432
+IF "%SEL%"=="13" GOTO G433
+IF "%SEL%"=="14" GOTO G434
+IF "%SEL%"=="15" GOTO G435
+IF "%SEL%"=="16" GOTO G436
+IF "%SEL%"=="17" GOTO G437
+IF "%SEL%"=="18" GOTO G438
+IF "%SEL%"=="19" GOTO G439
+IF "%SEL%"=="20" GOTO G440
+IF "%SEL%"=="21" GOTO G441
+IF "%SEL%"=="22" GOTO G442
+IF "%SEL%"=="23" GOTO G443
+IF "%SEL%"=="24" GOTO G444
+IF "%SEL%"=="25" GOTO G445
+IF "%SEL%"=="26" GOTO G446
+IF "%SEL%"=="27" GOTO G447
+IF "%SEL%"=="28" GOTO G448
+IF "%SEL%"=="29" GOTO G449
+IF "%SEL%"=="30" GOTO G450
+IF /I "%SEL%"=="N" GOTO P16
+IF /I "%SEL%"=="P" GOTO P14
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P15
+
+:P16
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 16/39
+ECHO.
+ECHO  1 - GRAFS
+ECHO  2 - Grand Prix Manager 2
+ECHO  3 - Grand Slam Bridge.1986
+ECHO  4 - GRAPHICS
+ECHO  5 - Great Courts 1
+ECHO  6 - greatesc
+ECHO  7 - gremlins
+ECHO  8 - grime
+ECHO  9 - GRWAR
+ECHO 10 - GTILES
+ECHO 11 - GUARDS
+ECHO 12 - guild
+ECHO 13 - gunboat
+ECHO 14 - GunShip.1987
+ECHO 15 - guyspy
+ECHO 16 - ha2
+ECHO 17 - hamil
+ECHO 18 - Hammer
+ECHO 19 - hannibal
+ECHO 20 - happy
+ECHO 21 - harry
+ECHO 22 - hattrick
+ECHO 23 - hb
+ECHO 24 - HeadOverHeels
+ECHO 25 - heartoc
+ECHO 26 - heim2
+ECHO 27 - heimdall
+ECHO 28 - Heirs
+ECHO 29 - Helicopter Simulator v1.0.1987
+ECHO 30 - HELP
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G451
+IF "%SEL%"=="2" GOTO G452
+IF "%SEL%"=="3" GOTO G453
+IF "%SEL%"=="4" GOTO G454
+IF "%SEL%"=="5" GOTO G455
+IF "%SEL%"=="6" GOTO G456
+IF "%SEL%"=="7" GOTO G457
+IF "%SEL%"=="8" GOTO G458
+IF "%SEL%"=="9" GOTO G459
+IF "%SEL%"=="10" GOTO G460
+IF "%SEL%"=="11" GOTO G461
+IF "%SEL%"=="12" GOTO G462
+IF "%SEL%"=="13" GOTO G463
+IF "%SEL%"=="14" GOTO G464
+IF "%SEL%"=="15" GOTO G465
+IF "%SEL%"=="16" GOTO G466
+IF "%SEL%"=="17" GOTO G467
+IF "%SEL%"=="18" GOTO G468
+IF "%SEL%"=="19" GOTO G469
+IF "%SEL%"=="20" GOTO G470
+IF "%SEL%"=="21" GOTO G471
+IF "%SEL%"=="22" GOTO G472
+IF "%SEL%"=="23" GOTO G473
+IF "%SEL%"=="24" GOTO G474
+IF "%SEL%"=="25" GOTO G475
+IF "%SEL%"=="26" GOTO G476
+IF "%SEL%"=="27" GOTO G477
+IF "%SEL%"=="28" GOTO G478
+IF "%SEL%"=="29" GOTO G479
+IF "%SEL%"=="30" GOTO G480
+IF /I "%SEL%"=="N" GOTO P17
+IF /I "%SEL%"=="P" GOTO P15
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P16
+
+:P17
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 17/39
+ECHO.
+ECHO  1 - HEROES
+ECHO  2 - hexx
+ECHO  3 - hhunter
+ECHO  4 - HIGHSEAS
+ECHO  5 - hoboken
+ECHO  6 - holly
+ECHO  7 - holmesfix
+ECHO  8 - homealone
+ECHO  9 - honeym
+ECHO 10 - horror
+ECHO 11 - hostage
+ECHO 12 - hoyle1
+ECHO 13 - hyperoid
+ECHO 14 - I
+ECHO 15 - I256
+ECHO 16 - ibmquiz
+ECHO 17 - IC
+ECHO 18 - ICE
+ECHO 19 - iceman
+ECHO 20 - icon
+ECHO 21 - igadget
+ECHO 22 - Igor Project Uikokahonia
+ECHO 23 - ikari_warriors_3
+ECHO 24 - ikariw
+ECHO 25 - ikariw2
+ECHO 26 - Illusion
+ECHO 27 - Images
+ECHO 28 - IMG
+ECHO 29 - IMG2
+ECHO 30 - indy3act
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G481
+IF "%SEL%"=="2" GOTO G482
+IF "%SEL%"=="3" GOTO G483
+IF "%SEL%"=="4" GOTO G484
+IF "%SEL%"=="5" GOTO G485
+IF "%SEL%"=="6" GOTO G486
+IF "%SEL%"=="7" GOTO G487
+IF "%SEL%"=="8" GOTO G488
+IF "%SEL%"=="9" GOTO G489
+IF "%SEL%"=="10" GOTO G490
+IF "%SEL%"=="11" GOTO G491
+IF "%SEL%"=="12" GOTO G492
+IF "%SEL%"=="13" GOTO G493
+IF "%SEL%"=="14" GOTO G494
+IF "%SEL%"=="15" GOTO G495
+IF "%SEL%"=="16" GOTO G496
+IF "%SEL%"=="17" GOTO G497
+IF "%SEL%"=="18" GOTO G498
+IF "%SEL%"=="19" GOTO G499
+IF "%SEL%"=="20" GOTO G500
+IF "%SEL%"=="21" GOTO G501
+IF "%SEL%"=="22" GOTO G502
+IF "%SEL%"=="23" GOTO G503
+IF "%SEL%"=="24" GOTO G504
+IF "%SEL%"=="25" GOTO G505
+IF "%SEL%"=="26" GOTO G506
+IF "%SEL%"=="27" GOTO G507
+IF "%SEL%"=="28" GOTO G508
+IF "%SEL%"=="29" GOTO G509
+IF "%SEL%"=="30" GOTO G510
+IF /I "%SEL%"=="N" GOTO P18
+IF /I "%SEL%"=="P" GOTO P16
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P17
+
+:P18
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 18/39
+ECHO.
+ECHO  1 - infidel
+ECHO  2 - INFO
+ECHO  3 - interphase
+ECHO  4 - intkarate
+ECHO  5 - INTRO
+ECHO  6 - INTROP
+ECHO  7 - invade
+ECHO  8 - IOD
+ECHO  9 - IronLord
+ECHO 10 - isc
+ECHO 11 - Ishar 3
+ECHO 12 - Ishar1
+ECHO 13 - ishido
+ECHO 14 - iskib
+ECHO 15 - isoccer
+ECHO 16 - IUC
+ECHO 17 - Iznogoud.1987
+ECHO 18 - jackdark
+ECHO 19 - jazz2
+ECHO 20 - jeop2
+ECHO 21 - jetf2
+ECHO 22 - jinxter
+ECHO 23 - jones
+ECHO 24 - jordan
+ECHO 25 - Joust
+ECHO 26 - jp
+ECHO 27 - JQUEST
+ECHO 28 - jtripper
+ECHO 29 - jungle
+ECHO 30 - Karateka.1986
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G511
+IF "%SEL%"=="2" GOTO G512
+IF "%SEL%"=="3" GOTO G513
+IF "%SEL%"=="4" GOTO G514
+IF "%SEL%"=="5" GOTO G515
+IF "%SEL%"=="6" GOTO G516
+IF "%SEL%"=="7" GOTO G517
+IF "%SEL%"=="8" GOTO G518
+IF "%SEL%"=="9" GOTO G519
+IF "%SEL%"=="10" GOTO G520
+IF "%SEL%"=="11" GOTO G521
+IF "%SEL%"=="12" GOTO G522
+IF "%SEL%"=="13" GOTO G523
+IF "%SEL%"=="14" GOTO G524
+IF "%SEL%"=="15" GOTO G525
+IF "%SEL%"=="16" GOTO G526
+IF "%SEL%"=="17" GOTO G527
+IF "%SEL%"=="18" GOTO G528
+IF "%SEL%"=="19" GOTO G529
+IF "%SEL%"=="20" GOTO G530
+IF "%SEL%"=="21" GOTO G531
+IF "%SEL%"=="22" GOTO G532
+IF "%SEL%"=="23" GOTO G533
+IF "%SEL%"=="24" GOTO G534
+IF "%SEL%"=="25" GOTO G535
+IF "%SEL%"=="26" GOTO G536
+IF "%SEL%"=="27" GOTO G537
+IF "%SEL%"=="28" GOTO G538
+IF "%SEL%"=="29" GOTO G539
+IF "%SEL%"=="30" GOTO G540
+IF /I "%SEL%"=="N" GOTO P19
+IF /I "%SEL%"=="P" GOTO P17
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P18
+
+:P19
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 19/39
+ECHO.
+ECHO  1 - Kazak.wz
+ECHO  2 - KEEN1
+ECHO  3 - keen4
+ECHO  4 - keend
+ECHO  5 - Kens Labyrinth
+ECHO  6 - KFIGHT
+ECHO  7 - KG
+ECHO  8 - KGB
+ECHO  9 - khan
+ECHO 10 - khan1
+ECHO 11 - kickoff2
+ECHO 12 - kidsok
+ECHO 13 - kill
+ECHO 14 - kingoger
+ECHO 15 - KMD
+ECHO 16 - kobayash
+ECHO 17 - kofc
+ECHO 18 - Korea.wz
+ECHO 19 - kots
+ECHO 20 - kq5
+ECHO 21 - kq6
+ECHO 22 - krymini
+ECHO 23 - krypton
+ECHO 24 - KtLoR
+ECHO 25 - KYRAND3
+ECHO 26 - lad2
+ECHO 27 - lakers
+ECHO 28 - lamers
+ECHO 29 - LANG
+ECHO 30 - larryloa
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G541
+IF "%SEL%"=="2" GOTO G542
+IF "%SEL%"=="3" GOTO G543
+IF "%SEL%"=="4" GOTO G544
+IF "%SEL%"=="5" GOTO G545
+IF "%SEL%"=="6" GOTO G546
+IF "%SEL%"=="7" GOTO G547
+IF "%SEL%"=="8" GOTO G548
+IF "%SEL%"=="9" GOTO G549
+IF "%SEL%"=="10" GOTO G550
+IF "%SEL%"=="11" GOTO G551
+IF "%SEL%"=="12" GOTO G552
+IF "%SEL%"=="13" GOTO G553
+IF "%SEL%"=="14" GOTO G554
+IF "%SEL%"=="15" GOTO G555
+IF "%SEL%"=="16" GOTO G556
+IF "%SEL%"=="17" GOTO G557
+IF "%SEL%"=="18" GOTO G558
+IF "%SEL%"=="19" GOTO G559
+IF "%SEL%"=="20" GOTO G560
+IF "%SEL%"=="21" GOTO G561
+IF "%SEL%"=="22" GOTO G562
+IF "%SEL%"=="23" GOTO G563
+IF "%SEL%"=="24" GOTO G564
+IF "%SEL%"=="25" GOTO G565
+IF "%SEL%"=="26" GOTO G566
+IF "%SEL%"=="27" GOTO G567
+IF "%SEL%"=="28" GOTO G568
+IF "%SEL%"=="29" GOTO G569
+IF "%SEL%"=="30" GOTO G570
+IF /I "%SEL%"=="N" GOTO P20
+IF /I "%SEL%"=="P" GOTO P18
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P19
+
+:P20
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 20/39
+ECHO.
+ECHO  1 - laserlt
+ECHO  2 - laurabow
+ECHO  3 - laurabow2
+ECHO  4 - lba
+ECHO  5 - LDMG
+ECHO  6 - Le Maitre des Ames.1987
+ECHO  7 - Legacy, The - Realms of Terror
+ECHO  8 - legend
+ECHO  9 - legendofkyrandia
+ECHO 10 - lem3
+ECHO 11 - lemmings1
+ECHO 12 - LESMAN
+ECHO 13 - LEVEL
+ECHO 14 - LEVELS
+ECHO 15 - LFX
+ECHO 16 - links386
+ECHO 17 - LION
+ECHO 18 - living2
+ECHO 19 - lockon
+ECHO 20 - lof
+ECHO 21 - lolore
+ECHO 22 - lombard
+ECHO 23 - longbow
+ECHO 24 - Lords
+ECHO 25 - lost
+ECHO 26 - Lostinla
+ECHO 27 - lotr
+ECHO 28 - lowblow
+ECHO 29 - LPFarm
+ECHO 30 - lsl1
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G571
+IF "%SEL%"=="2" GOTO G572
+IF "%SEL%"=="3" GOTO G573
+IF "%SEL%"=="4" GOTO G574
+IF "%SEL%"=="5" GOTO G575
+IF "%SEL%"=="6" GOTO G576
+IF "%SEL%"=="7" GOTO G577
+IF "%SEL%"=="8" GOTO G578
+IF "%SEL%"=="9" GOTO G579
+IF "%SEL%"=="10" GOTO G580
+IF "%SEL%"=="11" GOTO G581
+IF "%SEL%"=="12" GOTO G582
+IF "%SEL%"=="13" GOTO G583
+IF "%SEL%"=="14" GOTO G584
+IF "%SEL%"=="15" GOTO G585
+IF "%SEL%"=="16" GOTO G586
+IF "%SEL%"=="17" GOTO G587
+IF "%SEL%"=="18" GOTO G588
+IF "%SEL%"=="19" GOTO G589
+IF "%SEL%"=="20" GOTO G590
+IF "%SEL%"=="21" GOTO G591
+IF "%SEL%"=="22" GOTO G592
+IF "%SEL%"=="23" GOTO G593
+IF "%SEL%"=="24" GOTO G594
+IF "%SEL%"=="25" GOTO G595
+IF "%SEL%"=="26" GOTO G596
+IF "%SEL%"=="27" GOTO G597
+IF "%SEL%"=="28" GOTO G598
+IF "%SEL%"=="29" GOTO G599
+IF "%SEL%"=="30" GOTO G600
+IF /I "%SEL%"=="N" GOTO P21
+IF /I "%SEL%"=="P" GOTO P19
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P20
+
+:P21
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 21/39
+ECHO.
+ECHO  1 - lsquad
+ECHO  2 - lurking
+ECHO  3 - M
+ECHO  4 - maddogwi
+ECHO  5 - madmix2
+ECHO  6 - madshow
+ECHO  7 - magcrane
+ECHO  8 - magicpo
+ECHO  9 - MAIN_DAT
+ECHO 10 - Manual
+ECHO 11 - MAP
+ECHO 12 - MAPDESC
+ECHO 13 - MAPS
+ECHO 14 - MARIO
+ECHO 15 - MARS
+ECHO 16 - martian
+ECHO 17 - MAX
+ECHO 18 - MAYA
+ECHO 19 - mazeadv
+ECHO 20 - MAZES
+ECHO 21 - MBK
+ECHO 22 - MC
+ECHO 23 - mcarpet
+ECHO 24 - mdk
+ECHO 25 - Mean 18.1986
+ECHO 26 - megalomania
+ECHO 27 - MEGATRAV
+ECHO 28 - MENU
+ECHO 29 - menudat
+ECHO 30 - Menuscrn
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G601
+IF "%SEL%"=="2" GOTO G602
+IF "%SEL%"=="3" GOTO G603
+IF "%SEL%"=="4" GOTO G604
+IF "%SEL%"=="5" GOTO G605
+IF "%SEL%"=="6" GOTO G606
+IF "%SEL%"=="7" GOTO G607
+IF "%SEL%"=="8" GOTO G608
+IF "%SEL%"=="9" GOTO G609
+IF "%SEL%"=="10" GOTO G610
+IF "%SEL%"=="11" GOTO G611
+IF "%SEL%"=="12" GOTO G612
+IF "%SEL%"=="13" GOTO G613
+IF "%SEL%"=="14" GOTO G614
+IF "%SEL%"=="15" GOTO G615
+IF "%SEL%"=="16" GOTO G616
+IF "%SEL%"=="17" GOTO G617
+IF "%SEL%"=="18" GOTO G618
+IF "%SEL%"=="19" GOTO G619
+IF "%SEL%"=="20" GOTO G620
+IF "%SEL%"=="21" GOTO G621
+IF "%SEL%"=="22" GOTO G622
+IF "%SEL%"=="23" GOTO G623
+IF "%SEL%"=="24" GOTO G624
+IF "%SEL%"=="25" GOTO G625
+IF "%SEL%"=="26" GOTO G626
+IF "%SEL%"=="27" GOTO G627
+IF "%SEL%"=="28" GOTO G628
+IF "%SEL%"=="29" GOTO G629
+IF "%SEL%"=="30" GOTO G630
+IF /I "%SEL%"=="N" GOTO P22
+IF /I "%SEL%"=="P" GOTO P20
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P21
+
+:P22
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 22/39
+ECHO.
+ECHO  1 - Meteors - Shoot Em Up - 1989
+ECHO  2 - Meurtres en Serie.1987
+ECHO  3 - Mgt.1987
+ECHO  4 - mh2
+ECHO  5 - millenium
+ECHO  6 - mindbend
+ECHO  7 - mindshadow
+ECHO  8 - mindwheel
+ECHO  9 - miner
+ECHO 10 - minervga
+ECHO 11 - MiniPutt
+ECHO 12 - minus90
+ECHO 13 - MISC
+ECHO 14 - MISSDAT
+ECHO 15 - Missdata
+ECHO 16 - MISSION
+ECHO 17 - MISSIONS
+ECHO 18 - MLW2
+ECHO 19 - mm2
+ECHO 20 - mmadness
+ECHO 21 - mmania
+ECHO 22 - MnM
+ECHO 23 - MNM2
+ECHO 24 - modss
+ECHO 25 - moktar
+ECHO 26 - mom
+ECHO 27 - monopoly
+ECHO 28 - monster
+ECHO 29 - moonmist
+ECHO 30 - Moria2.1986
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G631
+IF "%SEL%"=="2" GOTO G632
+IF "%SEL%"=="3" GOTO G633
+IF "%SEL%"=="4" GOTO G634
+IF "%SEL%"=="5" GOTO G635
+IF "%SEL%"=="6" GOTO G636
+IF "%SEL%"=="7" GOTO G637
+IF "%SEL%"=="8" GOTO G638
+IF "%SEL%"=="9" GOTO G639
+IF "%SEL%"=="10" GOTO G640
+IF "%SEL%"=="11" GOTO G641
+IF "%SEL%"=="12" GOTO G642
+IF "%SEL%"=="13" GOTO G643
+IF "%SEL%"=="14" GOTO G644
+IF "%SEL%"=="15" GOTO G645
+IF "%SEL%"=="16" GOTO G646
+IF "%SEL%"=="17" GOTO G647
+IF "%SEL%"=="18" GOTO G648
+IF "%SEL%"=="19" GOTO G649
+IF "%SEL%"=="20" GOTO G650
+IF "%SEL%"=="21" GOTO G651
+IF "%SEL%"=="22" GOTO G652
+IF "%SEL%"=="23" GOTO G653
+IF "%SEL%"=="24" GOTO G654
+IF "%SEL%"=="25" GOTO G655
+IF "%SEL%"=="26" GOTO G656
+IF "%SEL%"=="27" GOTO G657
+IF "%SEL%"=="28" GOTO G658
+IF "%SEL%"=="29" GOTO G659
+IF "%SEL%"=="30" GOTO G660
+IF /I "%SEL%"=="N" GOTO P23
+IF /I "%SEL%"=="P" GOTO P21
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P22
+
+:P23
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 23/39
+ECHO.
+ECHO  1 - mortalkombat1
+ECHO  2 - mpatrol
+ECHO  3 - msarcade
+ECHO  4 - MSGS
+ECHO  5 - mshaft
+ECHO  6 - msspace
+ECHO  7 - mstone
+ECHO  8 - mstreets
+ECHO  9 - mstryker
+ECHO 10 - MT2
+ECHO 11 - MTPrince
+ECHO 12 - muft
+ECHO 13 - murder
+ECHO 14 - MUSIC
+ECHO 15 - mychess
+ECHO 16 - MYSTERY
+ECHO 17 - N
+ECHO 18 - Nags
+ECHO 19 - NAMEROOM
+ECHO 20 - napo
+ECHO 21 - NDS
+ECHO 22 - nebulus
+ECHO 23 - Nectaris
+ECHO 24 - Nethack
+ECHO 25 - NEWDPICS
+ECHO 26 - nfos
+ECHO 27 - nhlhock
+ECHO 28 - night
+ECHO 29 - nighthunter
+ECHO 30 - ninja
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G661
+IF "%SEL%"=="2" GOTO G662
+IF "%SEL%"=="3" GOTO G663
+IF "%SEL%"=="4" GOTO G664
+IF "%SEL%"=="5" GOTO G665
+IF "%SEL%"=="6" GOTO G666
+IF "%SEL%"=="7" GOTO G667
+IF "%SEL%"=="8" GOTO G668
+IF "%SEL%"=="9" GOTO G669
+IF "%SEL%"=="10" GOTO G670
+IF "%SEL%"=="11" GOTO G671
+IF "%SEL%"=="12" GOTO G672
+IF "%SEL%"=="13" GOTO G673
+IF "%SEL%"=="14" GOTO G674
+IF "%SEL%"=="15" GOTO G675
+IF "%SEL%"=="16" GOTO G676
+IF "%SEL%"=="17" GOTO G677
+IF "%SEL%"=="18" GOTO G678
+IF "%SEL%"=="19" GOTO G679
+IF "%SEL%"=="20" GOTO G680
+IF "%SEL%"=="21" GOTO G681
+IF "%SEL%"=="22" GOTO G682
+IF "%SEL%"=="23" GOTO G683
+IF "%SEL%"=="24" GOTO G684
+IF "%SEL%"=="25" GOTO G685
+IF "%SEL%"=="26" GOTO G686
+IF "%SEL%"=="27" GOTO G687
+IF "%SEL%"=="28" GOTO G688
+IF "%SEL%"=="29" GOTO G689
+IF "%SEL%"=="30" GOTO G690
+IF /I "%SEL%"=="N" GOTO P24
+IF /I "%SEL%"=="P" GOTO P22
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P23
+
+:P24
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 24/39
+ECHO.
+ECHO  1 - NinjaGD2
+ECHO  2 - Nippon
+ECHO  3 - nmp3
+ECHO  4 - nobu1
+ECHO  5 - nobu2
+ECHO  6 - Nomad
+ECHO  7 - nova9
+ECHO  8 - nrabbits
+ECHO  9 - nraid
+ECHO 10 - numberm
+ECHO 11 - Obitus
+ECHO 12 - OBJECTS
+ECHO 13 - obliter
+ECHO 14 - Ocean
+ECHO 15 - odentodo
+ECHO 16 - Offensive
+ECHO 17 - ohnolem
+ECHO 18 - oilwell
+ECHO 19 - olig
+ECHO 20 - omf2097
+ECHO 21 - ON
+ECHO 22 - One Step Beyond
+ECHO 23 - oneonone
+ECHO 24 - OOZEPIC
+ECHO 25 - OpFrog
+ECHO 26 - OPTIONS
+ECHO 27 - oranger
+ECHO 28 - oregondlx
+ECHO 29 - origamo
+ECHO 30 - Original
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G691
+IF "%SEL%"=="2" GOTO G692
+IF "%SEL%"=="3" GOTO G693
+IF "%SEL%"=="4" GOTO G694
+IF "%SEL%"=="5" GOTO G695
+IF "%SEL%"=="6" GOTO G696
+IF "%SEL%"=="7" GOTO G697
+IF "%SEL%"=="8" GOTO G698
+IF "%SEL%"=="9" GOTO G699
+IF "%SEL%"=="10" GOTO G700
+IF "%SEL%"=="11" GOTO G701
+IF "%SEL%"=="12" GOTO G702
+IF "%SEL%"=="13" GOTO G703
+IF "%SEL%"=="14" GOTO G704
+IF "%SEL%"=="15" GOTO G705
+IF "%SEL%"=="16" GOTO G706
+IF "%SEL%"=="17" GOTO G707
+IF "%SEL%"=="18" GOTO G708
+IF "%SEL%"=="19" GOTO G709
+IF "%SEL%"=="20" GOTO G710
+IF "%SEL%"=="21" GOTO G711
+IF "%SEL%"=="22" GOTO G712
+IF "%SEL%"=="23" GOTO G713
+IF "%SEL%"=="24" GOTO G714
+IF "%SEL%"=="25" GOTO G715
+IF "%SEL%"=="26" GOTO G716
+IF "%SEL%"=="27" GOTO G717
+IF "%SEL%"=="28" GOTO G718
+IF "%SEL%"=="29" GOTO G719
+IF "%SEL%"=="30" GOTO G720
+IF /I "%SEL%"=="N" GOTO P25
+IF /I "%SEL%"=="P" GOTO P23
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P24
+
+:P25
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 25/39
+ECHO.
+ECHO  1 - ostealth
+ECHO  2 - OUTRIDGE
+ECHO  3 - OVERKILL
+ECHO  4 - oxyd
+ECHO  5 - P
+ECHO  6 - p3
+ECHO  7 - pac
+ECHO  8 - PACS
+ECHO  9 - PAIN
+ECHO 10 - PAKDATA
+ECHO 11 - pang
+ECHO 12 - panzerg
+ECHO 13 - PATHS
+ECHO 14 - patrician
+ECHO 15 - PBW
+ECHO 16 - PCD
+ECHO 17 - PCG
+ECHO 18 - Pcman.1982
+ECHO 19 - PCRALLY
+ECHO 20 - PCS
+ECHO 21 - PCVIDEO
+ECHO 22 - PCX
+ECHO 23 - Pdolls
+ECHO 24 - pdreams2
+ECHO 25 - pe
+ECHO 26 - PEDS
+ECHO 27 - Pendu.1987
+ECHO 28 - pepper
+ECHO 29 - PERSO
+ECHO 30 - phantas3
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G721
+IF "%SEL%"=="2" GOTO G722
+IF "%SEL%"=="3" GOTO G723
+IF "%SEL%"=="4" GOTO G724
+IF "%SEL%"=="5" GOTO G725
+IF "%SEL%"=="6" GOTO G726
+IF "%SEL%"=="7" GOTO G727
+IF "%SEL%"=="8" GOTO G728
+IF "%SEL%"=="9" GOTO G729
+IF "%SEL%"=="10" GOTO G730
+IF "%SEL%"=="11" GOTO G731
+IF "%SEL%"=="12" GOTO G732
+IF "%SEL%"=="13" GOTO G733
+IF "%SEL%"=="14" GOTO G734
+IF "%SEL%"=="15" GOTO G735
+IF "%SEL%"=="16" GOTO G736
+IF "%SEL%"=="17" GOTO G737
+IF "%SEL%"=="18" GOTO G738
+IF "%SEL%"=="19" GOTO G739
+IF "%SEL%"=="20" GOTO G740
+IF "%SEL%"=="21" GOTO G741
+IF "%SEL%"=="22" GOTO G742
+IF "%SEL%"=="23" GOTO G743
+IF "%SEL%"=="24" GOTO G744
+IF "%SEL%"=="25" GOTO G745
+IF "%SEL%"=="26" GOTO G746
+IF "%SEL%"=="27" GOTO G747
+IF "%SEL%"=="28" GOTO G748
+IF "%SEL%"=="29" GOTO G749
+IF "%SEL%"=="30" GOTO G750
+IF /I "%SEL%"=="N" GOTO P26
+IF /I "%SEL%"=="P" GOTO P24
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P25
+
+:P26
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 26/39
+ECHO.
+ECHO  1 - PIC
+ECHO  2 - pickpile
+ECHO  3 - PICS
+ECHO  4 - PICTURES
+ECHO  5 - pinball
+ECHO  6 - piranha
+ECHO  7 - pirates
+ECHO  8 - PIZ
+ECHO  9 - plan9
+ECHO 10 - PLANETS
+ECHO 11 - platoon
+ECHO 12 - PLT
+ECHO 13 - Pmania
+ECHO 14 - Poca
+ECHO 15 - pole2
+ECHO 16 - POOLRAD
+ECHO 17 - portal
+ECHO 18 - Powermonger
+ECHO 19 - pq
+ECHO 20 - pq1vga
+ECHO 21 - pq2
+ECHO 22 - PQUEST
+ECHO 23 - premier
+ECHO 24 - PRG
+ECHO 25 - prince2
+ECHO 26 - Prohibition.1987
+ECHO 27 - proto
+ECHO 28 - psd
+ECHO 29 - psychop
+ECHO 30 - ptomb
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G751
+IF "%SEL%"=="2" GOTO G752
+IF "%SEL%"=="3" GOTO G753
+IF "%SEL%"=="4" GOTO G754
+IF "%SEL%"=="5" GOTO G755
+IF "%SEL%"=="6" GOTO G756
+IF "%SEL%"=="7" GOTO G757
+IF "%SEL%"=="8" GOTO G758
+IF "%SEL%"=="9" GOTO G759
+IF "%SEL%"=="10" GOTO G760
+IF "%SEL%"=="11" GOTO G761
+IF "%SEL%"=="12" GOTO G762
+IF "%SEL%"=="13" GOTO G763
+IF "%SEL%"=="14" GOTO G764
+IF "%SEL%"=="15" GOTO G765
+IF "%SEL%"=="16" GOTO G766
+IF "%SEL%"=="17" GOTO G767
+IF "%SEL%"=="18" GOTO G768
+IF "%SEL%"=="19" GOTO G769
+IF "%SEL%"=="20" GOTO G770
+IF "%SEL%"=="21" GOTO G771
+IF "%SEL%"=="22" GOTO G772
+IF "%SEL%"=="23" GOTO G773
+IF "%SEL%"=="24" GOTO G774
+IF "%SEL%"=="25" GOTO G775
+IF "%SEL%"=="26" GOTO G776
+IF "%SEL%"=="27" GOTO G777
+IF "%SEL%"=="28" GOTO G778
+IF "%SEL%"=="29" GOTO G779
+IF "%SEL%"=="30" GOTO G780
+IF /I "%SEL%"=="N" GOTO P27
+IF /I "%SEL%"=="P" GOTO P25
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P26
+
+:P27
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 27/39
+ECHO.
+ECHO  1 - Ptroika
+ECHO  2 - pushover
+ECHO  3 - Q
+ECHO  4 - qfg1
+ECHO  5 - qfg3
+ECHO  6 - quad
+ECHO  7 - quadrel
+ECHO  8 - R
+ECHO  9 - race
+ECHO 10 - rags
+ECHO 11 - raiden
+ECHO 12 - RAILS
+ECHO 13 - RAILSDX
+ECHO 14 - rambo3
+ECHO 15 - rangerfox
+ECHO 16 - RAZOR
+ECHO 17 - REACH
+ECHO 18 - REAL
+ECHO 19 - realms
+ECHO 20 - Rebel
+ECHO 21 - redhell
+ECHO 22 - remcon
+ECHO 23 - renegade
+ECHO 24 - RESOURCE
+ECHO 25 - resrigel
+ECHO 26 - retal
+ECHO 27 - Return Of The Phantom Game
+ECHO 28 - Revenge
+ECHO 29 - Re-Volt
+ECHO 30 - REX
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G781
+IF "%SEL%"=="2" GOTO G782
+IF "%SEL%"=="3" GOTO G783
+IF "%SEL%"=="4" GOTO G784
+IF "%SEL%"=="5" GOTO G785
+IF "%SEL%"=="6" GOTO G786
+IF "%SEL%"=="7" GOTO G787
+IF "%SEL%"=="8" GOTO G788
+IF "%SEL%"=="9" GOTO G789
+IF "%SEL%"=="10" GOTO G790
+IF "%SEL%"=="11" GOTO G791
+IF "%SEL%"=="12" GOTO G792
+IF "%SEL%"=="13" GOTO G793
+IF "%SEL%"=="14" GOTO G794
+IF "%SEL%"=="15" GOTO G795
+IF "%SEL%"=="16" GOTO G796
+IF "%SEL%"=="17" GOTO G797
+IF "%SEL%"=="18" GOTO G798
+IF "%SEL%"=="19" GOTO G799
+IF "%SEL%"=="20" GOTO G800
+IF "%SEL%"=="21" GOTO G801
+IF "%SEL%"=="22" GOTO G802
+IF "%SEL%"=="23" GOTO G803
+IF "%SEL%"=="24" GOTO G804
+IF "%SEL%"=="25" GOTO G805
+IF "%SEL%"=="26" GOTO G806
+IF "%SEL%"=="27" GOTO G807
+IF "%SEL%"=="28" GOTO G808
+IF "%SEL%"=="29" GOTO G809
+IF "%SEL%"=="30" GOTO G810
+IF /I "%SEL%"=="N" GOTO P28
+IF /I "%SEL%"=="P" GOTO P26
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P27
+
+:P28
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 28/39
+ECHO.
+ECHO  1 - RHPP
+ECHO  2 - rickd
+ECHO  3 - Ring
+ECHO  4 - Ring2
+ECHO  5 - riseotd
+ECHO  6 - roabod
+ECHO  7 - roadeuropa
+ECHO  8 - ROADX
+ECHO  9 - roast
+ECHO 10 - Robinson
+ECHO 11 - robotron
+ECHO 12 - rockyboot
+ECHO 13 - RoE
+ECHO 14 - rohan
+ECHO 15 - romance1
+ECHO 16 - romance2
+ECHO 17 - romance3
+ECHO 18 - ROOMS
+ECHO 19 - RotH
+ECHO 20 - round42
+ECHO 21 - ROUTES
+ECHO 22 - rrover
+ECHO 23 - rsr
+ECHO 24 - RTBASSCH
+ECHO 25 - rtype
+ECHO 26 - RUGBY.SAV
+ECHO 27 - RUNEXE
+ECHO 28 - rw2000
+ECHO 29 - S
+ECHO 30 - S0000000
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G811
+IF "%SEL%"=="2" GOTO G812
+IF "%SEL%"=="3" GOTO G813
+IF "%SEL%"=="4" GOTO G814
+IF "%SEL%"=="5" GOTO G815
+IF "%SEL%"=="6" GOTO G816
+IF "%SEL%"=="7" GOTO G817
+IF "%SEL%"=="8" GOTO G818
+IF "%SEL%"=="9" GOTO G819
+IF "%SEL%"=="10" GOTO G820
+IF "%SEL%"=="11" GOTO G821
+IF "%SEL%"=="12" GOTO G822
+IF "%SEL%"=="13" GOTO G823
+IF "%SEL%"=="14" GOTO G824
+IF "%SEL%"=="15" GOTO G825
+IF "%SEL%"=="16" GOTO G826
+IF "%SEL%"=="17" GOTO G827
+IF "%SEL%"=="18" GOTO G828
+IF "%SEL%"=="19" GOTO G829
+IF "%SEL%"=="20" GOTO G830
+IF "%SEL%"=="21" GOTO G831
+IF "%SEL%"=="22" GOTO G832
+IF "%SEL%"=="23" GOTO G833
+IF "%SEL%"=="24" GOTO G834
+IF "%SEL%"=="25" GOTO G835
+IF "%SEL%"=="26" GOTO G836
+IF "%SEL%"=="27" GOTO G837
+IF "%SEL%"=="28" GOTO G838
+IF "%SEL%"=="29" GOTO G839
+IF "%SEL%"=="30" GOTO G840
+IF /I "%SEL%"=="N" GOTO P29
+IF /I "%SEL%"=="P" GOTO P27
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P28
+
+:P29
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 29/39
+ECHO.
+ECHO  1 - S1
+ECHO  2 - S2
+ECHO  3 - S201
+ECHO  4 - S3
+ECHO  5 - S301
+ECHO  6 - S3E3
+ECHO  7 - S4
+ECHO  8 - S5
+ECHO  9 - Safari
+ECHO 10 - sailing
+ECHO 11 - Saratov.wz
+ECHO 12 - Sargon V
+ECHO 13 - SAVE
+ECHO 14 - SAVE0
+ECHO 15 - SAVEGAME
+ECHO 16 - sblast3
+ECHO 17 - sbugs
+ECHO 18 - scb
+ECHO 19 - SCENARIO
+ECHO 20 - SCENE01
+ECHO 21 - SCENE02
+ECHO 22 - SCENE03
+ECHO 23 - SCITECH
+ECHO 24 - SCON
+ECHO 25 - scrabble
+ECHO 26 - SCREENS
+ECHO 27 - Sdrivers
+ECHO 28 - SeaDragon.1983
+ECHO 29 - seastalk
+ECHO 30 - sens
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G841
+IF "%SEL%"=="2" GOTO G842
+IF "%SEL%"=="3" GOTO G843
+IF "%SEL%"=="4" GOTO G844
+IF "%SEL%"=="5" GOTO G845
+IF "%SEL%"=="6" GOTO G846
+IF "%SEL%"=="7" GOTO G847
+IF "%SEL%"=="8" GOTO G848
+IF "%SEL%"=="9" GOTO G849
+IF "%SEL%"=="10" GOTO G850
+IF "%SEL%"=="11" GOTO G851
+IF "%SEL%"=="12" GOTO G852
+IF "%SEL%"=="13" GOTO G853
+IF "%SEL%"=="14" GOTO G854
+IF "%SEL%"=="15" GOTO G855
+IF "%SEL%"=="16" GOTO G856
+IF "%SEL%"=="17" GOTO G857
+IF "%SEL%"=="18" GOTO G858
+IF "%SEL%"=="19" GOTO G859
+IF "%SEL%"=="20" GOTO G860
+IF "%SEL%"=="21" GOTO G861
+IF "%SEL%"=="22" GOTO G862
+IF "%SEL%"=="23" GOTO G863
+IF "%SEL%"=="24" GOTO G864
+IF "%SEL%"=="25" GOTO G865
+IF "%SEL%"=="26" GOTO G866
+IF "%SEL%"=="27" GOTO G867
+IF "%SEL%"=="28" GOTO G868
+IF "%SEL%"=="29" GOTO G869
+IF "%SEL%"=="30" GOTO G870
+IF /I "%SEL%"=="N" GOTO P30
+IF /I "%SEL%"=="P" GOTO P28
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P29
+
+:P30
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 30/39
+ECHO.
+ECHO  1 - sentinel64
+ECHO  2 - serpenti
+ECHO  3 - Serpy.1986
+ECHO  4 - setgold
+ECHO  5 - SETTINGS
+ECHO  6 - settlers
+ECHO  7 - Seymour
+ECHO  8 - sfight2
+ECHO  9 - SFX
+ECHO 10 - SG
+ECHO 11 - SHADOW
+ECHO 12 - Shadow Knights
+ECHO 13 - shadowgt
+ECHO 14 - SHAPES
+ECHO 15 - shen
+ECHO 16 - Sherlock
+ECHO 17 - shinobi
+ECHO 18 - shogun
+ECHO 19 - shuey2
+ECHO 20 - Shufflepuck Cafe
+ECHO 21 - SI
+ECHO 22 - SideArms.1987
+ECHO 23 - siege
+ECHO 24 - Silver95
+ECHO 25 - silverb
+ECHO 26 - sim earth
+ECHO 27 - simc2000
+ECHO 28 - simcity
+ECHO 29 - sixx
+ECHO 30 - SK1
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G871
+IF "%SEL%"=="2" GOTO G872
+IF "%SEL%"=="3" GOTO G873
+IF "%SEL%"=="4" GOTO G874
+IF "%SEL%"=="5" GOTO G875
+IF "%SEL%"=="6" GOTO G876
+IF "%SEL%"=="7" GOTO G877
+IF "%SEL%"=="8" GOTO G878
+IF "%SEL%"=="9" GOTO G879
+IF "%SEL%"=="10" GOTO G880
+IF "%SEL%"=="11" GOTO G881
+IF "%SEL%"=="12" GOTO G882
+IF "%SEL%"=="13" GOTO G883
+IF "%SEL%"=="14" GOTO G884
+IF "%SEL%"=="15" GOTO G885
+IF "%SEL%"=="16" GOTO G886
+IF "%SEL%"=="17" GOTO G887
+IF "%SEL%"=="18" GOTO G888
+IF "%SEL%"=="19" GOTO G889
+IF "%SEL%"=="20" GOTO G890
+IF "%SEL%"=="21" GOTO G891
+IF "%SEL%"=="22" GOTO G892
+IF "%SEL%"=="23" GOTO G893
+IF "%SEL%"=="24" GOTO G894
+IF "%SEL%"=="25" GOTO G895
+IF "%SEL%"=="26" GOTO G896
+IF "%SEL%"=="27" GOTO G897
+IF "%SEL%"=="28" GOTO G898
+IF "%SEL%"=="29" GOTO G899
+IF "%SEL%"=="30" GOTO G900
+IF /I "%SEL%"=="N" GOTO P31
+IF /I "%SEL%"=="P" GOTO P29
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P30
+
+:P31
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 31/39
+ECHO.
+ECHO  1 - SK2
+ECHO  2 - SKART
+ECHO  3 - SKC1
+ECHO  4 - SKC2
+ECHO  5 - Ski3
+ECHO  6 - SKIES
+ECHO  7 - skulldug
+ECHO  8 - Sky Runner.1987
+ECHO  9 - skyfox2
+ECHO 10 - skyshark
+ECHO 11 - sleepwalker
+ECHO 12 - slicks
+ECHO 13 - slip5000
+ECHO 14 - slugger
+ECHO 15 - smaster
+ECHO 16 - SMP
+ECHO 17 - snacka
+ECHO 18 - SND
+ECHO 19 - SNDS
+ECHO 20 - SNibbly
+ECHO 21 - snoop
+ECHO 22 - snova
+ECHO 23 - sntroop
+ECHO 24 - soe
+ECHO 25 - Soko-Ban.1984
+ECHO 26 - solo
+ECHO 27 - solskey
+ECHO 28 - solwinds
+ECHO 29 - SONG
+ECHO 30 - sonofs
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G901
+IF "%SEL%"=="2" GOTO G902
+IF "%SEL%"=="3" GOTO G903
+IF "%SEL%"=="4" GOTO G904
+IF "%SEL%"=="5" GOTO G905
+IF "%SEL%"=="6" GOTO G906
+IF "%SEL%"=="7" GOTO G907
+IF "%SEL%"=="8" GOTO G908
+IF "%SEL%"=="9" GOTO G909
+IF "%SEL%"=="10" GOTO G910
+IF "%SEL%"=="11" GOTO G911
+IF "%SEL%"=="12" GOTO G912
+IF "%SEL%"=="13" GOTO G913
+IF "%SEL%"=="14" GOTO G914
+IF "%SEL%"=="15" GOTO G915
+IF "%SEL%"=="16" GOTO G916
+IF "%SEL%"=="17" GOTO G917
+IF "%SEL%"=="18" GOTO G918
+IF "%SEL%"=="19" GOTO G919
+IF "%SEL%"=="20" GOTO G920
+IF "%SEL%"=="21" GOTO G921
+IF "%SEL%"=="22" GOTO G922
+IF "%SEL%"=="23" GOTO G923
+IF "%SEL%"=="24" GOTO G924
+IF "%SEL%"=="25" GOTO G925
+IF "%SEL%"=="26" GOTO G926
+IF "%SEL%"=="27" GOTO G927
+IF "%SEL%"=="28" GOTO G928
+IF "%SEL%"=="29" GOTO G929
+IF "%SEL%"=="30" GOTO G930
+IF /I "%SEL%"=="N" GOTO P32
+IF /I "%SEL%"=="P" GOTO P30
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P31
+
+:P32
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 32/39
+ECHO.
+ECHO  1 - SONS
+ECHO  2 - SOUND
+ECHO  3 - SOUND2
+ECHO  4 - SOUND3
+ECHO  5 - SOUNDS
+ECHO  6 - space
+ECHO  7 - Space Miner.1983
+ECHO  8 - spacefed
+ECHO  9 - spacehar
+ECHO 10 - spacestr
+ECHO 11 - speedball2
+ECHO 12 - spiderbt
+ECHO 13 - sportspe
+ECHO 14 - SPR
+ECHO 15 - SPRITES
+ECHO 16 - spy
+ECHO 17 - spynorth
+ECHO 18 - sq1vga
+ECHO 19 - sq4
+ECHO 20 - squake
+ECHO 21 - squash
+ECHO 22 - squest1
+ECHO 23 - sr
+ECHO 24 - Sram1.1987
+ECHO 25 - Sram2.1987
+ECHO 26 - SS1
+ECHO 27 - ss2
+ECHO 28 - SSB
+ECHO 29 - SSP
+ECHO 30 - SSR
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G931
+IF "%SEL%"=="2" GOTO G932
+IF "%SEL%"=="3" GOTO G933
+IF "%SEL%"=="4" GOTO G934
+IF "%SEL%"=="5" GOTO G935
+IF "%SEL%"=="6" GOTO G936
+IF "%SEL%"=="7" GOTO G937
+IF "%SEL%"=="8" GOTO G938
+IF "%SEL%"=="9" GOTO G939
+IF "%SEL%"=="10" GOTO G940
+IF "%SEL%"=="11" GOTO G941
+IF "%SEL%"=="12" GOTO G942
+IF "%SEL%"=="13" GOTO G943
+IF "%SEL%"=="14" GOTO G944
+IF "%SEL%"=="15" GOTO G945
+IF "%SEL%"=="16" GOTO G946
+IF "%SEL%"=="17" GOTO G947
+IF "%SEL%"=="18" GOTO G948
+IF "%SEL%"=="19" GOTO G949
+IF "%SEL%"=="20" GOTO G950
+IF "%SEL%"=="21" GOTO G951
+IF "%SEL%"=="22" GOTO G952
+IF "%SEL%"=="23" GOTO G953
+IF "%SEL%"=="24" GOTO G954
+IF "%SEL%"=="25" GOTO G955
+IF "%SEL%"=="26" GOTO G956
+IF "%SEL%"=="27" GOTO G957
+IF "%SEL%"=="28" GOTO G958
+IF "%SEL%"=="29" GOTO G959
+IF "%SEL%"=="30" GOTO G960
+IF /I "%SEL%"=="N" GOTO P33
+IF /I "%SEL%"=="P" GOTO P31
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P32
+
+:P33
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 33/39
+ECHO.
+ECHO  1 - Stalin
+ECHO  2 - starlord
+ECHO  3 - StarShip Invasion.1984
+ECHO  4 - STATIC
+ECHO  5 - STDATA
+ECHO  6 - stdriver
+ECHO  7 - STEELDAT
+ECHO  8 - steelpan
+ECHO  9 - steg
+ECHO 10 - stellar7
+ECHO 11 - Stjr
+ECHO 12 - STKII
+ECHO 13 - STONE
+ECHO 14 - storm
+ECHO 15 - stormlrd
+ECHO 16 - STRIFE
+ECHO 17 - strongh
+ECHO 18 - STTNG
+ECHO 19 - STTNG-T
+ECHO 20 - stunt
+ECHO 21 - stuntisl
+ECHO 22 - sub
+ECHO 23 - subbat
+ECHO 24 - summer
+ECHO 25 - summer2
+ECHO 26 - SummerEd
+ECHO 27 - supball
+ECHO 28 - Supercopter.1987
+ECHO 29 - suspend
+ECHO 30 - sword
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G961
+IF "%SEL%"=="2" GOTO G962
+IF "%SEL%"=="3" GOTO G963
+IF "%SEL%"=="4" GOTO G964
+IF "%SEL%"=="5" GOTO G965
+IF "%SEL%"=="6" GOTO G966
+IF "%SEL%"=="7" GOTO G967
+IF "%SEL%"=="8" GOTO G968
+IF "%SEL%"=="9" GOTO G969
+IF "%SEL%"=="10" GOTO G970
+IF "%SEL%"=="11" GOTO G971
+IF "%SEL%"=="12" GOTO G972
+IF "%SEL%"=="13" GOTO G973
+IF "%SEL%"=="14" GOTO G974
+IF "%SEL%"=="15" GOTO G975
+IF "%SEL%"=="16" GOTO G976
+IF "%SEL%"=="17" GOTO G977
+IF "%SEL%"=="18" GOTO G978
+IF "%SEL%"=="19" GOTO G979
+IF "%SEL%"=="20" GOTO G980
+IF "%SEL%"=="21" GOTO G981
+IF "%SEL%"=="22" GOTO G982
+IF "%SEL%"=="23" GOTO G983
+IF "%SEL%"=="24" GOTO G984
+IF "%SEL%"=="25" GOTO G985
+IF "%SEL%"=="26" GOTO G986
+IF "%SEL%"=="27" GOTO G987
+IF "%SEL%"=="28" GOTO G988
+IF "%SEL%"=="29" GOTO G989
+IF "%SEL%"=="30" GOTO G990
+IF /I "%SEL%"=="N" GOTO P34
+IF /I "%SEL%"=="P" GOTO P32
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P33
+
+:P34
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 34/39
+ECHO.
+ECHO  1 - synd
+ECHO  2 - T
+ECHO  3 - T2-JD
+ECHO  4 - TALFILES
+ECHO  5 - TAPES
+ECHO  6 - tass
+ECHO  7 - tauceti
+ECHO  8 - tdydat
+ECHO  9 - tdyiff
+ECHO 10 - TEAMDAT
+ECHO 11 - TEAMS
+ECHO 12 - TEDIT
+ECHO 13 - TEKWILLA
+ECHO 14 - Telengard.1985
+ECHO 15 - tempest
+ECHO 16 - Temple Of Apshai Trilogy.1985
+ECHO 17 - Tera.1986
+ECHO 18 - TERRAIN
+ECHO 19 - TEXT
+ECHO 20 - TG
+ECHO 21 - TGA
+ECHO 22 - thawk
+ECHO 23 - The 3 Stooges.1987
+ECHO 24 - The Black Cauldron.1987
+ECHO 25 - The Horde
+ECHO 26 - The Pawn v2.3.1986
+ECHO 27 - The Scrabble.1987
+ECHO 28 - theext
+ECHO 29 - Thexder.1987
+ECHO 30 - TILES
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G991
+IF "%SEL%"=="2" GOTO G992
+IF "%SEL%"=="3" GOTO G993
+IF "%SEL%"=="4" GOTO G994
+IF "%SEL%"=="5" GOTO G995
+IF "%SEL%"=="6" GOTO G996
+IF "%SEL%"=="7" GOTO G997
+IF "%SEL%"=="8" GOTO G998
+IF "%SEL%"=="9" GOTO G999
+IF "%SEL%"=="10" GOTO G1000
+IF "%SEL%"=="11" GOTO G1001
+IF "%SEL%"=="12" GOTO G1002
+IF "%SEL%"=="13" GOTO G1003
+IF "%SEL%"=="14" GOTO G1004
+IF "%SEL%"=="15" GOTO G1005
+IF "%SEL%"=="16" GOTO G1006
+IF "%SEL%"=="17" GOTO G1007
+IF "%SEL%"=="18" GOTO G1008
+IF "%SEL%"=="19" GOTO G1009
+IF "%SEL%"=="20" GOTO G1010
+IF "%SEL%"=="21" GOTO G1011
+IF "%SEL%"=="22" GOTO G1012
+IF "%SEL%"=="23" GOTO G1013
+IF "%SEL%"=="24" GOTO G1014
+IF "%SEL%"=="25" GOTO G1015
+IF "%SEL%"=="26" GOTO G1016
+IF "%SEL%"=="27" GOTO G1017
+IF "%SEL%"=="28" GOTO G1018
+IF "%SEL%"=="29" GOTO G1019
+IF "%SEL%"=="30" GOTO G1020
+IF /I "%SEL%"=="N" GOTO P35
+IF /I "%SEL%"=="P" GOTO P33
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P34
+
+:P35
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 35/39
+ECHO.
+ECHO  1 - tim
+ECHO  2 - timeb
+ECHO  3 - tintin
+ECHO  4 - TINYSKWS
+ECHO  5 - tjcatas
+ECHO  6 - tmnt
+ECHO  7 - TMS
+ECHO  8 - TOD
+ECHO  9 - Top Secret.1987
+ECHO 10 - TopGun.1986
+ECHO 11 - TORE
+ECHO 12 - total
+ECHO 13 - Touche
+ECHO 14 - toutrun
+ECHO 15 - traders
+ECHO 16 - Train
+ECHO 17 - trains
+ECHO 18 - TRANSA
+ECHO 19 - TRAZERE
+ECHO 20 - triders
+ECHO 21 - triplane
+ECHO 22 - Triskelion.1987
+ECHO 23 - Tristan
+ECHO 24 - trivia
+ECHO 25 - trog
+ECHO 26 - troll
+ECHO 27 - TTerror
+ECHO 28 - tubes
+ECHO 29 - TUNES
+ECHO 30 - tunnelsarm
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G1021
+IF "%SEL%"=="2" GOTO G1022
+IF "%SEL%"=="3" GOTO G1023
+IF "%SEL%"=="4" GOTO G1024
+IF "%SEL%"=="5" GOTO G1025
+IF "%SEL%"=="6" GOTO G1026
+IF "%SEL%"=="7" GOTO G1027
+IF "%SEL%"=="8" GOTO G1028
+IF "%SEL%"=="9" GOTO G1029
+IF "%SEL%"=="10" GOTO G1030
+IF "%SEL%"=="11" GOTO G1031
+IF "%SEL%"=="12" GOTO G1032
+IF "%SEL%"=="13" GOTO G1033
+IF "%SEL%"=="14" GOTO G1034
+IF "%SEL%"=="15" GOTO G1035
+IF "%SEL%"=="16" GOTO G1036
+IF "%SEL%"=="17" GOTO G1037
+IF "%SEL%"=="18" GOTO G1038
+IF "%SEL%"=="19" GOTO G1039
+IF "%SEL%"=="20" GOTO G1040
+IF "%SEL%"=="21" GOTO G1041
+IF "%SEL%"=="22" GOTO G1042
+IF "%SEL%"=="23" GOTO G1043
+IF "%SEL%"=="24" GOTO G1044
+IF "%SEL%"=="25" GOTO G1045
+IF "%SEL%"=="26" GOTO G1046
+IF "%SEL%"=="27" GOTO G1047
+IF "%SEL%"=="28" GOTO G1048
+IF "%SEL%"=="29" GOTO G1049
+IF "%SEL%"=="30" GOTO G1050
+IF /I "%SEL%"=="N" GOTO P36
+IF /I "%SEL%"=="P" GOTO P34
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P35
+
+:P36
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 36/39
+ECHO.
+ECHO  1 - turbocup
+ECHO  2 - Turok-Dinosaur Hunter
+ECHO  3 - tvbas
+ECHO  4 - twgbg
+ECHO  5 - typhoon
+ECHO  6 - tyrian2000
+ECHO  7 - TZone
+ECHO  8 - UFO
+ECHO  9 - ufo2
+ECHO 10 - ufo2000-0.4.0.334
+ECHO 11 - UFO2EXE
+ECHO 12 - UFOEXE
+ECHO 13 - UFOGRAPH
+ECHO 14 - UFOINTRO
+ECHO 15 - Uidata
+ECHO 16 - Ultimate NFL Coaches Club Football
+ECHO 17 - ULTIMAV
+ECHO 18 - ulysses
+ECHO 19 - UMS1
+ECHO 20 - ums2
+ECHO 21 - UNITS
+ECHO 22 - USER
+ECHO 23 - vectorb
+ECHO 24 - VECTORS
+ECHO 25 - veilofd
+ECHO 26 - venice
+ECHO 27 - vette
+ECHO 28 - VGA
+ECHO 29 - VGA_GFX
+ECHO 30 - vgadat
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G1051
+IF "%SEL%"=="2" GOTO G1052
+IF "%SEL%"=="3" GOTO G1053
+IF "%SEL%"=="4" GOTO G1054
+IF "%SEL%"=="5" GOTO G1055
+IF "%SEL%"=="6" GOTO G1056
+IF "%SEL%"=="7" GOTO G1057
+IF "%SEL%"=="8" GOTO G1058
+IF "%SEL%"=="9" GOTO G1059
+IF "%SEL%"=="10" GOTO G1060
+IF "%SEL%"=="11" GOTO G1061
+IF "%SEL%"=="12" GOTO G1062
+IF "%SEL%"=="13" GOTO G1063
+IF "%SEL%"=="14" GOTO G1064
+IF "%SEL%"=="15" GOTO G1065
+IF "%SEL%"=="16" GOTO G1066
+IF "%SEL%"=="17" GOTO G1067
+IF "%SEL%"=="18" GOTO G1068
+IF "%SEL%"=="19" GOTO G1069
+IF "%SEL%"=="20" GOTO G1070
+IF "%SEL%"=="21" GOTO G1071
+IF "%SEL%"=="22" GOTO G1072
+IF "%SEL%"=="23" GOTO G1073
+IF "%SEL%"=="24" GOTO G1074
+IF "%SEL%"=="25" GOTO G1075
+IF "%SEL%"=="26" GOTO G1076
+IF "%SEL%"=="27" GOTO G1077
+IF "%SEL%"=="28" GOTO G1078
+IF "%SEL%"=="29" GOTO G1079
+IF "%SEL%"=="30" GOTO G1080
+IF /I "%SEL%"=="N" GOTO P37
+IF /I "%SEL%"=="P" GOTO P35
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P36
+
+:P37
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 37/39
+ECHO.
+ECHO  1 - vgaiff
+ECHO  2 - VICTORY
+ECHO  3 - vietnam
+ECHO  4 - VMAX
+ECHO  5 - vmind
+ECHO  6 - VOC
+ECHO  7 - VoE
+ECHO  8 - voodoo
+ECHO  9 - vrsoccer
+ECHO 10 - wacky
+ECHO 11 - WAR
+ECHO 12 - warlords
+ECHO 13 - warlords2
+ECHO 14 - warp
+ECHO 15 - waters
+ECHO 16 - waves
+ECHO 17 - WAYBIN
+ECHO 18 - Wayne
+ECHO 19 - WAYTXT
+ECHO 20 - wcboxing
+ECHO 21 - wchess
+ECHO 22 - wclb
+ECHO 23 - wdarts
+ECHO 24 - WEAPONS
+ECHO 25 - ween
+ECHO 26 - weirdd
+ECHO 27 - welltris
+ECHO 28 - Westadv
+ECHO 29 - wetrix
+ECHO 30 - WFILE
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G1081
+IF "%SEL%"=="2" GOTO G1082
+IF "%SEL%"=="3" GOTO G1083
+IF "%SEL%"=="4" GOTO G1084
+IF "%SEL%"=="5" GOTO G1085
+IF "%SEL%"=="6" GOTO G1086
+IF "%SEL%"=="7" GOTO G1087
+IF "%SEL%"=="8" GOTO G1088
+IF "%SEL%"=="9" GOTO G1089
+IF "%SEL%"=="10" GOTO G1090
+IF "%SEL%"=="11" GOTO G1091
+IF "%SEL%"=="12" GOTO G1092
+IF "%SEL%"=="13" GOTO G1093
+IF "%SEL%"=="14" GOTO G1094
+IF "%SEL%"=="15" GOTO G1095
+IF "%SEL%"=="16" GOTO G1096
+IF "%SEL%"=="17" GOTO G1097
+IF "%SEL%"=="18" GOTO G1098
+IF "%SEL%"=="19" GOTO G1099
+IF "%SEL%"=="20" GOTO G1100
+IF "%SEL%"=="21" GOTO G1101
+IF "%SEL%"=="22" GOTO G1102
+IF "%SEL%"=="23" GOTO G1103
+IF "%SEL%"=="24" GOTO G1104
+IF "%SEL%"=="25" GOTO G1105
+IF "%SEL%"=="26" GOTO G1106
+IF "%SEL%"=="27" GOTO G1107
+IF "%SEL%"=="28" GOTO G1108
+IF "%SEL%"=="29" GOTO G1109
+IF "%SEL%"=="30" GOTO G1110
+IF /I "%SEL%"=="N" GOTO P38
+IF /I "%SEL%"=="P" GOTO P36
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P37
+
+:P38
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 38/39
+ECHO.
+ECHO  1 - wgames
+ECHO  2 - Where Time Stood Still
+ECHO  3 - Willy the Worm.1985
+ECHO  4 - willyb
+ECHO  5 - WING
+ECHO  6 - winpooh
+ECHO  7 - WinterEd
+ECHO  8 - winwilly
+ECHO  9 - wishbringer
+ECHO 10 - witness
+ECHO 11 - Wizard Warz
+ECHO 12 - wizball
+ECHO 13 - wizkid
+ECHO 14 - WO94
+ECHO 15 - wolfpack
+ECHO 16 - wordres
+ECHO 17 - world
+ECHO 18 - World of Xeen
+ECHO 19 - WORLDMAP
+ECHO 20 - WRATH
+ECHO 21 - WSFILE
+ECHO 22 - WVOYAGE
+ECHO 23 - wwf
+ECHO 24 - wwfert
+ECHO 25 - wwfhouse
+ECHO 26 - X
+ECHO 27 - Xatax
+ECHO 28 - xcom3
+ECHO 29 - xiphos
+ECHO 30 - XIXIT
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G1111
+IF "%SEL%"=="2" GOTO G1112
+IF "%SEL%"=="3" GOTO G1113
+IF "%SEL%"=="4" GOTO G1114
+IF "%SEL%"=="5" GOTO G1115
+IF "%SEL%"=="6" GOTO G1116
+IF "%SEL%"=="7" GOTO G1117
+IF "%SEL%"=="8" GOTO G1118
+IF "%SEL%"=="9" GOTO G1119
+IF "%SEL%"=="10" GOTO G1120
+IF "%SEL%"=="11" GOTO G1121
+IF "%SEL%"=="12" GOTO G1122
+IF "%SEL%"=="13" GOTO G1123
+IF "%SEL%"=="14" GOTO G1124
+IF "%SEL%"=="15" GOTO G1125
+IF "%SEL%"=="16" GOTO G1126
+IF "%SEL%"=="17" GOTO G1127
+IF "%SEL%"=="18" GOTO G1128
+IF "%SEL%"=="19" GOTO G1129
+IF "%SEL%"=="20" GOTO G1130
+IF "%SEL%"=="21" GOTO G1131
+IF "%SEL%"=="22" GOTO G1132
+IF "%SEL%"=="23" GOTO G1133
+IF "%SEL%"=="24" GOTO G1134
+IF "%SEL%"=="25" GOTO G1135
+IF "%SEL%"=="26" GOTO G1136
+IF "%SEL%"=="27" GOTO G1137
+IF "%SEL%"=="28" GOTO G1138
+IF "%SEL%"=="29" GOTO G1139
+IF "%SEL%"=="30" GOTO G1140
+IF /I "%SEL%"=="N" GOTO P39
+IF /I "%SEL%"=="P" GOTO P37
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P38
+
+:P39
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                    CAPYDOS GAME CENTER
+ECHO ============================================================
+ECHO P?gina 39/39
+ECHO.
+ECHO  1 - XM
+ECHO  2 - Xonix.1984
+ECHO  3 - XPINCD
+ECHO  4 - xxiv
+ECHO  5 - Y
+ECHO  6 - Yoda Stories
+ECHO  7 - Yogho
+ECHO  8 - ypm
+ECHO  9 - yrsim
+ECHO 10 - Z
+ECHO 11 - zack
+ECHO 12 - zak
+ECHO 13 - zakcodes
+ECHO 14 - ZEITUNG
+ECHO 15 - zelda
+ECHO 16 - zeliard
+ECHO 17 - zind
+ECHO 18 - Zombi.1986
+ECHO 19 - Zona0
+ECHO 20 - zone66
+ECHO 21 - zorkzero
+ECHO 22 - Zorro
+ECHO 23 - Zyll.1984
+ECHO.
+ECHO ------------------------------------------------------------
+ECHO N = Siguiente   P = Anterior   S = Buscar   Q = Salir
+ECHO ------------------------------------------------------------
+SET SEL=
+SET /P SEL=Selecciona: 
+
+IF "%SEL%"=="1" GOTO G1141
+IF "%SEL%"=="2" GOTO G1142
+IF "%SEL%"=="3" GOTO G1143
+IF "%SEL%"=="4" GOTO G1144
+IF "%SEL%"=="5" GOTO G1145
+IF "%SEL%"=="6" GOTO G1146
+IF "%SEL%"=="7" GOTO G1147
+IF "%SEL%"=="8" GOTO G1148
+IF "%SEL%"=="9" GOTO G1149
+IF "%SEL%"=="10" GOTO G1150
+IF "%SEL%"=="11" GOTO G1151
+IF "%SEL%"=="12" GOTO G1152
+IF "%SEL%"=="13" GOTO G1153
+IF "%SEL%"=="14" GOTO G1154
+IF "%SEL%"=="15" GOTO G1155
+IF "%SEL%"=="16" GOTO G1156
+IF "%SEL%"=="17" GOTO G1157
+IF "%SEL%"=="18" GOTO G1158
+IF "%SEL%"=="19" GOTO G1159
+IF "%SEL%"=="20" GOTO G1160
+IF "%SEL%"=="21" GOTO G1161
+IF "%SEL%"=="22" GOTO G1162
+IF "%SEL%"=="23" GOTO G1163
+IF /I "%SEL%"=="N" GOTO P1
+IF /I "%SEL%"=="P" GOTO P38
+IF /I "%SEL%"=="S" GOTO SEARCH
+IF /I "%SEL%"=="Q" GOTO EXIT
+GOTO P39
+
+:G1
+SET GAME= Last Ninja
+CD /D "%GAMES%\ Last Ninja"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G2
+SET GAME= Last Ninja 2
+CD /D "%GAMES%\ Last Ninja 2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G3
+SET GAME=1000
+CD /D "%GAMES%\1000"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G4
+SET GAME=1830
+CD /D "%GAMES%\1830"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G5
+SET GAME=1993tris
+CD /D "%GAMES%\1993tris"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G6
+SET GAME=3dbox
+CD /D "%GAMES%\3dbox"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G7
+SET GAME=3ddata
+CD /D "%GAMES%\3ddata"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G8
+SET GAME=3dwt
+CD /D "%GAMES%\3dwt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G9
+SET GAME=4dboxing
+CD /D "%GAMES%\4dboxing"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G10
+SET GAME=4dtennis
+CD /D "%GAMES%\4dtennis"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G11
+SET GAME=4thprotocol
+CD /D "%GAMES%\4thprotocol"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G12
+SET GAME=4x4
+CD /D "%GAMES%\4x4"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G13
+SET GAME=5aside
+CD /D "%GAMES%\5aside"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G14
+SET GAME=5-FLEET
+CD /D "%GAMES%\5-FLEET"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G15
+SET GAME=688
+CD /D "%GAMES%\688"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G16
+SET GAME=7cities
+CD /D "%GAMES%\7cities"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G17
+SET GAME=7stud
+CD /D "%GAMES%\7stud"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G18
+SET GAME=8balldx
+CD /D "%GAMES%\8balldx"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G19
+SET GAME=AAMUSIC
+CD /D "%GAMES%\AAMUSIC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G20
+SET GAME=aargh
+CD /D "%GAMES%\aargh"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G21
+SET GAME=abrams_tank
+CD /D "%GAMES%\abrams_tank"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G22
+SET GAME=ABSOLUTE
+CD /D "%GAMES%\ABSOLUTE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G23
+SET GAME=ABUSE
+CD /D "%GAMES%\ABUSE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G24
+SET GAME=aces
+CD /D "%GAMES%\aces"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G25
+SET GAME=Acheton
+CD /D "%GAMES%\Acheton"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G26
+SET GAME=adcivi
+CD /D "%GAMES%\adcivi"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G27
+SET GAME=adlib
+CD /D "%GAMES%\adlib"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G28
+SET GAME=ADOM
+CD /D "%GAMES%\ADOM"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G29
+SET GAME=aethra1
+CD /D "%GAMES%\aethra1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G30
+SET GAME=Afghan.wz
+CD /D "%GAMES%\Afghan.wz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G31
+SET GAME=African
+CD /D "%GAMES%\African"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G32
+SET GAME=aft
+CD /D "%GAMES%\aft"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G33
+SET GAME=afterburner
+CD /D "%GAMES%\afterburner"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G34
+SET GAME=agenda
+CD /D "%GAMES%\agenda"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G35
+SET GAME=agentusa
+CD /D "%GAMES%\agentusa"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G36
+SET GAME=ahws
+CD /D "%GAMES%\ahws"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G37
+SET GAME=air_Hockey
+CD /D "%GAMES%\air_Hockey"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G38
+SET GAME=AIRBUS
+CD /D "%GAMES%\AIRBUS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G39
+SET GAME=AIRLIFT
+CD /D "%GAMES%\AIRLIFT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G40
+SET GAME=aitna
+CD /D "%GAMES%\aitna"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G41
+SET GAME=Albion
+CD /D "%GAMES%\Albion"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G42
+SET GAME=alcatraz
+CD /D "%GAMES%\alcatraz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G43
+SET GAME=aldo2
+CD /D "%GAMES%\aldo2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G44
+SET GAME=aldo3
+CD /D "%GAMES%\aldo3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G45
+SET GAME=aleshar
+CD /D "%GAMES%\aleshar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G46
+SET GAME=aliants
+CD /D "%GAMES%\aliants"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G47
+SET GAME=alien
+CD /D "%GAMES%\alien"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G48
+SET GAME=alien2
+CD /D "%GAMES%\alien2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G49
+SET GAME=alienram
+CD /D "%GAMES%\alienram"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G50
+SET GAME=all point bulletin
+CD /D "%GAMES%\all point bulletin"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G51
+SET GAME=alone
+CD /D "%GAMES%\alone"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G52
+SET GAME=Alone in the Dark 2
+CD /D "%GAMES%\Alone in the Dark 2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G53
+SET GAME=alpine
+CD /D "%GAMES%\alpine"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G54
+SET GAME=Al-Qadim
+CD /D "%GAMES%\Al-Qadim"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G55
+SET GAME=altermale
+CD /D "%GAMES%\altermale"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G56
+SET GAME=altern
+CD /D "%GAMES%\altern"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G57
+SET GAME=amado
+CD /D "%GAMES%\amado"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G58
+SET GAME=amazong
+CD /D "%GAMES%\amazong"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G59
+SET GAME=amberstar
+CD /D "%GAMES%\amberstar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G60
+SET GAME=amfv
+CD /D "%GAMES%\amfv"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G61
+SET GAME=amuletyen
+CD /D "%GAMES%\amuletyen"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G62
+SET GAME=ANA
+CD /D "%GAMES%\ANA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G63
+SET GAME=ANDY
+CD /D "%GAMES%\ANDY"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G64
+SET GAME=anim
+CD /D "%GAMES%\anim"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G65
+SET GAME=animals
+CD /D "%GAMES%\animals"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G66
+SET GAME=ANIMS
+CD /D "%GAMES%\ANIMS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G67
+SET GAME=Anvil
+CD /D "%GAMES%\Anvil"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G68
+SET GAME=aoaltair
+CD /D "%GAMES%\aoaltair"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G69
+SET GAME=aplaces
+CD /D "%GAMES%\aplaces"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G70
+SET GAME=apollo18
+CD /D "%GAMES%\apollo18"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G71
+SET GAME=applep
+CD /D "%GAMES%\applep"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G72
+SET GAME=aquanoid
+CD /D "%GAMES%\aquanoid"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G73
+SET GAME=arcade1
+CD /D "%GAMES%\arcade1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G74
+SET GAME=archer
+CD /D "%GAMES%\archer"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G75
+SET GAME=arka2
+CD /D "%GAMES%\arka2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G76
+SET GAME=Armor Alley
+CD /D "%GAMES%\Armor Alley"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G77
+SET GAME=arnhem
+CD /D "%GAMES%\arnhem"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G78
+SET GAME=art
+CD /D "%GAMES%\art"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G79
+SET GAME=Arthur
+CD /D "%GAMES%\Arthur"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G80
+SET GAME=artofwar
+CD /D "%GAMES%\artofwar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G81
+SET GAME=Ascendancy
+CD /D "%GAMES%\Ascendancy"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G82
+SET GAME=Ashes
+CD /D "%GAMES%\Ashes"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G83
+SET GAME=aspar
+CD /D "%GAMES%\aspar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G84
+SET GAME=asterixold
+CD /D "%GAMES%\asterixold"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G85
+SET GAME=athlet
+CD /D "%GAMES%\athlet"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G86
+SET GAME=ATLANTIS
+CD /D "%GAMES%\ATLANTIS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G87
+SET GAME=atrain
+CD /D "%GAMES%\atrain"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G88
+SET GAME=audio
+CD /D "%GAMES%\audio"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G89
+SET GAME=autoduel
+CD /D "%GAMES%\autoduel"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G90
+SET GAME=AV8B
+CD /D "%GAMES%\AV8B"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G91
+SET GAME=Avish
+CD /D "%GAMES%\Avish"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G92
+SET GAME=awe
+CD /D "%GAMES%\awe"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G93
+SET GAME=B
+CD /D "%GAMES%\B"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G94
+SET GAME=b13
+CD /D "%GAMES%\b13"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G95
+SET GAME=baal
+CD /D "%GAMES%\baal"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G96
+SET GAME=babyjo
+CD /D "%GAMES%\babyjo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G97
+SET GAME=backto2
+CD /D "%GAMES%\backto2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G98
+SET GAME=badblood
+CD /D "%GAMES%\badblood"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G99
+SET GAME=baddudes
+CD /D "%GAMES%\baddudes"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G100
+SET GAME=bakerstreet
+CD /D "%GAMES%\bakerstreet"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G101
+SET GAME=ballyhoo
+CD /D "%GAMES%\ballyhoo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G102
+SET GAME=BALTAZAR
+CD /D "%GAMES%\BALTAZAR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G103
+SET GAME=bangbang
+CD /D "%GAMES%\bangbang"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G104
+SET GAME=BANKS
+CD /D "%GAMES%\BANKS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G105
+SET GAME=barbarian
+CD /D "%GAMES%\barbarian"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G106
+SET GAME=barbie
+CD /D "%GAMES%\barbie"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G107
+SET GAME=BARTER
+CD /D "%GAMES%\BARTER"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G108
+SET GAME=baseball
+CD /D "%GAMES%\baseball"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G109
+SET GAME=basketm
+CD /D "%GAMES%\basketm"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G110
+SET GAME=batmanc
+CD /D "%GAMES%\batmanc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G111
+SET GAME=Battle Zone.1987
+CD /D "%GAMES%\Battle Zone.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G112
+SET GAME=battlebugs
+CD /D "%GAMES%\battlebugs"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G113
+SET GAME=battleofantietam
+CD /D "%GAMES%\battleofantietam"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G114
+SET GAME=BBGTH
+CD /D "%GAMES%\BBGTH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G115
+SET GAME=bcracers
+CD /D "%GAMES%\bcracers"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G116
+SET GAME=bedlam
+CD /D "%GAMES%\bedlam"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G117
+SET GAME=berlin
+CD /D "%GAMES%\berlin"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G118
+SET GAME=bftc
+CD /D "%GAMES%\bftc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G119
+SET GAME=BH_STUFF
+CD /D "%GAMES%\BH_STUFF"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G120
+SET GAME=bholiday
+CD /D "%GAMES%\bholiday"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G121
+SET GAME=BI193
+CD /D "%GAMES%\BI193"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G122
+SET GAME=bigbiz
+CD /D "%GAMES%\bigbiz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G123
+SET GAME=bigtop
+CD /D "%GAMES%\bigtop"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G124
+SET GAME=billnted
+CD /D "%GAMES%\billnted"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G125
+SET GAME=Bioforge
+CD /D "%GAMES%\Bioforge"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G126
+SET GAME=birdprey
+CD /D "%GAMES%\birdprey"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G127
+SET GAME=BIT
+CD /D "%GAMES%\BIT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G128
+SET GAME=BLACK
+CD /D "%GAMES%\BLACK"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G129
+SET GAME=blackjack
+CD /D "%GAMES%\blackjack"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G130
+SET GAME=blackmon
+CD /D "%GAMES%\blackmon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G131
+SET GAME=Blackstar
+CD /D "%GAMES%\Blackstar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G132
+SET GAME=Blades
+CD /D "%GAMES%\Blades"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G133
+SET GAME=blockbreaker
+CD /D "%GAMES%\blockbreaker"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G134
+SET GAME=blockcad
+CD /D "%GAMES%\blockcad"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G135
+SET GAME=Blood
+CD /D "%GAMES%\Blood"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G136
+SET GAME=bluemax
+CD /D "%GAMES%\bluemax"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G137
+SET GAME=bmenace
+CD /D "%GAMES%\bmenace"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G138
+SET GAME=BOB
+CD /D "%GAMES%\BOB"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G139
+SET GAME=bobtham
+CD /D "%GAMES%\bobtham"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G140
+SET GAME=bobwinner
+CD /D "%GAMES%\bobwinner"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G141
+SET GAME=BODIES
+CD /D "%GAMES%\BODIES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G142
+SET GAME=bodyblow
+CD /D "%GAMES%\bodyblow"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G143
+SET GAME=BOMBJACK
+CD /D "%GAMES%\BOMBJACK"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G144
+SET GAME=bombuzal
+CD /D "%GAMES%\bombuzal"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G145
+SET GAME=BOPWIRE
+CD /D "%GAMES%\BOPWIRE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G146
+SET GAME=borderzo
+CD /D "%GAMES%\borderzo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G147
+SET GAME=Boxer Rebellion.1982
+CD /D "%GAMES%\Boxer Rebellion.1982"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G148
+SET GAME=brix
+CD /D "%GAMES%\brix"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G149
+SET GAME=bsfball
+CD /D "%GAMES%\bsfball"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G150
+SET GAME=btroot
+CD /D "%GAMES%\btroot"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G151
+SET GAME=bubblepop
+CD /D "%GAMES%\bubblepop"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G152
+SET GAME=Buffalo Bills Rodeo Games
+CD /D "%GAMES%\Buffalo Bills Rodeo Games"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G153
+SET GAME=Burntime
+CD /D "%GAMES%\Burntime"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G154
+SET GAME=bz
+CD /D "%GAMES%\bz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G155
+SET GAME=C
+CD /D "%GAMES%\C"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G156
+SET GAME=c2
+CD /D "%GAMES%\c2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G157
+SET GAME=cabal
+CD /D "%GAMES%\cabal"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G158
+SET GAME=caesar
+CD /D "%GAMES%\caesar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G159
+SET GAME=campaign
+CD /D "%GAMES%\campaign"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G160
+SET GAME=candp
+CD /D "%GAMES%\candp"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G161
+SET GAME=canim
+CD /D "%GAMES%\canim"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G162
+SET GAME=cannonf
+CD /D "%GAMES%\cannonf"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G163
+SET GAME=CannonFodder2
+CD /D "%GAMES%\CannonFodder2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G164
+SET GAME=capone
+CD /D "%GAMES%\capone"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G165
+SET GAME=captive
+CD /D "%GAMES%\captive"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G166
+SET GAME=car
+CD /D "%GAMES%\car"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G167
+SET GAME=cardsharks
+CD /D "%GAMES%\cardsharks"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G168
+SET GAME=carmenap
+CD /D "%GAMES%\carmenap"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G169
+SET GAME=carmeuro
+CD /D "%GAMES%\carmeuro"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G170
+SET GAME=carmusa
+CD /D "%GAMES%\carmusa"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G171
+SET GAME=Carnage
+CD /D "%GAMES%\Carnage"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G172
+SET GAME=CARS
+CD /D "%GAMES%\CARS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G173
+SET GAME=CARTOON
+CD /D "%GAMES%\CARTOON"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G174
+SET GAME=casgames
+CD /D "%GAMES%\casgames"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G175
+SET GAME=Castle.1984
+CD /D "%GAMES%\Castle.1984"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G176
+SET GAME=castles
+CD /D "%GAMES%\castles"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G177
+SET GAME=CASTLEVA
+CD /D "%GAMES%\CASTLEVA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G178
+SET GAME=catchem
+CD /D "%GAMES%\catchem"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G179
+SET GAME=cbongo
+CD /D "%GAMES%\cbongo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G180
+SET GAME=cc3
+CD /D "%GAMES%\cc3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G181
+SET GAME=CD
+CD /D "%GAMES%\CD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G182
+SET GAME=CDA
+CD /D "%GAMES%\CDA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G183
+SET GAME=CDDATA
+CD /D "%GAMES%\CDDATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G184
+SET GAME=cdynamo
+CD /D "%GAMES%\cdynamo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G185
+SET GAME=cfac
+CD /D "%GAMES%\cfac"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G186
+SET GAME=CGA
+CD /D "%GAMES%\CGA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G187
+SET GAME=cgadat
+CD /D "%GAMES%\cgadat"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G188
+SET GAME=CGAGRAPH
+CD /D "%GAMES%\CGAGRAPH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G189
+SET GAME=cgaiff
+CD /D "%GAMES%\cgaiff"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G190
+SET GAME=champitalia
+CD /D "%GAMES%\champitalia"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G191
+SET GAME=CHARLES
+CD /D "%GAMES%\CHARLES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G192
+SET GAME=Charlie
+CD /D "%GAMES%\Charlie"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G193
+SET GAME=CHARS
+CD /D "%GAMES%\CHARS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G194
+SET GAME=chess
+CD /D "%GAMES%\chess"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G195
+SET GAME=chicago90
+CD /D "%GAMES%\chicago90"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G196
+SET GAME=chicheck
+CD /D "%GAMES%\chicheck"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G197
+SET GAME=chips
+CD /D "%GAMES%\chips"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G198
+SET GAME=chlode
+CD /D "%GAMES%\chlode"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G199
+SET GAME=CHR
+CD /D "%GAMES%\CHR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G200
+SET GAME=CHRONOS
+CD /D "%GAMES%\CHRONOS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G201
+SET GAME=cisco
+CD /D "%GAMES%\cisco"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G202
+SET GAME=civ
+CD /D "%GAMES%\civ"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G203
+SET GAME=civ1win
+CD /D "%GAMES%\civ1win"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G204
+SET GAME=CL
+CD /D "%GAMES%\CL"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G205
+SET GAME=clashofs
+CD /D "%GAMES%\clashofs"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G206
+SET GAME=CLOCK
+CD /D "%GAMES%\CLOCK"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G207
+SET GAME=clue
+CD /D "%GAMES%\clue"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G208
+SET GAME=clue master detective
+CD /D "%GAMES%\clue master detective"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G209
+SET GAME=Cockpits
+CD /D "%GAMES%\Cockpits"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G210
+SET GAME=colonize
+CD /D "%GAMES%\colonize"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G211
+SET GAME=ColorHarmony
+CD /D "%GAMES%\ColorHarmony"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G212
+SET GAME=ColorTails100
+CD /D "%GAMES%\ColorTails100"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G213
+SET GAME=Columb
+CD /D "%GAMES%\Columb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G214
+SET GAME=comanche
+CD /D "%GAMES%\comanche"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G215
+SET GAME=conan
+CD /D "%GAMES%\conan"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G216
+SET GAME=concen2
+CD /D "%GAMES%\concen2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G217
+SET GAME=contrap
+CD /D "%GAMES%\contrap"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G218
+SET GAME=coolslider
+CD /D "%GAMES%\coolslider"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G219
+SET GAME=corporation
+CD /D "%GAMES%\corporation"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G220
+SET GAME=corpraid
+CD /D "%GAMES%\corpraid"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G221
+SET GAME=count
+CD /D "%GAMES%\count"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G222
+SET GAME=coxanth
+CD /D "%GAMES%\coxanth"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G223
+SET GAME=cozoarre
+CD /D "%GAMES%\cozoarre"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G224
+SET GAME=CP
+CD /D "%GAMES%\CP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G225
+SET GAME=cquest
+CD /D "%GAMES%\cquest"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G226
+SET GAME=CRACK
+CD /D "%GAMES%\CRACK"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G227
+SET GAME=Crash Garret.1987
+CD /D "%GAMES%\Crash Garret.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G228
+SET GAME=CRAZYCA2
+CD /D "%GAMES%\CRAZYCA2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G229
+SET GAME=crazycars
+CD /D "%GAMES%\crazycars"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G230
+SET GAME=CREDITS
+CD /D "%GAMES%\CREDITS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G231
+SET GAME=crime
+CD /D "%GAMES%\crime"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G232
+SET GAME=CRIT
+CD /D "%GAMES%\CRIT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G233
+SET GAME=croc
+CD /D "%GAMES%\croc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G234
+SET GAME=crossword
+CD /D "%GAMES%\crossword"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G235
+SET GAME=crusade
+CD /D "%GAMES%\crusade"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G236
+SET GAME=Crystals
+CD /D "%GAMES%\Crystals"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G237
+SET GAME=ctbppat
+CD /D "%GAMES%\ctbppat"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G238
+SET GAME=ctime
+CD /D "%GAMES%\ctime"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G239
+SET GAME=curseoe
+CD /D "%GAMES%\curseoe"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G240
+SET GAME=Cutemouse
+CD /D "%GAMES%\Cutemouse"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G241
+SET GAME=CUTS
+CD /D "%GAMES%\CUTS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G242
+SET GAME=cutth
+CD /D "%GAMES%\cutth"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G243
+SET GAME=cwdeluxe
+CD /D "%GAMES%\cwdeluxe"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G244
+SET GAME=cyac
+CD /D "%GAMES%\cyac"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G245
+SET GAME=cyber
+CD /D "%GAMES%\cyber"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G246
+SET GAME=cyberbox
+CD /D "%GAMES%\cyberbox"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G247
+SET GAME=CyberRac
+CD /D "%GAMES%\CyberRac"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G248
+SET GAME=cyborg
+CD /D "%GAMES%\cyborg"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G249
+SET GAME=cyclones
+CD /D "%GAMES%\cyclones"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G250
+SET GAME=Cyrus.1986
+CD /D "%GAMES%\Cyrus.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G251
+SET GAME=D
+CD /D "%GAMES%\D"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G252
+SET GAME=d_d
+CD /D "%GAMES%\d_d"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G253
+SET GAME=d2demo
+CD /D "%GAMES%\d2demo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G254
+SET GAME=DA
+CD /D "%GAMES%\DA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G255
+SET GAME=Daffy Duck
+CD /D "%GAMES%\Daffy Duck"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G256
+SET GAME=Dalek
+CD /D "%GAMES%\Dalek"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G257
+SET GAME=damiano
+CD /D "%GAMES%\damiano"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G258
+SET GAME=darkages
+CD /D "%GAMES%\darkages"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G259
+SET GAME=darkhalf
+CD /D "%GAMES%\darkhalf"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G260
+SET GAME=Darklands
+CD /D "%GAMES%\Darklands"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G261
+SET GAME=DARKSEED
+CD /D "%GAMES%\DARKSEED"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G262
+SET GAME=DASH
+CD /D "%GAMES%\DASH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G263
+SET GAME=DAT
+CD /D "%GAMES%\DAT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G264
+SET GAME=DATA
+CD /D "%GAMES%\DATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G265
+SET GAME=DATS
+CD /D "%GAMES%\DATS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G266
+SET GAME=davidwolf
+CD /D "%GAMES%\davidwolf"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G267
+SET GAME=DBDATA
+CD /D "%GAMES%\DBDATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G268
+SET GAME=dboston
+CD /D "%GAMES%\dboston"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G269
+SET GAME=dd2
+CD /D "%GAMES%\dd2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G270
+SET GAME=dd3
+CD /D "%GAMES%\dd3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G271
+SET GAME=ddplay
+CD /D "%GAMES%\ddplay"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G272
+SET GAME=DDRIBBLE
+CD /D "%GAMES%\DDRIBBLE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G273
+SET GAME=deadline
+CD /D "%GAMES%\deadline"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G274
+SET GAME=deathsw
+CD /D "%GAMES%\deathsw"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G275
+SET GAME=DEC
+CD /D "%GAMES%\DEC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G276
+SET GAME=decathlon
+CD /D "%GAMES%\decathlon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G277
+SET GAME=deep
+CD /D "%GAMES%\deep"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G278
+SET GAME=deep2
+CD /D "%GAMES%\deep2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G279
+SET GAME=DEFENCES
+CD /D "%GAMES%\DEFENCES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G280
+SET GAME=DEM_DATA
+CD /D "%GAMES%\DEM_DATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G281
+SET GAME=Des chiffres et des lettres.1987
+CD /D "%GAMES%\Des chiffres et des lettres.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G282
+SET GAME=descent
+CD /D "%GAMES%\descent"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G283
+SET GAME=DESERT
+CD /D "%GAMES%\DESERT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G284
+SET GAME=deserts
+CD /D "%GAMES%\deserts"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G285
+SET GAME=dforge
+CD /D "%GAMES%\dforge"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G286
+SET GAME=dgen
+CD /D "%GAMES%\dgen"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G287
+SET GAME=diehard
+CD /D "%GAMES%\diehard"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G288
+SET GAME=diehard2
+CD /D "%GAMES%\diehard2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G289
+SET GAME=DIGIT
+CD /D "%GAMES%\DIGIT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G290
+SET GAME=disc
+CD /D "%GAMES%\disc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G291
+SET GAME=disk 1
+CD /D "%GAMES%\disk 1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G292
+SET GAME=disk 2
+CD /D "%GAMES%\disk 2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G293
+SET GAME=DISK1
+CD /D "%GAMES%\DISK1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G294
+SET GAME=DISK2
+CD /D "%GAMES%\DISK2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G295
+SET GAME=DISK3
+CD /D "%GAMES%\DISK3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G296
+SET GAME=divebomber
+CD /D "%GAMES%\divebomber"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G297
+SET GAME=dizzy
+CD /D "%GAMES%\dizzy"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G298
+SET GAME=Docs
+CD /D "%GAMES%\Docs"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G299
+SET GAME=Dogs
+CD /D "%GAMES%\Dogs"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G300
+SET GAME=dogsowar
+CD /D "%GAMES%\dogsowar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G301
+SET GAME=Dominus
+CD /D "%GAMES%\Dominus"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G302
+SET GAME=DOS
+CD /D "%GAMES%\DOS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G303
+SET GAME=dragon
+CD /D "%GAMES%\dragon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G304
+SET GAME=Drakkhen
+CD /D "%GAMES%\Drakkhen"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G305
+SET GAME=drbrain
+CD /D "%GAMES%\drbrain"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G306
+SET GAME=Dreamweb
+CD /D "%GAMES%\Dreamweb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G307
+SET GAME=DRIVERS
+CD /D "%GAMES%\DRIVERS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G308
+SET GAME=dstroy
+CD /D "%GAMES%\dstroy"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G309
+SET GAME=DTRIVPUR
+CD /D "%GAMES%\DTRIVPUR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G310
+SET GAME=duckhunt
+CD /D "%GAMES%\duckhunt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G311
+SET GAME=dune
+CD /D "%GAMES%\dune"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G312
+SET GAME=dunjin
+CD /D "%GAMES%\dunjin"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G313
+SET GAME=Dusk
+CD /D "%GAMES%\Dusk"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G314
+SET GAME=dyna
+CD /D "%GAMES%\dyna"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G315
+SET GAME=DYNO
+CD /D "%GAMES%\DYNO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G316
+SET GAME=eaglerider
+CD /D "%GAMES%\eaglerider"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G317
+SET GAME=eaglesnest
+CD /D "%GAMES%\eaglesnest"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G318
+SET GAME=EDT
+CD /D "%GAMES%\EDT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G319
+SET GAME=EFFECTS
+CD /D "%GAMES%\EFFECTS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G320
+SET GAME=EGA
+CD /D "%GAMES%\EGA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G321
+SET GAME=egabomb
+CD /D "%GAMES%\egabomb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G322
+SET GAME=egadat
+CD /D "%GAMES%\egadat"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G323
+SET GAME=egaiff
+CD /D "%GAMES%\egaiff"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G324
+SET GAME=egawalls
+CD /D "%GAMES%\egawalls"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G325
+SET GAME=Eggerland
+CD /D "%GAMES%\Eggerland"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G326
+SET GAME=electran
+CD /D "%GAMES%\electran"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G327
+SET GAME=Elements
+CD /D "%GAMES%\Elements"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G328
+SET GAME=elitepl
+CD /D "%GAMES%\elitepl"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G329
+SET GAME=enchant
+CD /D "%GAMES%\enchant"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G330
+SET GAME=Enclosure
+CD /D "%GAMES%\Enclosure"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G331
+SET GAME=ENCODED
+CD /D "%GAMES%\ENCODED"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G332
+SET GAME=encount
+CD /D "%GAMES%\encount"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G333
+SET GAME=epicpinb
+CD /D "%GAMES%\epicpinb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G334
+SET GAME=EPULET
+CD /D "%GAMES%\EPULET"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G335
+SET GAME=equest
+CD /D "%GAMES%\equest"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G336
+SET GAME=ernie
+CD /D "%GAMES%\ernie"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G337
+SET GAME=escape
+CD /D "%GAMES%\escape"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G338
+SET GAME=Escape from Delirium
+CD /D "%GAMES%\Escape from Delirium"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G339
+SET GAME=esoccer
+CD /D "%GAMES%\esoccer"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G340
+SET GAME=europe
+CD /D "%GAMES%\europe"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G341
+SET GAME=eurosoccer
+CD /D "%GAMES%\eurosoccer"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G342
+SET GAME=EVAGRAPH
+CD /D "%GAMES%\EVAGRAPH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G343
+SET GAME=ewofthec
+CD /D "%GAMES%\ewofthec"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G344
+SET GAME=EXE
+CD /D "%GAMES%\EXE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G345
+SET GAME=EXECS
+CD /D "%GAMES%\EXECS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G346
+SET GAME=EXTRA
+CD /D "%GAMES%\EXTRA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G347
+SET GAME=eye2
+CD /D "%GAMES%\eye2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G348
+SET GAME=eyeofbeholder
+CD /D "%GAMES%\eyeofbeholder"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G349
+SET GAME=F
+CD /D "%GAMES%\F"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G350
+SET GAME=F117
+CD /D "%GAMES%\F117"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G351
+SET GAME=F15-3
+CD /D "%GAMES%\F15-3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G352
+SET GAME=F19
+CD /D "%GAMES%\F19"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G353
+SET GAME=Fable
+CD /D "%GAMES%\Fable"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G354
+SET GAME=famfeud
+CD /D "%GAMES%\famfeud"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G355
+SET GAME=Fantasy
+CD /D "%GAMES%\Fantasy"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G356
+SET GAME=fbcd
+CD /D "%GAMES%\fbcd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G357
+SET GAME=FDAT
+CD /D "%GAMES%\FDAT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G358
+SET GAME=FDATA
+CD /D "%GAMES%\FDATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G359
+SET GAME=FE
+CD /D "%GAMES%\FE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G360
+SET GAME=FF_Endless Nova
+CD /D "%GAMES%\FF_Endless Nova"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G361
+SET GAME=FFighter
+CD /D "%GAMES%\FFighter"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G362
+SET GAME=fg
+CD /D "%GAMES%\fg"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G363
+SET GAME=Fields Of Glory
+CD /D "%GAMES%\Fields Of Glory"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G364
+SET GAME=fievel
+CD /D "%GAMES%\fievel"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G365
+SET GAME=FIGHTS
+CD /D "%GAMES%\FIGHTS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G366
+SET GAME=finalcon
+CD /D "%GAMES%\finalcon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G367
+SET GAME=firefor
+CD /D "%GAMES%\firefor"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G368
+SET GAME=firefor2
+CD /D "%GAMES%\firefor2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G369
+SET GAME=firehouse
+CD /D "%GAMES%\firehouse"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G370
+SET GAME=firstenc
+CD /D "%GAMES%\firstenc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G371
+SET GAME=Fishing
+CD /D "%GAMES%\Fishing"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G372
+SET GAME=FLAGGER
+CD /D "%GAMES%\FLAGGER"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G373
+SET GAME=FLAGS
+CD /D "%GAMES%\FLAGS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G374
+SET GAME=flash
+CD /D "%GAMES%\flash"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G375
+SET GAME=FLICS
+CD /D "%GAMES%\FLICS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G376
+SET GAME=FLIGHT
+CD /D "%GAMES%\FLIGHT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G377
+SET GAME=flightoftheamazonqueen
+CD /D "%GAMES%\flightoftheamazonqueen"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G378
+SET GAME=FLOORS
+CD /D "%GAMES%\FLOORS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G379
+SET GAME=fm
+CD /D "%GAMES%\fm"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G380
+SET GAME=FMAP
+CD /D "%GAMES%\FMAP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G381
+SET GAME=font
+CD /D "%GAMES%\font"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G382
+SET GAME=Fonts
+CD /D "%GAMES%\Fonts"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G383
+SET GAME=foo
+CD /D "%GAMES%\foo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G384
+SET GAME=footman2
+CD /D "%GAMES%\footman2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G385
+SET GAME=footman3
+CD /D "%GAMES%\footman3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G386
+SET GAME=FORD
+CD /D "%GAMES%\FORD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G387
+SET GAME=fordsim
+CD /D "%GAMES%\fordsim"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G388
+SET GAME=FRAMES
+CD /D "%GAMES%\FRAMES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G389
+SET GAME=FRED
+CD /D "%GAMES%\FRED"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G390
+SET GAME=freddy
+CD /D "%GAMES%\freddy"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G391
+SET GAME=FRENCH
+CD /D "%GAMES%\FRENCH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G392
+SET GAME=frog2
+CD /D "%GAMES%\frog2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G393
+SET GAME=frontier
+CD /D "%GAMES%\frontier"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G394
+SET GAME=FRUA
+CD /D "%GAMES%\FRUA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G395
+SET GAME=funnels
+CD /D "%GAMES%\funnels"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G396
+SET GAME=future
+CD /D "%GAMES%\future"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G397
+SET GAME=futurewars
+CD /D "%GAMES%\futurewars"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G398
+SET GAME=FX
+CD /D "%GAMES%\FX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G399
+SET GAME=G
+CD /D "%GAMES%\G"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G400
+SET GAME=galacta
+CD /D "%GAMES%\galacta"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G401
+SET GAME=Galactic Battle
+CD /D "%GAMES%\Galactic Battle"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G402
+SET GAME=Galaxy Trek.1983
+CD /D "%GAMES%\Galaxy Trek.1983"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G403
+SET GAME=GAM
+CD /D "%GAMES%\GAM"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G404
+SET GAME=GAME
+CD /D "%GAMES%\GAME"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G405
+SET GAME=GAME_1
+CD /D "%GAMES%\GAME_1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G406
+SET GAME=GAME_10
+CD /D "%GAMES%\GAME_10"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G407
+SET GAME=GAME_2
+CD /D "%GAMES%\GAME_2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G408
+SET GAME=GAME_3
+CD /D "%GAMES%\GAME_3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G409
+SET GAME=GAME_4
+CD /D "%GAMES%\GAME_4"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G410
+SET GAME=GAME_5
+CD /D "%GAMES%\GAME_5"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G411
+SET GAME=GAME_6
+CD /D "%GAMES%\GAME_6"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G412
+SET GAME=GAME_7
+CD /D "%GAMES%\GAME_7"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G413
+SET GAME=GAME_8
+CD /D "%GAMES%\GAME_8"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G414
+SET GAME=GAME_9
+CD /D "%GAMES%\GAME_9"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G415
+SET GAME=GAME1
+CD /D "%GAMES%\GAME1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G416
+SET GAME=GAME3
+CD /D "%GAMES%\GAME3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G417
+SET GAME=GAME4
+CD /D "%GAMES%\GAME4"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G418
+SET GAME=GAME5
+CD /D "%GAMES%\GAME5"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G419
+SET GAME=GAME6
+CD /D "%GAMES%\GAME6"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G420
+SET GAME=GAMEDATA
+CD /D "%GAMES%\GAMEDATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G421
+SET GAME=games92
+CD /D "%GAMES%\games92"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G422
+SET GAME=GAMESAVE
+CD /D "%GAMES%\GAMESAVE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G423
+SET GAME=gammaf
+CD /D "%GAMES%\gammaf"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G424
+SET GAME=Gato.1984
+CD /D "%GAMES%\Gato.1984"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G425
+SET GAME=Gear
+CD /D "%GAMES%\Gear"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G426
+SET GAME=GEARWORK
+CD /D "%GAMES%\GEARWORK"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G427
+SET GAME=gemfire
+CD /D "%GAMES%\gemfire"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G428
+SET GAME=Gene
+CD /D "%GAMES%\Gene"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G429
+SET GAME=GENERAL
+CD /D "%GAMES%\GENERAL"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G430
+SET GAME=GEODATA
+CD /D "%GAMES%\GEODATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G431
+SET GAME=GEOGRAPH
+CD /D "%GAMES%\GEOGRAPH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G432
+SET GAME=GERMAN
+CD /D "%GAMES%\GERMAN"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G433
+SET GAME=gertsec
+CD /D "%GAMES%\gertsec"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G434
+SET GAME=GFX
+CD /D "%GAMES%\GFX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G435
+SET GAME=ghostb2
+CD /D "%GAMES%\ghostb2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G436
+SET GAME=GHOSTS
+CD /D "%GAMES%\GHOSTS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G437
+SET GAME=gianasisters
+CD /D "%GAMES%\gianasisters"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G438
+SET GAME=Glad
+CD /D "%GAMES%\Glad"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G439
+SET GAME=GLADIATR
+CD /D "%GAMES%\GLADIATR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G440
+SET GAME=GLORI
+CD /D "%GAMES%\GLORI"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G441
+SET GAME=gm
+CD /D "%GAMES%\gm"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G442
+SET GAME=GNBNA
+CD /D "%GAMES%\GNBNA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G443
+SET GAME=gng
+CD /D "%GAMES%\gng"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G444
+SET GAME=goblins
+CD /D "%GAMES%\goblins"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G445
+SET GAME=goblins2
+CD /D "%GAMES%\goblins2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G446
+SET GAME=gods
+CD /D "%GAMES%\gods"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G447
+SET GAME=GPSAVES
+CD /D "%GAMES%\GPSAVES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G448
+SET GAME=GR_1869
+CD /D "%GAMES%\GR_1869"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G449
+SET GAME=GRAFIKA
+CD /D "%GAMES%\GRAFIKA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G450
+SET GAME=GRAFIX
+CD /D "%GAMES%\GRAFIX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G451
+SET GAME=GRAFS
+CD /D "%GAMES%\GRAFS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G452
+SET GAME=Grand Prix Manager 2
+CD /D "%GAMES%\Grand Prix Manager 2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G453
+SET GAME=Grand Slam Bridge.1986
+CD /D "%GAMES%\Grand Slam Bridge.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G454
+SET GAME=GRAPHICS
+CD /D "%GAMES%\GRAPHICS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G455
+SET GAME=Great Courts 1
+CD /D "%GAMES%\Great Courts 1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G456
+SET GAME=greatesc
+CD /D "%GAMES%\greatesc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G457
+SET GAME=gremlins
+CD /D "%GAMES%\gremlins"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G458
+SET GAME=grime
+CD /D "%GAMES%\grime"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G459
+SET GAME=GRWAR
+CD /D "%GAMES%\GRWAR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G460
+SET GAME=GTILES
+CD /D "%GAMES%\GTILES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G461
+SET GAME=GUARDS
+CD /D "%GAMES%\GUARDS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G462
+SET GAME=guild
+CD /D "%GAMES%\guild"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G463
+SET GAME=gunboat
+CD /D "%GAMES%\gunboat"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G464
+SET GAME=GunShip.1987
+CD /D "%GAMES%\GunShip.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G465
+SET GAME=guyspy
+CD /D "%GAMES%\guyspy"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G466
+SET GAME=ha2
+CD /D "%GAMES%\ha2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G467
+SET GAME=hamil
+CD /D "%GAMES%\hamil"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G468
+SET GAME=Hammer
+CD /D "%GAMES%\Hammer"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G469
+SET GAME=hannibal
+CD /D "%GAMES%\hannibal"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G470
+SET GAME=happy
+CD /D "%GAMES%\happy"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G471
+SET GAME=harry
+CD /D "%GAMES%\harry"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G472
+SET GAME=hattrick
+CD /D "%GAMES%\hattrick"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G473
+SET GAME=hb
+CD /D "%GAMES%\hb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G474
+SET GAME=HeadOverHeels
+CD /D "%GAMES%\HeadOverHeels"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G475
+SET GAME=heartoc
+CD /D "%GAMES%\heartoc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G476
+SET GAME=heim2
+CD /D "%GAMES%\heim2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G477
+SET GAME=heimdall
+CD /D "%GAMES%\heimdall"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G478
+SET GAME=Heirs
+CD /D "%GAMES%\Heirs"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G479
+SET GAME=Helicopter Simulator v1.0.1987
+CD /D "%GAMES%\Helicopter Simulator v1.0.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G480
+SET GAME=HELP
+CD /D "%GAMES%\HELP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G481
+SET GAME=HEROES
+CD /D "%GAMES%\HEROES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G482
+SET GAME=hexx
+CD /D "%GAMES%\hexx"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G483
+SET GAME=hhunter
+CD /D "%GAMES%\hhunter"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G484
+SET GAME=HIGHSEAS
+CD /D "%GAMES%\HIGHSEAS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G485
+SET GAME=hoboken
+CD /D "%GAMES%\hoboken"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G486
+SET GAME=holly
+CD /D "%GAMES%\holly"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G487
+SET GAME=holmesfix
+CD /D "%GAMES%\holmesfix"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G488
+SET GAME=homealone
+CD /D "%GAMES%\homealone"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G489
+SET GAME=honeym
+CD /D "%GAMES%\honeym"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G490
+SET GAME=horror
+CD /D "%GAMES%\horror"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G491
+SET GAME=hostage
+CD /D "%GAMES%\hostage"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G492
+SET GAME=hoyle1
+CD /D "%GAMES%\hoyle1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G493
+SET GAME=hyperoid
+CD /D "%GAMES%\hyperoid"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G494
+SET GAME=I
+CD /D "%GAMES%\I"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G495
+SET GAME=I256
+CD /D "%GAMES%\I256"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G496
+SET GAME=ibmquiz
+CD /D "%GAMES%\ibmquiz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G497
+SET GAME=IC
+CD /D "%GAMES%\IC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G498
+SET GAME=ICE
+CD /D "%GAMES%\ICE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G499
+SET GAME=iceman
+CD /D "%GAMES%\iceman"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G500
+SET GAME=icon
+CD /D "%GAMES%\icon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G501
+SET GAME=igadget
+CD /D "%GAMES%\igadget"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G502
+SET GAME=Igor Project Uikokahonia
+CD /D "%GAMES%\Igor Project Uikokahonia"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G503
+SET GAME=ikari_warriors_3
+CD /D "%GAMES%\ikari_warriors_3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G504
+SET GAME=ikariw
+CD /D "%GAMES%\ikariw"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G505
+SET GAME=ikariw2
+CD /D "%GAMES%\ikariw2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G506
+SET GAME=Illusion
+CD /D "%GAMES%\Illusion"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G507
+SET GAME=Images
+CD /D "%GAMES%\Images"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G508
+SET GAME=IMG
+CD /D "%GAMES%\IMG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G509
+SET GAME=IMG2
+CD /D "%GAMES%\IMG2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G510
+SET GAME=indy3act
+CD /D "%GAMES%\indy3act"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G511
+SET GAME=infidel
+CD /D "%GAMES%\infidel"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G512
+SET GAME=INFO
+CD /D "%GAMES%\INFO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G513
+SET GAME=interphase
+CD /D "%GAMES%\interphase"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G514
+SET GAME=intkarate
+CD /D "%GAMES%\intkarate"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G515
+SET GAME=INTRO
+CD /D "%GAMES%\INTRO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G516
+SET GAME=INTROP
+CD /D "%GAMES%\INTROP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G517
+SET GAME=invade
+CD /D "%GAMES%\invade"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G518
+SET GAME=IOD
+CD /D "%GAMES%\IOD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G519
+SET GAME=IronLord
+CD /D "%GAMES%\IronLord"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G520
+SET GAME=isc
+CD /D "%GAMES%\isc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G521
+SET GAME=Ishar 3
+CD /D "%GAMES%\Ishar 3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G522
+SET GAME=Ishar1
+CD /D "%GAMES%\Ishar1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G523
+SET GAME=ishido
+CD /D "%GAMES%\ishido"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G524
+SET GAME=iskib
+CD /D "%GAMES%\iskib"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G525
+SET GAME=isoccer
+CD /D "%GAMES%\isoccer"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G526
+SET GAME=IUC
+CD /D "%GAMES%\IUC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G527
+SET GAME=Iznogoud.1987
+CD /D "%GAMES%\Iznogoud.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G528
+SET GAME=jackdark
+CD /D "%GAMES%\jackdark"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G529
+SET GAME=jazz2
+CD /D "%GAMES%\jazz2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G530
+SET GAME=jeop2
+CD /D "%GAMES%\jeop2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G531
+SET GAME=jetf2
+CD /D "%GAMES%\jetf2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G532
+SET GAME=jinxter
+CD /D "%GAMES%\jinxter"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G533
+SET GAME=jones
+CD /D "%GAMES%\jones"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G534
+SET GAME=jordan
+CD /D "%GAMES%\jordan"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G535
+SET GAME=Joust
+CD /D "%GAMES%\Joust"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G536
+SET GAME=jp
+CD /D "%GAMES%\jp"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G537
+SET GAME=JQUEST
+CD /D "%GAMES%\JQUEST"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G538
+SET GAME=jtripper
+CD /D "%GAMES%\jtripper"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G539
+SET GAME=jungle
+CD /D "%GAMES%\jungle"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G540
+SET GAME=Karateka.1986
+CD /D "%GAMES%\Karateka.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G541
+SET GAME=Kazak.wz
+CD /D "%GAMES%\Kazak.wz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G542
+SET GAME=KEEN1
+CD /D "%GAMES%\KEEN1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G543
+SET GAME=keen4
+CD /D "%GAMES%\keen4"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G544
+SET GAME=keend
+CD /D "%GAMES%\keend"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G545
+SET GAME=Kens Labyrinth
+CD /D "%GAMES%\Kens Labyrinth"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G546
+SET GAME=KFIGHT
+CD /D "%GAMES%\KFIGHT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G547
+SET GAME=KG
+CD /D "%GAMES%\KG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G548
+SET GAME=KGB
+CD /D "%GAMES%\KGB"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G549
+SET GAME=khan
+CD /D "%GAMES%\khan"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G550
+SET GAME=khan1
+CD /D "%GAMES%\khan1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G551
+SET GAME=kickoff2
+CD /D "%GAMES%\kickoff2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G552
+SET GAME=kidsok
+CD /D "%GAMES%\kidsok"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G553
+SET GAME=kill
+CD /D "%GAMES%\kill"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G554
+SET GAME=kingoger
+CD /D "%GAMES%\kingoger"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G555
+SET GAME=KMD
+CD /D "%GAMES%\KMD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G556
+SET GAME=kobayash
+CD /D "%GAMES%\kobayash"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G557
+SET GAME=kofc
+CD /D "%GAMES%\kofc"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G558
+SET GAME=Korea.wz
+CD /D "%GAMES%\Korea.wz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G559
+SET GAME=kots
+CD /D "%GAMES%\kots"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G560
+SET GAME=kq5
+CD /D "%GAMES%\kq5"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G561
+SET GAME=kq6
+CD /D "%GAMES%\kq6"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G562
+SET GAME=krymini
+CD /D "%GAMES%\krymini"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G563
+SET GAME=krypton
+CD /D "%GAMES%\krypton"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G564
+SET GAME=KtLoR
+CD /D "%GAMES%\KtLoR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G565
+SET GAME=KYRAND3
+CD /D "%GAMES%\KYRAND3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G566
+SET GAME=lad2
+CD /D "%GAMES%\lad2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G567
+SET GAME=lakers
+CD /D "%GAMES%\lakers"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G568
+SET GAME=lamers
+CD /D "%GAMES%\lamers"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G569
+SET GAME=LANG
+CD /D "%GAMES%\LANG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G570
+SET GAME=larryloa
+CD /D "%GAMES%\larryloa"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G571
+SET GAME=laserlt
+CD /D "%GAMES%\laserlt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G572
+SET GAME=laurabow
+CD /D "%GAMES%\laurabow"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G573
+SET GAME=laurabow2
+CD /D "%GAMES%\laurabow2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G574
+SET GAME=lba
+CD /D "%GAMES%\lba"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G575
+SET GAME=LDMG
+CD /D "%GAMES%\LDMG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G576
+SET GAME=Le Maitre des Ames.1987
+CD /D "%GAMES%\Le Maitre des Ames.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G577
+SET GAME=Legacy, The - Realms of Terror
+CD /D "%GAMES%\Legacy, The - Realms of Terror"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G578
+SET GAME=legend
+CD /D "%GAMES%\legend"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G579
+SET GAME=legendofkyrandia
+CD /D "%GAMES%\legendofkyrandia"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G580
+SET GAME=lem3
+CD /D "%GAMES%\lem3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G581
+SET GAME=lemmings1
+CD /D "%GAMES%\lemmings1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G582
+SET GAME=LESMAN
+CD /D "%GAMES%\LESMAN"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G583
+SET GAME=LEVEL
+CD /D "%GAMES%\LEVEL"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G584
+SET GAME=LEVELS
+CD /D "%GAMES%\LEVELS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G585
+SET GAME=LFX
+CD /D "%GAMES%\LFX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G586
+SET GAME=links386
+CD /D "%GAMES%\links386"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G587
+SET GAME=LION
+CD /D "%GAMES%\LION"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G588
+SET GAME=living2
+CD /D "%GAMES%\living2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G589
+SET GAME=lockon
+CD /D "%GAMES%\lockon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G590
+SET GAME=lof
+CD /D "%GAMES%\lof"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G591
+SET GAME=lolore
+CD /D "%GAMES%\lolore"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G592
+SET GAME=lombard
+CD /D "%GAMES%\lombard"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G593
+SET GAME=longbow
+CD /D "%GAMES%\longbow"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G594
+SET GAME=Lords
+CD /D "%GAMES%\Lords"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G595
+SET GAME=lost
+CD /D "%GAMES%\lost"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G596
+SET GAME=Lostinla
+CD /D "%GAMES%\Lostinla"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G597
+SET GAME=lotr
+CD /D "%GAMES%\lotr"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G598
+SET GAME=lowblow
+CD /D "%GAMES%\lowblow"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G599
+SET GAME=LPFarm
+CD /D "%GAMES%\LPFarm"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G600
+SET GAME=lsl1
+CD /D "%GAMES%\lsl1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G601
+SET GAME=lsquad
+CD /D "%GAMES%\lsquad"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G602
+SET GAME=lurking
+CD /D "%GAMES%\lurking"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G603
+SET GAME=M
+CD /D "%GAMES%\M"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G604
+SET GAME=maddogwi
+CD /D "%GAMES%\maddogwi"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G605
+SET GAME=madmix2
+CD /D "%GAMES%\madmix2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G606
+SET GAME=madshow
+CD /D "%GAMES%\madshow"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G607
+SET GAME=magcrane
+CD /D "%GAMES%\magcrane"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G608
+SET GAME=magicpo
+CD /D "%GAMES%\magicpo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G609
+SET GAME=MAIN_DAT
+CD /D "%GAMES%\MAIN_DAT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G610
+SET GAME=Manual
+CD /D "%GAMES%\Manual"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G611
+SET GAME=MAP
+CD /D "%GAMES%\MAP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G612
+SET GAME=MAPDESC
+CD /D "%GAMES%\MAPDESC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G613
+SET GAME=MAPS
+CD /D "%GAMES%\MAPS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G614
+SET GAME=MARIO
+CD /D "%GAMES%\MARIO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G615
+SET GAME=MARS
+CD /D "%GAMES%\MARS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G616
+SET GAME=martian
+CD /D "%GAMES%\martian"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G617
+SET GAME=MAX
+CD /D "%GAMES%\MAX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G618
+SET GAME=MAYA
+CD /D "%GAMES%\MAYA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G619
+SET GAME=mazeadv
+CD /D "%GAMES%\mazeadv"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G620
+SET GAME=MAZES
+CD /D "%GAMES%\MAZES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G621
+SET GAME=MBK
+CD /D "%GAMES%\MBK"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G622
+SET GAME=MC
+CD /D "%GAMES%\MC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G623
+SET GAME=mcarpet
+CD /D "%GAMES%\mcarpet"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G624
+SET GAME=mdk
+CD /D "%GAMES%\mdk"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G625
+SET GAME=Mean 18.1986
+CD /D "%GAMES%\Mean 18.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G626
+SET GAME=megalomania
+CD /D "%GAMES%\megalomania"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G627
+SET GAME=MEGATRAV
+CD /D "%GAMES%\MEGATRAV"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G628
+SET GAME=MENU
+CD /D "%GAMES%\MENU"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G629
+SET GAME=menudat
+CD /D "%GAMES%\menudat"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G630
+SET GAME=Menuscrn
+CD /D "%GAMES%\Menuscrn"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G631
+SET GAME=Meteors - Shoot Em Up - 1989
+CD /D "%GAMES%\Meteors - Shoot Em Up - 1989"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G632
+SET GAME=Meurtres en Serie.1987
+CD /D "%GAMES%\Meurtres en Serie.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G633
+SET GAME=Mgt.1987
+CD /D "%GAMES%\Mgt.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G634
+SET GAME=mh2
+CD /D "%GAMES%\mh2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G635
+SET GAME=millenium
+CD /D "%GAMES%\millenium"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G636
+SET GAME=mindbend
+CD /D "%GAMES%\mindbend"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G637
+SET GAME=mindshadow
+CD /D "%GAMES%\mindshadow"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G638
+SET GAME=mindwheel
+CD /D "%GAMES%\mindwheel"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G639
+SET GAME=miner
+CD /D "%GAMES%\miner"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G640
+SET GAME=minervga
+CD /D "%GAMES%\minervga"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G641
+SET GAME=MiniPutt
+CD /D "%GAMES%\MiniPutt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G642
+SET GAME=minus90
+CD /D "%GAMES%\minus90"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G643
+SET GAME=MISC
+CD /D "%GAMES%\MISC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G644
+SET GAME=MISSDAT
+CD /D "%GAMES%\MISSDAT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G645
+SET GAME=Missdata
+CD /D "%GAMES%\Missdata"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G646
+SET GAME=MISSION
+CD /D "%GAMES%\MISSION"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G647
+SET GAME=MISSIONS
+CD /D "%GAMES%\MISSIONS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G648
+SET GAME=MLW2
+CD /D "%GAMES%\MLW2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G649
+SET GAME=mm2
+CD /D "%GAMES%\mm2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G650
+SET GAME=mmadness
+CD /D "%GAMES%\mmadness"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G651
+SET GAME=mmania
+CD /D "%GAMES%\mmania"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G652
+SET GAME=MnM
+CD /D "%GAMES%\MnM"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G653
+SET GAME=MNM2
+CD /D "%GAMES%\MNM2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G654
+SET GAME=modss
+CD /D "%GAMES%\modss"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G655
+SET GAME=moktar
+CD /D "%GAMES%\moktar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G656
+SET GAME=mom
+CD /D "%GAMES%\mom"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G657
+SET GAME=monopoly
+CD /D "%GAMES%\monopoly"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G658
+SET GAME=monster
+CD /D "%GAMES%\monster"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G659
+SET GAME=moonmist
+CD /D "%GAMES%\moonmist"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G660
+SET GAME=Moria2.1986
+CD /D "%GAMES%\Moria2.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G661
+SET GAME=mortalkombat1
+CD /D "%GAMES%\mortalkombat1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G662
+SET GAME=mpatrol
+CD /D "%GAMES%\mpatrol"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G663
+SET GAME=msarcade
+CD /D "%GAMES%\msarcade"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G664
+SET GAME=MSGS
+CD /D "%GAMES%\MSGS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G665
+SET GAME=mshaft
+CD /D "%GAMES%\mshaft"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G666
+SET GAME=msspace
+CD /D "%GAMES%\msspace"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G667
+SET GAME=mstone
+CD /D "%GAMES%\mstone"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G668
+SET GAME=mstreets
+CD /D "%GAMES%\mstreets"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G669
+SET GAME=mstryker
+CD /D "%GAMES%\mstryker"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G670
+SET GAME=MT2
+CD /D "%GAMES%\MT2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G671
+SET GAME=MTPrince
+CD /D "%GAMES%\MTPrince"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G672
+SET GAME=muft
+CD /D "%GAMES%\muft"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G673
+SET GAME=murder
+CD /D "%GAMES%\murder"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G674
+SET GAME=MUSIC
+CD /D "%GAMES%\MUSIC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G675
+SET GAME=mychess
+CD /D "%GAMES%\mychess"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G676
+SET GAME=MYSTERY
+CD /D "%GAMES%\MYSTERY"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G677
+SET GAME=N
+CD /D "%GAMES%\N"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G678
+SET GAME=Nags
+CD /D "%GAMES%\Nags"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G679
+SET GAME=NAMEROOM
+CD /D "%GAMES%\NAMEROOM"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G680
+SET GAME=napo
+CD /D "%GAMES%\napo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G681
+SET GAME=NDS
+CD /D "%GAMES%\NDS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G682
+SET GAME=nebulus
+CD /D "%GAMES%\nebulus"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G683
+SET GAME=Nectaris
+CD /D "%GAMES%\Nectaris"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G684
+SET GAME=Nethack
+CD /D "%GAMES%\Nethack"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G685
+SET GAME=NEWDPICS
+CD /D "%GAMES%\NEWDPICS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G686
+SET GAME=nfos
+CD /D "%GAMES%\nfos"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G687
+SET GAME=nhlhock
+CD /D "%GAMES%\nhlhock"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G688
+SET GAME=night
+CD /D "%GAMES%\night"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G689
+SET GAME=nighthunter
+CD /D "%GAMES%\nighthunter"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G690
+SET GAME=ninja
+CD /D "%GAMES%\ninja"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G691
+SET GAME=NinjaGD2
+CD /D "%GAMES%\NinjaGD2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G692
+SET GAME=Nippon
+CD /D "%GAMES%\Nippon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G693
+SET GAME=nmp3
+CD /D "%GAMES%\nmp3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G694
+SET GAME=nobu1
+CD /D "%GAMES%\nobu1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G695
+SET GAME=nobu2
+CD /D "%GAMES%\nobu2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G696
+SET GAME=Nomad
+CD /D "%GAMES%\Nomad"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G697
+SET GAME=nova9
+CD /D "%GAMES%\nova9"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G698
+SET GAME=nrabbits
+CD /D "%GAMES%\nrabbits"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G699
+SET GAME=nraid
+CD /D "%GAMES%\nraid"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G700
+SET GAME=numberm
+CD /D "%GAMES%\numberm"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G701
+SET GAME=Obitus
+CD /D "%GAMES%\Obitus"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G702
+SET GAME=OBJECTS
+CD /D "%GAMES%\OBJECTS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G703
+SET GAME=obliter
+CD /D "%GAMES%\obliter"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G704
+SET GAME=Ocean
+CD /D "%GAMES%\Ocean"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G705
+SET GAME=odentodo
+CD /D "%GAMES%\odentodo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G706
+SET GAME=Offensive
+CD /D "%GAMES%\Offensive"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G707
+SET GAME=ohnolem
+CD /D "%GAMES%\ohnolem"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G708
+SET GAME=oilwell
+CD /D "%GAMES%\oilwell"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G709
+SET GAME=olig
+CD /D "%GAMES%\olig"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G710
+SET GAME=omf2097
+CD /D "%GAMES%\omf2097"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G711
+SET GAME=ON
+CD /D "%GAMES%\ON"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G712
+SET GAME=One Step Beyond
+CD /D "%GAMES%\One Step Beyond"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G713
+SET GAME=oneonone
+CD /D "%GAMES%\oneonone"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G714
+SET GAME=OOZEPIC
+CD /D "%GAMES%\OOZEPIC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G715
+SET GAME=OpFrog
+CD /D "%GAMES%\OpFrog"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G716
+SET GAME=OPTIONS
+CD /D "%GAMES%\OPTIONS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G717
+SET GAME=oranger
+CD /D "%GAMES%\oranger"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G718
+SET GAME=oregondlx
+CD /D "%GAMES%\oregondlx"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G719
+SET GAME=origamo
+CD /D "%GAMES%\origamo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G720
+SET GAME=Original
+CD /D "%GAMES%\Original"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G721
+SET GAME=ostealth
+CD /D "%GAMES%\ostealth"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G722
+SET GAME=OUTRIDGE
+CD /D "%GAMES%\OUTRIDGE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G723
+SET GAME=OVERKILL
+CD /D "%GAMES%\OVERKILL"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G724
+SET GAME=oxyd
+CD /D "%GAMES%\oxyd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G725
+SET GAME=P
+CD /D "%GAMES%\P"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G726
+SET GAME=p3
+CD /D "%GAMES%\p3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G727
+SET GAME=pac
+CD /D "%GAMES%\pac"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G728
+SET GAME=PACS
+CD /D "%GAMES%\PACS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G729
+SET GAME=PAIN
+CD /D "%GAMES%\PAIN"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G730
+SET GAME=PAKDATA
+CD /D "%GAMES%\PAKDATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G731
+SET GAME=pang
+CD /D "%GAMES%\pang"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G732
+SET GAME=panzerg
+CD /D "%GAMES%\panzerg"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G733
+SET GAME=PATHS
+CD /D "%GAMES%\PATHS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G734
+SET GAME=patrician
+CD /D "%GAMES%\patrician"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G735
+SET GAME=PBW
+CD /D "%GAMES%\PBW"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G736
+SET GAME=PCD
+CD /D "%GAMES%\PCD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G737
+SET GAME=PCG
+CD /D "%GAMES%\PCG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G738
+SET GAME=Pcman.1982
+CD /D "%GAMES%\Pcman.1982"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G739
+SET GAME=PCRALLY
+CD /D "%GAMES%\PCRALLY"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G740
+SET GAME=PCS
+CD /D "%GAMES%\PCS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G741
+SET GAME=PCVIDEO
+CD /D "%GAMES%\PCVIDEO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G742
+SET GAME=PCX
+CD /D "%GAMES%\PCX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G743
+SET GAME=Pdolls
+CD /D "%GAMES%\Pdolls"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G744
+SET GAME=pdreams2
+CD /D "%GAMES%\pdreams2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G745
+SET GAME=pe
+CD /D "%GAMES%\pe"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G746
+SET GAME=PEDS
+CD /D "%GAMES%\PEDS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G747
+SET GAME=Pendu.1987
+CD /D "%GAMES%\Pendu.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G748
+SET GAME=pepper
+CD /D "%GAMES%\pepper"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G749
+SET GAME=PERSO
+CD /D "%GAMES%\PERSO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G750
+SET GAME=phantas3
+CD /D "%GAMES%\phantas3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G751
+SET GAME=PIC
+CD /D "%GAMES%\PIC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G752
+SET GAME=pickpile
+CD /D "%GAMES%\pickpile"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G753
+SET GAME=PICS
+CD /D "%GAMES%\PICS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G754
+SET GAME=PICTURES
+CD /D "%GAMES%\PICTURES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G755
+SET GAME=pinball
+CD /D "%GAMES%\pinball"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G756
+SET GAME=piranha
+CD /D "%GAMES%\piranha"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G757
+SET GAME=pirates
+CD /D "%GAMES%\pirates"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G758
+SET GAME=PIZ
+CD /D "%GAMES%\PIZ"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G759
+SET GAME=plan9
+CD /D "%GAMES%\plan9"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G760
+SET GAME=PLANETS
+CD /D "%GAMES%\PLANETS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G761
+SET GAME=platoon
+CD /D "%GAMES%\platoon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G762
+SET GAME=PLT
+CD /D "%GAMES%\PLT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G763
+SET GAME=Pmania
+CD /D "%GAMES%\Pmania"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G764
+SET GAME=Poca
+CD /D "%GAMES%\Poca"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G765
+SET GAME=pole2
+CD /D "%GAMES%\pole2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G766
+SET GAME=POOLRAD
+CD /D "%GAMES%\POOLRAD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G767
+SET GAME=portal
+CD /D "%GAMES%\portal"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G768
+SET GAME=Powermonger
+CD /D "%GAMES%\Powermonger"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G769
+SET GAME=pq
+CD /D "%GAMES%\pq"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G770
+SET GAME=pq1vga
+CD /D "%GAMES%\pq1vga"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G771
+SET GAME=pq2
+CD /D "%GAMES%\pq2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G772
+SET GAME=PQUEST
+CD /D "%GAMES%\PQUEST"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G773
+SET GAME=premier
+CD /D "%GAMES%\premier"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G774
+SET GAME=PRG
+CD /D "%GAMES%\PRG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G775
+SET GAME=prince2
+CD /D "%GAMES%\prince2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G776
+SET GAME=Prohibition.1987
+CD /D "%GAMES%\Prohibition.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G777
+SET GAME=proto
+CD /D "%GAMES%\proto"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G778
+SET GAME=psd
+CD /D "%GAMES%\psd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G779
+SET GAME=psychop
+CD /D "%GAMES%\psychop"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G780
+SET GAME=ptomb
+CD /D "%GAMES%\ptomb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G781
+SET GAME=Ptroika
+CD /D "%GAMES%\Ptroika"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G782
+SET GAME=pushover
+CD /D "%GAMES%\pushover"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G783
+SET GAME=Q
+CD /D "%GAMES%\Q"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G784
+SET GAME=qfg1
+CD /D "%GAMES%\qfg1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G785
+SET GAME=qfg3
+CD /D "%GAMES%\qfg3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G786
+SET GAME=quad
+CD /D "%GAMES%\quad"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G787
+SET GAME=quadrel
+CD /D "%GAMES%\quadrel"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G788
+SET GAME=R
+CD /D "%GAMES%\R"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G789
+SET GAME=race
+CD /D "%GAMES%\race"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G790
+SET GAME=rags
+CD /D "%GAMES%\rags"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G791
+SET GAME=raiden
+CD /D "%GAMES%\raiden"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G792
+SET GAME=RAILS
+CD /D "%GAMES%\RAILS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G793
+SET GAME=RAILSDX
+CD /D "%GAMES%\RAILSDX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G794
+SET GAME=rambo3
+CD /D "%GAMES%\rambo3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G795
+SET GAME=rangerfox
+CD /D "%GAMES%\rangerfox"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G796
+SET GAME=RAZOR
+CD /D "%GAMES%\RAZOR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G797
+SET GAME=REACH
+CD /D "%GAMES%\REACH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G798
+SET GAME=REAL
+CD /D "%GAMES%\REAL"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G799
+SET GAME=realms
+CD /D "%GAMES%\realms"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G800
+SET GAME=Rebel
+CD /D "%GAMES%\Rebel"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G801
+SET GAME=redhell
+CD /D "%GAMES%\redhell"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G802
+SET GAME=remcon
+CD /D "%GAMES%\remcon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G803
+SET GAME=renegade
+CD /D "%GAMES%\renegade"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G804
+SET GAME=RESOURCE
+CD /D "%GAMES%\RESOURCE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G805
+SET GAME=resrigel
+CD /D "%GAMES%\resrigel"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G806
+SET GAME=retal
+CD /D "%GAMES%\retal"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G807
+SET GAME=Return Of The Phantom Game
+CD /D "%GAMES%\Return Of The Phantom Game"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G808
+SET GAME=Revenge
+CD /D "%GAMES%\Revenge"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G809
+SET GAME=Re-Volt
+CD /D "%GAMES%\Re-Volt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G810
+SET GAME=REX
+CD /D "%GAMES%\REX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G811
+SET GAME=RHPP
+CD /D "%GAMES%\RHPP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G812
+SET GAME=rickd
+CD /D "%GAMES%\rickd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G813
+SET GAME=Ring
+CD /D "%GAMES%\Ring"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G814
+SET GAME=Ring2
+CD /D "%GAMES%\Ring2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G815
+SET GAME=riseotd
+CD /D "%GAMES%\riseotd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G816
+SET GAME=roabod
+CD /D "%GAMES%\roabod"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G817
+SET GAME=roadeuropa
+CD /D "%GAMES%\roadeuropa"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G818
+SET GAME=ROADX
+CD /D "%GAMES%\ROADX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G819
+SET GAME=roast
+CD /D "%GAMES%\roast"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G820
+SET GAME=Robinson
+CD /D "%GAMES%\Robinson"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G821
+SET GAME=robotron
+CD /D "%GAMES%\robotron"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G822
+SET GAME=rockyboot
+CD /D "%GAMES%\rockyboot"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G823
+SET GAME=RoE
+CD /D "%GAMES%\RoE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G824
+SET GAME=rohan
+CD /D "%GAMES%\rohan"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G825
+SET GAME=romance1
+CD /D "%GAMES%\romance1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G826
+SET GAME=romance2
+CD /D "%GAMES%\romance2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G827
+SET GAME=romance3
+CD /D "%GAMES%\romance3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G828
+SET GAME=ROOMS
+CD /D "%GAMES%\ROOMS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G829
+SET GAME=RotH
+CD /D "%GAMES%\RotH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G830
+SET GAME=round42
+CD /D "%GAMES%\round42"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G831
+SET GAME=ROUTES
+CD /D "%GAMES%\ROUTES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G832
+SET GAME=rrover
+CD /D "%GAMES%\rrover"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G833
+SET GAME=rsr
+CD /D "%GAMES%\rsr"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G834
+SET GAME=RTBASSCH
+CD /D "%GAMES%\RTBASSCH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G835
+SET GAME=rtype
+CD /D "%GAMES%\rtype"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G836
+SET GAME=RUGBY.SAV
+CD /D "%GAMES%\RUGBY.SAV"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G837
+SET GAME=RUNEXE
+CD /D "%GAMES%\RUNEXE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G838
+SET GAME=rw2000
+CD /D "%GAMES%\rw2000"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G839
+SET GAME=S
+CD /D "%GAMES%\S"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G840
+SET GAME=S0000000
+CD /D "%GAMES%\S0000000"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G841
+SET GAME=S1
+CD /D "%GAMES%\S1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G842
+SET GAME=S2
+CD /D "%GAMES%\S2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G843
+SET GAME=S201
+CD /D "%GAMES%\S201"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G844
+SET GAME=S3
+CD /D "%GAMES%\S3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G845
+SET GAME=S301
+CD /D "%GAMES%\S301"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G846
+SET GAME=S3E3
+CD /D "%GAMES%\S3E3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G847
+SET GAME=S4
+CD /D "%GAMES%\S4"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G848
+SET GAME=S5
+CD /D "%GAMES%\S5"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G849
+SET GAME=Safari
+CD /D "%GAMES%\Safari"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G850
+SET GAME=sailing
+CD /D "%GAMES%\sailing"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G851
+SET GAME=Saratov.wz
+CD /D "%GAMES%\Saratov.wz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G852
+SET GAME=Sargon V
+CD /D "%GAMES%\Sargon V"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G853
+SET GAME=SAVE
+CD /D "%GAMES%\SAVE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G854
+SET GAME=SAVE0
+CD /D "%GAMES%\SAVE0"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G855
+SET GAME=SAVEGAME
+CD /D "%GAMES%\SAVEGAME"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G856
+SET GAME=sblast3
+CD /D "%GAMES%\sblast3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G857
+SET GAME=sbugs
+CD /D "%GAMES%\sbugs"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G858
+SET GAME=scb
+CD /D "%GAMES%\scb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G859
+SET GAME=SCENARIO
+CD /D "%GAMES%\SCENARIO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G860
+SET GAME=SCENE01
+CD /D "%GAMES%\SCENE01"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G861
+SET GAME=SCENE02
+CD /D "%GAMES%\SCENE02"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G862
+SET GAME=SCENE03
+CD /D "%GAMES%\SCENE03"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G863
+SET GAME=SCITECH
+CD /D "%GAMES%\SCITECH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G864
+SET GAME=SCON
+CD /D "%GAMES%\SCON"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G865
+SET GAME=scrabble
+CD /D "%GAMES%\scrabble"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G866
+SET GAME=SCREENS
+CD /D "%GAMES%\SCREENS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G867
+SET GAME=Sdrivers
+CD /D "%GAMES%\Sdrivers"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G868
+SET GAME=SeaDragon.1983
+CD /D "%GAMES%\SeaDragon.1983"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G869
+SET GAME=seastalk
+CD /D "%GAMES%\seastalk"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G870
+SET GAME=sens
+CD /D "%GAMES%\sens"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G871
+SET GAME=sentinel64
+CD /D "%GAMES%\sentinel64"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G872
+SET GAME=serpenti
+CD /D "%GAMES%\serpenti"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G873
+SET GAME=Serpy.1986
+CD /D "%GAMES%\Serpy.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G874
+SET GAME=setgold
+CD /D "%GAMES%\setgold"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G875
+SET GAME=SETTINGS
+CD /D "%GAMES%\SETTINGS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G876
+SET GAME=settlers
+CD /D "%GAMES%\settlers"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G877
+SET GAME=Seymour
+CD /D "%GAMES%\Seymour"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G878
+SET GAME=sfight2
+CD /D "%GAMES%\sfight2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G879
+SET GAME=SFX
+CD /D "%GAMES%\SFX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G880
+SET GAME=SG
+CD /D "%GAMES%\SG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G881
+SET GAME=SHADOW
+CD /D "%GAMES%\SHADOW"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G882
+SET GAME=Shadow Knights
+CD /D "%GAMES%\Shadow Knights"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G883
+SET GAME=shadowgt
+CD /D "%GAMES%\shadowgt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G884
+SET GAME=SHAPES
+CD /D "%GAMES%\SHAPES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G885
+SET GAME=shen
+CD /D "%GAMES%\shen"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G886
+SET GAME=Sherlock
+CD /D "%GAMES%\Sherlock"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G887
+SET GAME=shinobi
+CD /D "%GAMES%\shinobi"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G888
+SET GAME=shogun
+CD /D "%GAMES%\shogun"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G889
+SET GAME=shuey2
+CD /D "%GAMES%\shuey2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G890
+SET GAME=Shufflepuck Cafe
+CD /D "%GAMES%\Shufflepuck Cafe"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G891
+SET GAME=SI
+CD /D "%GAMES%\SI"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G892
+SET GAME=SideArms.1987
+CD /D "%GAMES%\SideArms.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G893
+SET GAME=siege
+CD /D "%GAMES%\siege"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G894
+SET GAME=Silver95
+CD /D "%GAMES%\Silver95"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G895
+SET GAME=silverb
+CD /D "%GAMES%\silverb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G896
+SET GAME=sim earth
+CD /D "%GAMES%\sim earth"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G897
+SET GAME=simc2000
+CD /D "%GAMES%\simc2000"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G898
+SET GAME=simcity
+CD /D "%GAMES%\simcity"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G899
+SET GAME=sixx
+CD /D "%GAMES%\sixx"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G900
+SET GAME=SK1
+CD /D "%GAMES%\SK1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G901
+SET GAME=SK2
+CD /D "%GAMES%\SK2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G902
+SET GAME=SKART
+CD /D "%GAMES%\SKART"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G903
+SET GAME=SKC1
+CD /D "%GAMES%\SKC1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G904
+SET GAME=SKC2
+CD /D "%GAMES%\SKC2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G905
+SET GAME=Ski3
+CD /D "%GAMES%\Ski3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G906
+SET GAME=SKIES
+CD /D "%GAMES%\SKIES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G907
+SET GAME=skulldug
+CD /D "%GAMES%\skulldug"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G908
+SET GAME=Sky Runner.1987
+CD /D "%GAMES%\Sky Runner.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G909
+SET GAME=skyfox2
+CD /D "%GAMES%\skyfox2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G910
+SET GAME=skyshark
+CD /D "%GAMES%\skyshark"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G911
+SET GAME=sleepwalker
+CD /D "%GAMES%\sleepwalker"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G912
+SET GAME=slicks
+CD /D "%GAMES%\slicks"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G913
+SET GAME=slip5000
+CD /D "%GAMES%\slip5000"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G914
+SET GAME=slugger
+CD /D "%GAMES%\slugger"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G915
+SET GAME=smaster
+CD /D "%GAMES%\smaster"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G916
+SET GAME=SMP
+CD /D "%GAMES%\SMP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G917
+SET GAME=snacka
+CD /D "%GAMES%\snacka"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G918
+SET GAME=SND
+CD /D "%GAMES%\SND"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G919
+SET GAME=SNDS
+CD /D "%GAMES%\SNDS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G920
+SET GAME=SNibbly
+CD /D "%GAMES%\SNibbly"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G921
+SET GAME=snoop
+CD /D "%GAMES%\snoop"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G922
+SET GAME=snova
+CD /D "%GAMES%\snova"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G923
+SET GAME=sntroop
+CD /D "%GAMES%\sntroop"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G924
+SET GAME=soe
+CD /D "%GAMES%\soe"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G925
+SET GAME=Soko-Ban.1984
+CD /D "%GAMES%\Soko-Ban.1984"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G926
+SET GAME=solo
+CD /D "%GAMES%\solo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G927
+SET GAME=solskey
+CD /D "%GAMES%\solskey"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G928
+SET GAME=solwinds
+CD /D "%GAMES%\solwinds"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G929
+SET GAME=SONG
+CD /D "%GAMES%\SONG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G930
+SET GAME=sonofs
+CD /D "%GAMES%\sonofs"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G931
+SET GAME=SONS
+CD /D "%GAMES%\SONS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G932
+SET GAME=SOUND
+CD /D "%GAMES%\SOUND"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G933
+SET GAME=SOUND2
+CD /D "%GAMES%\SOUND2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G934
+SET GAME=SOUND3
+CD /D "%GAMES%\SOUND3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G935
+SET GAME=SOUNDS
+CD /D "%GAMES%\SOUNDS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G936
+SET GAME=space
+CD /D "%GAMES%\space"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G937
+SET GAME=Space Miner.1983
+CD /D "%GAMES%\Space Miner.1983"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G938
+SET GAME=spacefed
+CD /D "%GAMES%\spacefed"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G939
+SET GAME=spacehar
+CD /D "%GAMES%\spacehar"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G940
+SET GAME=spacestr
+CD /D "%GAMES%\spacestr"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G941
+SET GAME=speedball2
+CD /D "%GAMES%\speedball2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G942
+SET GAME=spiderbt
+CD /D "%GAMES%\spiderbt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G943
+SET GAME=sportspe
+CD /D "%GAMES%\sportspe"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G944
+SET GAME=SPR
+CD /D "%GAMES%\SPR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G945
+SET GAME=SPRITES
+CD /D "%GAMES%\SPRITES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G946
+SET GAME=spy
+CD /D "%GAMES%\spy"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G947
+SET GAME=spynorth
+CD /D "%GAMES%\spynorth"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G948
+SET GAME=sq1vga
+CD /D "%GAMES%\sq1vga"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G949
+SET GAME=sq4
+CD /D "%GAMES%\sq4"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G950
+SET GAME=squake
+CD /D "%GAMES%\squake"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G951
+SET GAME=squash
+CD /D "%GAMES%\squash"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G952
+SET GAME=squest1
+CD /D "%GAMES%\squest1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G953
+SET GAME=sr
+CD /D "%GAMES%\sr"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G954
+SET GAME=Sram1.1987
+CD /D "%GAMES%\Sram1.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G955
+SET GAME=Sram2.1987
+CD /D "%GAMES%\Sram2.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G956
+SET GAME=SS1
+CD /D "%GAMES%\SS1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G957
+SET GAME=ss2
+CD /D "%GAMES%\ss2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G958
+SET GAME=SSB
+CD /D "%GAMES%\SSB"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G959
+SET GAME=SSP
+CD /D "%GAMES%\SSP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G960
+SET GAME=SSR
+CD /D "%GAMES%\SSR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G961
+SET GAME=Stalin
+CD /D "%GAMES%\Stalin"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G962
+SET GAME=starlord
+CD /D "%GAMES%\starlord"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G963
+SET GAME=StarShip Invasion.1984
+CD /D "%GAMES%\StarShip Invasion.1984"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G964
+SET GAME=STATIC
+CD /D "%GAMES%\STATIC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G965
+SET GAME=STDATA
+CD /D "%GAMES%\STDATA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G966
+SET GAME=stdriver
+CD /D "%GAMES%\stdriver"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G967
+SET GAME=STEELDAT
+CD /D "%GAMES%\STEELDAT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G968
+SET GAME=steelpan
+CD /D "%GAMES%\steelpan"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G969
+SET GAME=steg
+CD /D "%GAMES%\steg"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G970
+SET GAME=stellar7
+CD /D "%GAMES%\stellar7"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G971
+SET GAME=Stjr
+CD /D "%GAMES%\Stjr"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G972
+SET GAME=STKII
+CD /D "%GAMES%\STKII"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G973
+SET GAME=STONE
+CD /D "%GAMES%\STONE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G974
+SET GAME=storm
+CD /D "%GAMES%\storm"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G975
+SET GAME=stormlrd
+CD /D "%GAMES%\stormlrd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G976
+SET GAME=STRIFE
+CD /D "%GAMES%\STRIFE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G977
+SET GAME=strongh
+CD /D "%GAMES%\strongh"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G978
+SET GAME=STTNG
+CD /D "%GAMES%\STTNG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G979
+SET GAME=STTNG-T
+CD /D "%GAMES%\STTNG-T"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G980
+SET GAME=stunt
+CD /D "%GAMES%\stunt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G981
+SET GAME=stuntisl
+CD /D "%GAMES%\stuntisl"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G982
+SET GAME=sub
+CD /D "%GAMES%\sub"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G983
+SET GAME=subbat
+CD /D "%GAMES%\subbat"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G984
+SET GAME=summer
+CD /D "%GAMES%\summer"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G985
+SET GAME=summer2
+CD /D "%GAMES%\summer2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G986
+SET GAME=SummerEd
+CD /D "%GAMES%\SummerEd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G987
+SET GAME=supball
+CD /D "%GAMES%\supball"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G988
+SET GAME=Supercopter.1987
+CD /D "%GAMES%\Supercopter.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G989
+SET GAME=suspend
+CD /D "%GAMES%\suspend"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G990
+SET GAME=sword
+CD /D "%GAMES%\sword"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G991
+SET GAME=synd
+CD /D "%GAMES%\synd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G992
+SET GAME=T
+CD /D "%GAMES%\T"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G993
+SET GAME=T2-JD
+CD /D "%GAMES%\T2-JD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G994
+SET GAME=TALFILES
+CD /D "%GAMES%\TALFILES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G995
+SET GAME=TAPES
+CD /D "%GAMES%\TAPES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G996
+SET GAME=tass
+CD /D "%GAMES%\tass"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G997
+SET GAME=tauceti
+CD /D "%GAMES%\tauceti"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G998
+SET GAME=tdydat
+CD /D "%GAMES%\tdydat"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G999
+SET GAME=tdyiff
+CD /D "%GAMES%\tdyiff"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1000
+SET GAME=TEAMDAT
+CD /D "%GAMES%\TEAMDAT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1001
+SET GAME=TEAMS
+CD /D "%GAMES%\TEAMS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1002
+SET GAME=TEDIT
+CD /D "%GAMES%\TEDIT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1003
+SET GAME=TEKWILLA
+CD /D "%GAMES%\TEKWILLA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1004
+SET GAME=Telengard.1985
+CD /D "%GAMES%\Telengard.1985"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1005
+SET GAME=tempest
+CD /D "%GAMES%\tempest"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1006
+SET GAME=Temple Of Apshai Trilogy.1985
+CD /D "%GAMES%\Temple Of Apshai Trilogy.1985"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1007
+SET GAME=Tera.1986
+CD /D "%GAMES%\Tera.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1008
+SET GAME=TERRAIN
+CD /D "%GAMES%\TERRAIN"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1009
+SET GAME=TEXT
+CD /D "%GAMES%\TEXT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1010
+SET GAME=TG
+CD /D "%GAMES%\TG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1011
+SET GAME=TGA
+CD /D "%GAMES%\TGA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1012
+SET GAME=thawk
+CD /D "%GAMES%\thawk"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1013
+SET GAME=The 3 Stooges.1987
+CD /D "%GAMES%\The 3 Stooges.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1014
+SET GAME=The Black Cauldron.1987
+CD /D "%GAMES%\The Black Cauldron.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1015
+SET GAME=The Horde
+CD /D "%GAMES%\The Horde"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1016
+SET GAME=The Pawn v2.3.1986
+CD /D "%GAMES%\The Pawn v2.3.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1017
+SET GAME=The Scrabble.1987
+CD /D "%GAMES%\The Scrabble.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1018
+SET GAME=theext
+CD /D "%GAMES%\theext"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1019
+SET GAME=Thexder.1987
+CD /D "%GAMES%\Thexder.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1020
+SET GAME=TILES
+CD /D "%GAMES%\TILES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1021
+SET GAME=tim
+CD /D "%GAMES%\tim"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1022
+SET GAME=timeb
+CD /D "%GAMES%\timeb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1023
+SET GAME=tintin
+CD /D "%GAMES%\tintin"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1024
+SET GAME=TINYSKWS
+CD /D "%GAMES%\TINYSKWS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1025
+SET GAME=tjcatas
+CD /D "%GAMES%\tjcatas"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1026
+SET GAME=tmnt
+CD /D "%GAMES%\tmnt"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1027
+SET GAME=TMS
+CD /D "%GAMES%\TMS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1028
+SET GAME=TOD
+CD /D "%GAMES%\TOD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1029
+SET GAME=Top Secret.1987
+CD /D "%GAMES%\Top Secret.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1030
+SET GAME=TopGun.1986
+CD /D "%GAMES%\TopGun.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1031
+SET GAME=TORE
+CD /D "%GAMES%\TORE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1032
+SET GAME=total
+CD /D "%GAMES%\total"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1033
+SET GAME=Touche
+CD /D "%GAMES%\Touche"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1034
+SET GAME=toutrun
+CD /D "%GAMES%\toutrun"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1035
+SET GAME=traders
+CD /D "%GAMES%\traders"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1036
+SET GAME=Train
+CD /D "%GAMES%\Train"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1037
+SET GAME=trains
+CD /D "%GAMES%\trains"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1038
+SET GAME=TRANSA
+CD /D "%GAMES%\TRANSA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1039
+SET GAME=TRAZERE
+CD /D "%GAMES%\TRAZERE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1040
+SET GAME=triders
+CD /D "%GAMES%\triders"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1041
+SET GAME=triplane
+CD /D "%GAMES%\triplane"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1042
+SET GAME=Triskelion.1987
+CD /D "%GAMES%\Triskelion.1987"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1043
+SET GAME=Tristan
+CD /D "%GAMES%\Tristan"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1044
+SET GAME=trivia
+CD /D "%GAMES%\trivia"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1045
+SET GAME=trog
+CD /D "%GAMES%\trog"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1046
+SET GAME=troll
+CD /D "%GAMES%\troll"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1047
+SET GAME=TTerror
+CD /D "%GAMES%\TTerror"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1048
+SET GAME=tubes
+CD /D "%GAMES%\tubes"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1049
+SET GAME=TUNES
+CD /D "%GAMES%\TUNES"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1050
+SET GAME=tunnelsarm
+CD /D "%GAMES%\tunnelsarm"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1051
+SET GAME=turbocup
+CD /D "%GAMES%\turbocup"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1052
+SET GAME=Turok-Dinosaur Hunter
+CD /D "%GAMES%\Turok-Dinosaur Hunter"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1053
+SET GAME=tvbas
+CD /D "%GAMES%\tvbas"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1054
+SET GAME=twgbg
+CD /D "%GAMES%\twgbg"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1055
+SET GAME=typhoon
+CD /D "%GAMES%\typhoon"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1056
+SET GAME=tyrian2000
+CD /D "%GAMES%\tyrian2000"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1057
+SET GAME=TZone
+CD /D "%GAMES%\TZone"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1058
+SET GAME=UFO
+CD /D "%GAMES%\UFO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1059
+SET GAME=ufo2
+CD /D "%GAMES%\ufo2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1060
+SET GAME=ufo2000-0.4.0.334
+CD /D "%GAMES%\ufo2000-0.4.0.334"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1061
+SET GAME=UFO2EXE
+CD /D "%GAMES%\UFO2EXE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1062
+SET GAME=UFOEXE
+CD /D "%GAMES%\UFOEXE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1063
+SET GAME=UFOGRAPH
+CD /D "%GAMES%\UFOGRAPH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1064
+SET GAME=UFOINTRO
+CD /D "%GAMES%\UFOINTRO"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1065
+SET GAME=Uidata
+CD /D "%GAMES%\Uidata"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1066
+SET GAME=Ultimate NFL Coaches Club Football
+CD /D "%GAMES%\Ultimate NFL Coaches Club Football"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1067
+SET GAME=ULTIMAV
+CD /D "%GAMES%\ULTIMAV"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1068
+SET GAME=ulysses
+CD /D "%GAMES%\ulysses"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1069
+SET GAME=UMS1
+CD /D "%GAMES%\UMS1"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1070
+SET GAME=ums2
+CD /D "%GAMES%\ums2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1071
+SET GAME=UNITS
+CD /D "%GAMES%\UNITS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1072
+SET GAME=USER
+CD /D "%GAMES%\USER"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1073
+SET GAME=vectorb
+CD /D "%GAMES%\vectorb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1074
+SET GAME=VECTORS
+CD /D "%GAMES%\VECTORS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1075
+SET GAME=veilofd
+CD /D "%GAMES%\veilofd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1076
+SET GAME=venice
+CD /D "%GAMES%\venice"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1077
+SET GAME=vette
+CD /D "%GAMES%\vette"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1078
+SET GAME=VGA
+CD /D "%GAMES%\VGA"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1079
+SET GAME=VGA_GFX
+CD /D "%GAMES%\VGA_GFX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1080
+SET GAME=vgadat
+CD /D "%GAMES%\vgadat"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1081
+SET GAME=vgaiff
+CD /D "%GAMES%\vgaiff"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1082
+SET GAME=VICTORY
+CD /D "%GAMES%\VICTORY"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1083
+SET GAME=vietnam
+CD /D "%GAMES%\vietnam"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1084
+SET GAME=VMAX
+CD /D "%GAMES%\VMAX"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1085
+SET GAME=vmind
+CD /D "%GAMES%\vmind"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1086
+SET GAME=VOC
+CD /D "%GAMES%\VOC"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1087
+SET GAME=VoE
+CD /D "%GAMES%\VoE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1088
+SET GAME=voodoo
+CD /D "%GAMES%\voodoo"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1089
+SET GAME=vrsoccer
+CD /D "%GAMES%\vrsoccer"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1090
+SET GAME=wacky
+CD /D "%GAMES%\wacky"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1091
+SET GAME=WAR
+CD /D "%GAMES%\WAR"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1092
+SET GAME=warlords
+CD /D "%GAMES%\warlords"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1093
+SET GAME=warlords2
+CD /D "%GAMES%\warlords2"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1094
+SET GAME=warp
+CD /D "%GAMES%\warp"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1095
+SET GAME=waters
+CD /D "%GAMES%\waters"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1096
+SET GAME=waves
+CD /D "%GAMES%\waves"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1097
+SET GAME=WAYBIN
+CD /D "%GAMES%\WAYBIN"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1098
+SET GAME=Wayne
+CD /D "%GAMES%\Wayne"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1099
+SET GAME=WAYTXT
+CD /D "%GAMES%\WAYTXT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1100
+SET GAME=wcboxing
+CD /D "%GAMES%\wcboxing"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1101
+SET GAME=wchess
+CD /D "%GAMES%\wchess"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1102
+SET GAME=wclb
+CD /D "%GAMES%\wclb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1103
+SET GAME=wdarts
+CD /D "%GAMES%\wdarts"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1104
+SET GAME=WEAPONS
+CD /D "%GAMES%\WEAPONS"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1105
+SET GAME=ween
+CD /D "%GAMES%\ween"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1106
+SET GAME=weirdd
+CD /D "%GAMES%\weirdd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1107
+SET GAME=welltris
+CD /D "%GAMES%\welltris"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1108
+SET GAME=Westadv
+CD /D "%GAMES%\Westadv"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1109
+SET GAME=wetrix
+CD /D "%GAMES%\wetrix"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1110
+SET GAME=WFILE
+CD /D "%GAMES%\WFILE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1111
+SET GAME=wgames
+CD /D "%GAMES%\wgames"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1112
+SET GAME=Where Time Stood Still
+CD /D "%GAMES%\Where Time Stood Still"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1113
+SET GAME=Willy the Worm.1985
+CD /D "%GAMES%\Willy the Worm.1985"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1114
+SET GAME=willyb
+CD /D "%GAMES%\willyb"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1115
+SET GAME=WING
+CD /D "%GAMES%\WING"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1116
+SET GAME=winpooh
+CD /D "%GAMES%\winpooh"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1117
+SET GAME=WinterEd
+CD /D "%GAMES%\WinterEd"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1118
+SET GAME=winwilly
+CD /D "%GAMES%\winwilly"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1119
+SET GAME=wishbringer
+CD /D "%GAMES%\wishbringer"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1120
+SET GAME=witness
+CD /D "%GAMES%\witness"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1121
+SET GAME=Wizard Warz
+CD /D "%GAMES%\Wizard Warz"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1122
+SET GAME=wizball
+CD /D "%GAMES%\wizball"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1123
+SET GAME=wizkid
+CD /D "%GAMES%\wizkid"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1124
+SET GAME=WO94
+CD /D "%GAMES%\WO94"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1125
+SET GAME=wolfpack
+CD /D "%GAMES%\wolfpack"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1126
+SET GAME=wordres
+CD /D "%GAMES%\wordres"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1127
+SET GAME=world
+CD /D "%GAMES%\world"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1128
+SET GAME=World of Xeen
+CD /D "%GAMES%\World of Xeen"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1129
+SET GAME=WORLDMAP
+CD /D "%GAMES%\WORLDMAP"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1130
+SET GAME=WRATH
+CD /D "%GAMES%\WRATH"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1131
+SET GAME=WSFILE
+CD /D "%GAMES%\WSFILE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1132
+SET GAME=WVOYAGE
+CD /D "%GAMES%\WVOYAGE"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1133
+SET GAME=wwf
+CD /D "%GAMES%\wwf"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1134
+SET GAME=wwfert
+CD /D "%GAMES%\wwfert"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1135
+SET GAME=wwfhouse
+CD /D "%GAMES%\wwfhouse"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1136
+SET GAME=X
+CD /D "%GAMES%\X"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1137
+SET GAME=Xatax
+CD /D "%GAMES%\Xatax"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1138
+SET GAME=xcom3
+CD /D "%GAMES%\xcom3"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1139
+SET GAME=xiphos
+CD /D "%GAMES%\xiphos"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1140
+SET GAME=XIXIT
+CD /D "%GAMES%\XIXIT"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1141
+SET GAME=XM
+CD /D "%GAMES%\XM"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1142
+SET GAME=Xonix.1984
+CD /D "%GAMES%\Xonix.1984"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1143
+SET GAME=XPINCD
+CD /D "%GAMES%\XPINCD"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1144
+SET GAME=xxiv
+CD /D "%GAMES%\xxiv"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1145
+SET GAME=Y
+CD /D "%GAMES%\Y"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1146
+SET GAME=Yoda Stories
+CD /D "%GAMES%\Yoda Stories"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1147
+SET GAME=Yogho
+CD /D "%GAMES%\Yogho"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1148
+SET GAME=ypm
+CD /D "%GAMES%\ypm"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1149
+SET GAME=yrsim
+CD /D "%GAMES%\yrsim"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1150
+SET GAME=Z
+CD /D "%GAMES%\Z"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1151
+SET GAME=zack
+CD /D "%GAMES%\zack"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1152
+SET GAME=zak
+CD /D "%GAMES%\zak"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1153
+SET GAME=zakcodes
+CD /D "%GAMES%\zakcodes"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1154
+SET GAME=ZEITUNG
+CD /D "%GAMES%\ZEITUNG"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1155
+SET GAME=zelda
+CD /D "%GAMES%\zelda"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1156
+SET GAME=zeliard
+CD /D "%GAMES%\zeliard"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1157
+SET GAME=zind
+CD /D "%GAMES%\zind"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1158
+SET GAME=Zombi.1986
+CD /D "%GAMES%\Zombi.1986"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1159
+SET GAME=Zona0
+CD /D "%GAMES%\Zona0"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1160
+SET GAME=zone66
+CD /D "%GAMES%\zone66"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1161
+SET GAME=zorkzero
+CD /D "%GAMES%\zorkzero"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1162
+SET GAME=Zorro
+CD /D "%GAMES%\Zorro"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:G1163
+SET GAME=Zyll.1984
+CD /D "%GAMES%\Zyll.1984"
+IF ERRORLEVEL 1 GOTO START
+GOTO RUN
+
+:SEARCH
+CLS
+ECHO.
+ECHO ============================================================
+ECHO                       BUSCAR JUEGO
+ECHO ============================================================
+ECHO.
+SET SEARCH=
+SET /P SEARCH=Texto a buscar: 
+IF "%SEARCH%"=="" GOTO START
+CLS
+ECHO.
+ECHO RESULTADOS:
+ECHO.
+DIR "%GAMES%\*%SEARCH%*" /AD /B
+ECHO.
+ECHO Escribe el nombre exacto de la carpeta.
+ECHO ENTER = volver.
+SET GAME=
+SET /P GAME=Juego: 
+IF "%GAME%"=="" GOTO START
+CD /D "%GAMES%\%GAME%"
+IF ERRORLEVEL 1 GOTO SEARCH
+GOTO RUN
+
+:RUN
+CLS
+ECHO.
+ECHO ============================================================
+ECHO %GAME%
+ECHO ============================================================
+ECHO.
+ECHO EJECUTABLES:
+ECHO.
+DIR *.EXE /B
+DIR *.COM /B
+DIR *.BAT /B
+ECHO.
+ECHO Escribe el nombre del ejecutable.
+ECHO ENTER = volver al listado.
+SET EXE=
+SET /P EXE=Ejecutar: 
+IF "%EXE%"=="" GOTO START
+%EXE%
+ECHO.
+ECHO El programa ha terminado.
+PAUSE
+GOTO RUN
+
+:NOGAMES
+CLS
+ECHO.
+ECHO ERROR: No se encontro GAMES.
+PAUSE
+GOTO EXIT
+
+:EXIT
+CLS
+ECHO.
+ECHO Saliendo de CAPYDOS...
+

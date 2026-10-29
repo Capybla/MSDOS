@@ -1,0 +1,51 @@
+@echo off
+SET DOSDIR=\FREEDOS
+SET PATH=%dosdir%\BIN
+SET DIRCMD=/P /OGN /Y
+
+if exist %dosdir%\NLS\NUL set NLSPATH=%dosdir%\NLS
+if exist %dosdir%\HELP\NUL set HELPPATH=%dosdir%\HELP
+if exist %dosdir%\BIN\DOSLFN.COM %dosdir%\BIN\DOSLFN.COM
+
+SET OS_NAME=FreeDOS
+SET OS_VERSION=1.4
+SET AUTOFILE=%0
+SET CFGFILE=\FDCONFIG.SYS
+alias reboot=fdapm warmboot
+alias reset=fdisk /reboot
+alias halt=fdapm poweroff
+alias shutdown=fdapm poweroff
+
+rem ============================================================
+rem Sound Blaster emulation for modern UEFI PCs
+rem ============================================================
+SET BLASTER=A220 I7 D1 H5 P330 T6
+SET SBEMU_DRV=
+if exist C:\SBEMU\VDPMI.EXE SET SBEMU_DRV=C:
+if exist D:\SBEMU\VDPMI.EXE SET SBEMU_DRV=D:
+if exist E:\SBEMU\VDPMI.EXE SET SBEMU_DRV=E:
+if exist F:\SBEMU\VDPMI.EXE SET SBEMU_DRV=F:
+if exist G:\SBEMU\VDPMI.EXE SET SBEMU_DRV=G:
+if exist R:\SBEMU\VDPMI.EXE SET SBEMU_DRV=R:
+
+if "%SBEMU_DRV%"=="" goto NoSBEMU
+%SBEMU_DRV%
+cd \SBEMU
+VDPMI.EXE /DPMIMEM=64 /EMS=0
+SBEMU.EXE /A220 /I7 /D1 /H5 /T6 /VOL100
+cd \
+goto SoundDone
+
+:NoSBEMU
+echo SBEMU no encontrado: el sonido Sound Blaster no estara disponible.
+
+:SoundDone
+cls
+echo.
+echo ============================================================
+echo           CAPYDOS RETRO GAMES - INICIANDO SISTEMA...
+echo ============================================================
+echo Sound Blaster: A220 I7 D1 H5 P330 T6
+echo.
+
+call MENU.BAT

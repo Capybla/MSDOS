@@ -1,0 +1,26 @@
+@echo off
+SET DOSDIR=\FREEDOS
+SET PATH=%dosdir%\BIN
+SET DIRCMD=/P /OGN /Y
+
+if exist %dosdir%\NLS\NUL set NLSPATH=%dosdir%\NLS
+if exist %dosdir%\HELP\NUL set HELPPATH=%dosdir%\HELP
+if exist %dosdir%\BIN\DOSLFN.COM %dosdir%\BIN\DOSLFN.COM
+
+SET OS_NAME=FreeDOS
+SET OS_VERSION=1.4
+SET AUTOFILE=%0
+SET CFGFILE=\FDCONFIG.SYS
+alias reboot=fdapm warmboot
+alias reset=fdisk /reboot
+alias halt=fdapm poweroff
+alias shutdown=fdapm poweroff
+
+cls
+echo.
+echo ============================================================
+echo           CAPYDOS RETRO GAMES - INICIANDO SISTEMA...
+echo ============================================================
+echo.
+
+call MENU.BAT

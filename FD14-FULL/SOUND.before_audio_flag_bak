@@ -1,0 +1,32 @@
+@echo off
+rem ============================================================
+rem CAPYDOS SOUND TEST - loads Sound Blaster emulation manually
+rem ============================================================
+SET BLASTER=A220 I7 D1 H5 P330 T6
+SET CAPY_AUDIO=0
+SET SBEMU_DRV=
+if exist C:\SBEMU\VDPMI.EXE SET SBEMU_DRV=C:
+if exist D:\SBEMU\VDPMI.EXE SET SBEMU_DRV=D:
+if exist E:\SBEMU\VDPMI.EXE SET SBEMU_DRV=E:
+if exist F:\SBEMU\VDPMI.EXE SET SBEMU_DRV=F:
+if exist G:\SBEMU\VDPMI.EXE SET SBEMU_DRV=G:
+if exist R:\SBEMU\VDPMI.EXE SET SBEMU_DRV=R:
+
+if "%SBEMU_DRV%"=="" goto NoSBEMU
+%SBEMU_DRV%
+cd \SBEMU
+echo Cargando VDPMI...
+VDPMI.EXE /DPMIMEM=64 /EMS=0
+echo Cargando SBEMU...
+SBEMU.EXE /A220 /I7 /D1 /H5 /T6 /VOL100
+cd \
+SET CAPY_AUDIO=1
+echo.
+echo SBEMU ha vuelto al sistema. Configuracion: %BLASTER%
+echo Si no se ha colgado, prueba un juego configurado como Sound Blaster 16.
+goto End
+
+:NoSBEMU
+echo No se encontro \SBEMU\VDPMI.EXE en ninguna unidad.
+
+:End

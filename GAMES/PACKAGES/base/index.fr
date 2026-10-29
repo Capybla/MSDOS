@@ -1,0 +1,58 @@
+FD-REPOv1	Build time: 1743604616	FreeDOS Base	57
+ambhelp	0.1d	Les fichiers d'aide de FreeDOS au format AMB	1ab5cc6f
+append	5.0-0.7	Acc‚der aux fichiers comme si dans le dossier courant	0d15a723
+assign	1.4a	Attribuer une nouvelle lettre … un lecteur	8ef35fc7
+attrib	2.1a	Afficher et d‚finir les attributs de fichiers	8ae764ff
+chkdsk	beta 0.9.2 (rev A)	V‚rifier le disque pour des erreurs	5363179e
+choice	4.4a	Pr‚senter un choix et attendre	4d437734
+comp	1.04a	Comparer des fichiers et afficher les diff‚rences	7a547756
+cpidos	3.0a	Pages de code DOS de type DISPLAY	3bf5e157
+ctmouse	2.1b4	Le pilote de souris pour FreeDOS	a48592bd
+debug	2.50	Outil pour tester et ‚diter les programmes	4fac2b3c
+defrag	1.3.2a	Utilitaire de d‚fragmentation	626fd71e
+deltree	1.02g.mrlg (rev A)	Supprimer des fichiers et des r‚pertoires	2fdd2438
+devload	3.25a	Charger des pilotes depuis la ligne de commande	a17c968b
+diskcomp	06jun2003 (rev A)	Utilitaire de comparaison de disques	72a1c0c4
+diskcopy	beta 0.95 (rev A)	Copier un disque ou un fichier d'image sur un autre disque	c8f8eb8f
+display	0.13d	Pilote pour la gestion des pages de code	0ba99653
+edit	0.9b	L'‚diteur de texte de FreeDOS	cdd591cd
+edlin	2.24	L'‚diteur de lignes standard de FreeDOS	beee3f1a
+exe2bin	1.5a	Convertir un fichier exe au format bin	f77a9453
+fc	3.03a	Utilitaire de comparaison de fichiers	ca811e53
+fdapm	2009sep11 (rev A)	Outil de gestion d'‚nergie avanc‚	f03ac807
+fdhelper	1.3.6	Fichiers batch pour effectuer diverses tƒches	35426706
+fdisk	1.4.3	Outil de partitionnement Fixed disk	72c363a0
+fdxms286	0.03.Temperaments (rev A)	Pilote XMS de remplacement pour les systŠmes '286 ou sup‚rieurs.	246e6304
+fdxms	0.94.Bananas (rev A)	Pilote XMS de remplacement pour les systŠmes '386 ou sup‚rieurs	354df3e2
+find	3.0b LFN (rev A)	Rechercher des fichiers contenant une chaŒne	d67f7f5e
+format	0.92a (pre-release)	Programme de formatage de disques	ca9ea226
+freecom	0.86a	Le shell de commande de FreeDOS	7581b582
+graphics	2008-07-14a	Permet … Impr ‚cran d'imprimer les ‚crans graphiques	fa8de167
+himemx	3.38	HimemX est un gestionnaire de m‚moire d‚riv‚ de FreeDOS Himem	0f523501
+htmlhelp	1.1.0	Les fichiers d'aide de FreeDOS au format HTML	a7e639bf
+jemm	5.85	Jemm386 est un gestionnaire de m‚moire ‚tendue	ce184e6a
+kernel	2043	Le noyau FreeDOS	ebf91ae3
+keyb_lay	3.1a	Dispositions de clavier pour KEYB	a86efca9
+keyb	2.11	Pilote de niveau BIOS de claviers internationaux	93c3d90b
+label	1.5	D‚finit ou modifie le libell‚ du volume de disque	f796c3c7
+lbacache	2009feb06	Tampon de disque pour lecteurs et disquettes	44c3285e
+mem	1.12	Afficher la m‚moire utilis‚e et libre sur votre systŠme	be24657b
+mirror	0.2a	Enregistre des informations de disque pour une ‚ventuelle r‚cup‚ration de donn‚es	439585c0
+mkeyb	0.52 (fork)	Pilote de clavier trŠs l‚ger	c5d704b3
+mode	2015-11-25a	D‚finir le mode de vos appareils	bbdb668b
+more	4.3a	Afficher un fichier texte ou la sortie d'un programme une page … la fois	2607e40d
+move	3.5	D‚placer des fichiers d'un endroit … un autre	418048e7
+nansi	4.0d (2007may26)	Un pilote ANSI pour DOS	c7739cfa
+nlsfunc	0.4a	Ajoute le NLS … certains programmes support‚s	262d5164
+print	1.02.ea (rev A)	Imprimer des fichiers en arriŠre-plan	5dd1502a
+recover	0.1 (BETA) (rev A)	R‚cup‚rer des disques ou des fichiers perdus	f445e72a
+replace	1.2a	Remplace les fichiers du r‚pertoire de destination	5dfd22a9
+samcfg	20110719a	Exemples de fichiers de configuration	86d46289
+share	08/2006a	Capacit‚s de partage et de verrouillage de fichiers	8b5cc4af
+shsucdx	3.09	Extenseur CD-ROM et DVD-ROM	c333b866
+sort	1.5.1a	Trier le contenu d'un fichier texte	9c22e7fd
+swsubst	3.2a	SUBST et JOIN	7b3f5961
+tree	3.7.3	Affiche la structure de r‚pertoires d'un lecteur ou d'un chemin.	5d4b7c2c
+undelete	2008a	Restaurer des fichiers effac‚s sur des systŠmes de fichiers FAT16/FAT32	839f9d5a
+unformat	0.8a	Restaurer un disque accidentellement format‚	f8b00fd3
+xcopy	1.8b	Copie les fichiers et les arborescences de r‚pertoires	baaf8a82

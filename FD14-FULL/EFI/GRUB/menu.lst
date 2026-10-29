@@ -1,0 +1,9 @@
+timeout 1
+default 0
+
+title ReactOS 0.4.16 Live
+find --set-root /REACTOS/ISO/ReactOS-0.4.16-i386.iso
+map --mem /REACTOS/ISO/ReactOS-0.4.16-i386.iso (0xff)
+map --hook
+chainloader (0xff)
+boot

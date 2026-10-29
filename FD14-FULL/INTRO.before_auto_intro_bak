@@ -1,0 +1,20 @@
+@echo off
+rem ============================================================
+rem CAPYDOS INTRO - audio and animation together only
+rem ============================================================
+call SOUND.BAT
+if not "%CAPY_AUDIO%"=="1" goto NoAudio
+SET ANIM_DONE=1
+if exist C:\ANIM\PLAYANIM.COM C:\ANIM\PLAYANIM.COM
+if exist D:\ANIM\PLAYANIM.COM D:\ANIM\PLAYANIM.COM
+if exist E:\ANIM\PLAYANIM.COM E:\ANIM\PLAYANIM.COM
+if exist F:\ANIM\PLAYANIM.COM F:\ANIM\PLAYANIM.COM
+if exist G:\ANIM\PLAYANIM.COM G:\ANIM\PLAYANIM.COM
+goto End
+
+:NoAudio
+echo.
+echo No reproduzco la animacion porque el audio no esta listo.
+echo Asi evitamos una intro desincronizada.
+
+:End

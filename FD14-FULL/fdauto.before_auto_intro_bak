@@ -1,0 +1,34 @@
+@echo off
+SET DOSDIR=\FREEDOS
+SET PATH=%dosdir%\BIN
+SET DIRCMD=/P /OGN /Y
+
+if exist %dosdir%\NLS\NUL set NLSPATH=%dosdir%\NLS
+if exist %dosdir%\HELP\NUL set HELPPATH=%dosdir%\HELP
+if exist %dosdir%\BIN\DOSLFN.COM %dosdir%\BIN\DOSLFN.COM
+
+SET OS_NAME=FreeDOS
+SET OS_VERSION=1.4
+SET AUTOFILE=%0
+SET CFGFILE=\FDCONFIG.SYS
+alias reboot=fdapm warmboot
+alias reset=fdisk /reboot
+alias halt=fdapm poweroff
+alias shutdown=fdapm poweroff
+
+rem Keep common Sound Blaster settings for game setup screens.
+rem The emulator is NOT loaded automatically because it can hang on some UEFI/CSMWrap PCs.
+SET BLASTER=A220 I7 D1 H5 P330 T6
+SET CAPY_AUDIO=0
+
+cls
+echo.
+echo ============================================================
+echo           CAPYDOS RETRO GAMES - INICIANDO SISTEMA...
+echo ============================================================
+echo Audio automatico desactivado para evitar bloqueos al arrancar.
+echo Para probar sonido sincronizado con la intro, escribe INTRO.
+echo Para probar solo el driver de sonido, escribe SOUND.
+echo.
+
+call MENU.BAT

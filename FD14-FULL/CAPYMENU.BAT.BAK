@@ -1,0 +1,209 @@
+@echo off
+rem ============================================================
+rem CAPYDOS RETRO GAMES LAUNCHER - DYNAMIC COMPACT VERSION
+rem ============================================================
+rem Detecta automaticamente todos los juegos en D:\GAMES\
+rem Version optimizada sin lista estatica de juegos
+
+setlocal enabledelayedexpansion
+
+rem 1. Detectar particion con carpeta GAMES (prioriza D:)
+set G_DRV=
+if exist D:\GAMES\NUL set G_DRV=D:
+if "%G_DRV%"=="" if exist C:\GAMES\NUL set G_DRV=C:
+if "%G_DRV%"=="" if exist E:\GAMES\NUL set G_DRV=E:
+if "%G_DRV%"=="" if exist F:\GAMES\NUL set G_DRV=F:
+if "%G_DRV%"=="" (
+	echo ERROR: No se encontro la carpeta GAMES en ninguna unidad.
+	pause
+	goto EXIT
+)
+
+rem -- Boot animation ------------------------------------------------
+if "%CAPY_AUDIO%"=="1" if "%ANIM_DONE%"=="" (
+	set ANIM_DONE=1
+	for %%D in (C D E F G) do if exist %%D:\ANIM\PLAYANIM.COM %%D:\ANIM\PLAYANIM.COM
+)
+
+:MENU_MAIN
+cls
+echo.
+echo ============================================================
+echo               CAPYDOS RETRO GAMES - MENU PRINCIPAL
+echo ============================================================
+echo.
+echo  Selecciona una categoria alfabetica:
+echo.
+echo   [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M]
+echo   [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
+echo   [#] Numeros y simbolos
+echo.
+echo   [0] Buscar juego por nombre
+echo   [?] Ayuda y atajos para salir de juegos
+echo   [!] Reiniciar equipo al menu
+echo   [X] Salir al simbolo de sistema
+if "%CAPY_AUDIO_WARN%"=="1" echo   AVISO: audio no validado; algunos juegos pueden no sonar.
+echo ============================================================
+set /p CAT=Opcion: 
+if "%CAT%"=="" goto MENU_MAIN
+if "%CAT%"=="0" goto SEARCH_GAME
+if "%CAT%"=="?" goto HELP_KEYS
+if "%CAT%"=="!" goto DO_REBOOT
+if /i "%CAT%"=="x" goto EXIT
+if /i "%CAT%"=="#" set CAT=NUM
+goto CAT_LETTER
+
+:HELP_KEYS
+cls
+echo.
+echo ============================================================
+echo           GUIA DE CONTROLES Y ATAJOS DE JUEGOS DOS
+echo ============================================================
+echo.
+echo  1. COMO SALIR DE UN JUEGO HACIA EL MENU:
+echo     * Tecla [ESC]: abre menu de pausa / opciones
+echo     * [ALT] + [X]: atajo estandar en muchisimos juegos
+echo     * [CTRL] + [Q]: comun en aventuras graficas
+echo     * Tecla [F10] o [Q]: muy comun en juegos arcade
+echo.
+echo  2. SI UN JUEGO SE CONGELA O NO RESPONDE:
+echo     * Pulsa [CTRL] + [ALT] + [SUPR]
+echo       FreeDOS reinicia de inmediato en 3 segundos
+echo.
+echo  3. CONTROLES GENERALES:
+echo     * Movimiento: Flechas del cursor o teclado numerico
+echo     * Acciones: Espacio, Ctrl, Alt, Enter
+echo ============================================================
+pause >nul
+goto MENU_MAIN
+
+:DO_REBOOT
+cls
+echo Reiniciando equipo al menu de juegos...
+fdapm warmboot
+goto EXIT
+
+rem ======================================================================
+rem CLASIFICACION DINAMICA POR LETRA/NUMERO
+rem ======================================================================
+
+:CAT_LETTER
+if /i "%CAT%"=="A" set LETTER=A
+if /i "%CAT%"=="B" set LETTER=B
+if /i "%CAT%"=="C" set LETTER=C
+if /i "%CAT%"=="D" set LETTER=D
+if /i "%CAT%"=="E" set LETTER=E
+if /i "%CAT%"=="F" set LETTER=F
+if /i "%CAT%"=="G" set LETTER=G
+if /i "%CAT%"=="H" set LETTER=H
+if /i "%CAT%"=="I" set LETTER=I
+if /i "%CAT%"=="J" set LETTER=J
+if /i "%CAT%"=="K" set LETTER=K
+if /i "%CAT%"=="L" set LETTER=L
+if /i "%CAT%"=="M" set LETTER=M
+if /i "%CAT%"=="N" set LETTER=N
+if /i "%CAT%"=="O" set LETTER=O
+if /i "%CAT%"=="P" set LETTER=P
+if /i "%CAT%"=="Q" set LETTER=Q
+if /i "%CAT%"=="R" set LETTER=R
+if /i "%CAT%"=="S" set LETTER=S
+if /i "%CAT%"=="T" set LETTER=T
+if /i "%CAT%"=="U" set LETTER=U
+if /i "%CAT%"=="V" set LETTER=V
+if /i "%CAT%"=="W" set LETTER=W
+if /i "%CAT%"=="X" set LETTER=X
+if /i "%CAT%"=="Y" set LETTER=Y
+if /i "%CAT%"=="Z" set LETTER=Z
+if "%CAT%"=="NUM" set LETTER=0
+
+if "%LETTER%"=="" goto MENU_MAIN
+
+:SHOW_CATEGORY
+cls
+echo.
+echo ============================================================
+echo  JUEGOS: [%LETTER%]
+echo ============================================================
+echo.
+echo Carpetas disponibles:
+echo.
+%G_DRV%
+cd \GAMES
+if "%LETTER%"=="0" (
+	dir /b /ad 0* 1* 2* 3* 4* 5* 6* 7* 8* 9* 2>nul || echo   (Ninguna encontrada)
+) else (
+	dir /b /ad %LETTER%* 2>nul || echo   (Ninguna encontrada)
+)
+echo.
+echo ============================================================
+echo.
+set /p S_DIR=Carpeta del juego (o Enter para menu): 
+if "%S_DIR%"=="" goto MENU_MAIN
+if not exist "%G_DRV%\GAMES\%S_DIR%\NUL" (
+	echo.
+	echo No se encontro la carpeta "%S_DIR%".
+	pause >nul
+	goto SHOW_CATEGORY
+)
+goto RUN_GAME
+
+:SEARCH_GAME
+cls
+echo.
+echo ============================================================
+echo                      BUSCAR JUEGO
+echo ============================================================
+echo.
+set /p S_TERM=Texto a buscar (o Enter para menu): 
+if "%S_TERM%"=="" goto MENU_MAIN
+cls
+echo.
+echo Resultados para "%S_TERM%":
+echo.
+%G_DRV%
+cd \GAMES
+dir /b /ad *%S_TERM%* 2>nul || echo (Ninguno encontrado)
+echo.
+set /p S_DIR=Carpeta del juego (o Enter para menu): 
+if "%S_DIR%"=="" goto MENU_MAIN
+if not exist "%G_DRV%\GAMES\%S_DIR%\NUL" (
+	echo.
+	echo No se encontro "%S_DIR%".
+	pause >nul
+	goto SEARCH_GAME
+)
+goto RUN_GAME
+
+:RUN_GAME
+cls
+echo.
+echo ============================================================
+echo  JUEGO SELECCIONADO: %S_DIR%
+echo ============================================================
+echo.
+%G_DRV%
+cd "\GAMES\%S_DIR%"
+echo Carpeta actual:
+cd
+echo.
+echo Ejecutables disponibles:
+echo.
+dir /b *.exe *.com *.bat 2>nul || echo   (Ninguno encontrado)
+echo.
+echo ============================================================
+echo.
+echo Para ejecutar un juego, escribe su nombre (ej: game.exe)
+echo Para volver al menu, escribe MENU y pulsa Enter.
+echo.
+goto END_MENU
+
+:EXIT
+cls
+echo.
+echo ============================================================
+echo Has salido de CAPYDOS Retro Games (Dynamic).
+echo ============================================================
+echo.
+
+:END_MENU
+endlocal
